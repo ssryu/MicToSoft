@@ -11,6 +11,7 @@
         <h1>MicToSoft</h1>
 
         <p>サンプル</p>
+        <p>push test</p>
 
         <?php wp_footer(); ?>
     </body>
