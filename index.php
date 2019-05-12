@@ -13,6 +13,12 @@
         <p>サンプル</p>
         <p>push test</p>
 
+        <script type="text/javascript">
+            for(var i = 0; i < 10; i++) {
+                document.write("a" + i + "<br>");
+            }
+        </script>
+
         <?php wp_footer(); ?>
     </body>
 </html>
