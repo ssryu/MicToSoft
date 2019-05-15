@@ -18,7 +18,6 @@
                 document.write("a" + i + "<br>");
             }
         </script>
-	<p>yamadaga tsukutta bubnn</p>
         <?php wp_footer(); ?>
     </body>
 </html>
