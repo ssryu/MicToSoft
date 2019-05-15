@@ -11,7 +11,6 @@
         <h1>MicToSoft</h1>
 
         <p>サンプル</p>
-        <p>push test</p>
 
         <script type="text/javascript">
             for(var i = 0; i < 10; i++) {
