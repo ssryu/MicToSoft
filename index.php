@@ -23,7 +23,7 @@
         <p>サンプル</p>
 
         <script type="text/javascript">
-            FunkyBlocks.init();
+            init();
         </script>
         <?php wp_footer(); ?>
     </body>
