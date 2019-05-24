@@ -41,7 +41,7 @@
     <img id="block4" src="<?php echo get_template_directory_uri();?>/FunkyBlocks/block4.png" style="display:none" />
 
     <script type="text/javascript">
-        FunkyBlocks.init();
+        init();
     </script>
     <?php wp_footer(); ?>
 </body>
