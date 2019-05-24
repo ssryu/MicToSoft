@@ -39,10 +39,11 @@
     <img id="block2" src="<?php echo get_template_directory_uri();?>/FunkyBlocks/block2.png" style="display:none" />
     <img id="block3" src="<?php echo get_template_directory_uri();?>/FunkyBlocks/block3.png" style="display:none" />
     <img id="block4" src="<?php echo get_template_directory_uri();?>/FunkyBlocks/block4.png" style="display:none" />
-
+    <div>
     <script type="text/javascript">
         init();
     </script>
+    </div>
     <?php wp_footer(); ?>
 </body>
 </html>
