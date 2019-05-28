@@ -21,7 +21,6 @@
     </script>
     <script src="<?php echo get_template_directory_uri();?>/FunkyBlocks/FunkyBlocks.js"></script>
 
-    <?php wp_head(); ?>
 </head>
 <body>
     <audio src="<?php echo get_template_directory_uri();?>/FunkyBlocks/sound.mp3" id="sound"></audio>
@@ -44,6 +43,5 @@
 
     <p>サンプル</p>
 
-    <?php wp_footer(); ?>
 </body>
 </html>
