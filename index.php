@@ -20,7 +20,8 @@
         var path = "";
     </script> -->
     <script src="/FunkyBlocks/FunkyBlocks.js"></script>
-
+    <script src="static/brython.js"></script>
+    <script src="static/brython_stdlib.js"></script>    
 </head>
 <body onload = "init();brython()">
     <audio src="/FunkyBlocks/sound.mp3" id="sound"></audio>
