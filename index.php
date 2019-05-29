@@ -41,7 +41,7 @@
 
     <p>サンプル</p>
 
-    <script type="text/python" src="static/bmi.py"></script>
+    <script type="text/python" src="bmi.py"></script>
     <h1>BrythonでBMIを計算する</h1>
 
     <p>身長(メートル)
