@@ -22,7 +22,7 @@
     <script src="/FunkyBlocks/FunkyBlocks.js"></script>
 
 </head>
-<body onload = "init()">
+<body onload = "init();brython()">
     <audio src="/FunkyBlocks/sound.mp3" id="sound"></audio>
     <audio src="/FunkyBlocks/letsgo.mp3" id="bgm"></audio>
     <canvas id="canvas" width="800" height="600"></canvas>
@@ -42,6 +42,16 @@
     <h1>MicToSoft</h1>
 
     <p>サンプル</p>
-    
+
+    <script type="text/python" src="static/bmi.py"></script>
+    <h1>BrythonでBMIを計算する</h1>
+
+    <p>身長(メートル)
+    <input type="text" id="height" />
+    <p>体重(キログラム)
+    <input type="text" id="weight" />
+    <br><button id="execute">計算だ!</button>
+
+    <div id="result"></div>
 </body>
 </html>
