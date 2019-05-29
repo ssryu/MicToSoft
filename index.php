@@ -16,9 +16,6 @@
             top: 200px;
         }
     </style>
-    <!-- <script>
-        var path = "";
-    </script> -->
     <script src="/FunkyBlocks/FunkyBlocks.js"></script>
     <script src="static/brython.js"></script>
     <script src="static/brython_stdlib.js"></script>    
