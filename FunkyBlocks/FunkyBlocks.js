@@ -69,7 +69,7 @@ function init() {
     // Init remaining time
     for (var i = 0; i < 15; i++) {
         var t = document.createElement("img");
-        t.src = path + "/FunkyBlocks/time" + i + ".png";
+        t.src = "/FunkyBlocks/time" + i + ".png";
         times.push(t);
     }
 
