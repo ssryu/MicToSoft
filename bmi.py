@@ -11,5 +11,6 @@ def calc_bmi():
     rslt = document["result"]
     rslt.text = bmi
 
+print("python test")
 execute_btn = document["execute"]
 execute_btn.bind("click", calc_bmi)
