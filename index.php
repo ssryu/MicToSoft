@@ -22,7 +22,8 @@
     <script src="/FunkyBlocks/FunkyBlocks.js"></script>
 
 </head>
-<body>
+<body onload = "init()"
+>
     <audio src="/FunkyBlocks/sound.mp3" id="sound"></audio>
     <audio src="/FunkyBlocks/letsgo.mp3" id="bgm"></audio>
     <canvas id="canvas" width="800" height="600"></canvas>
@@ -33,11 +34,11 @@
     <img id="block2" src="/FunkyBlocks/block2.png" style="display:none" />
     <img id="block3" src="/FunkyBlocks/block3.png" style="display:none" />
     <img id="block4" src="/FunkyBlocks/block4.png" style="display:none" />
-    <div>
+    <!-- <div>
     <script type="text/javascript">
         init();
     </script>
-    </div>
+    </div> -->
 
     <h1>MicToSoft</h1>
 
