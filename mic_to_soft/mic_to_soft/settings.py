@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'classifier',
 ]
 
 MIDDLEWARE = [
@@ -58,7 +59,10 @@ ROOT_URLCONF = 'mic_to_soft.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            'templates',
+            'classifier/templates/classifier',
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
