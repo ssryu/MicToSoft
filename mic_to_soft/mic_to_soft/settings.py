@@ -29,7 +29,7 @@ SECRET_KEY = PROPERTIES['secret_key']
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = PROPERTIES['debug']
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = PROPERTIES['allowed_hosts']
 
 
 # Application definition
