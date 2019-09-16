@@ -8,6 +8,9 @@ from django.views.decorators.csrf import csrf_exempt
 def index(request):
     return render(request, 'classifier/index.html', context = {'test' : 'test text'})
 
+def index(request):
+    return render(request, 'classifier/about.html', context = {'test' : 'test text'})
+
 @csrf_exempt
 def api(request):
     if request.method == "POST":
