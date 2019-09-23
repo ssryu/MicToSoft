@@ -1,4 +1,4 @@
 # MicToSoft
 Natural Language Processing by Deep Learning
 
-Web site : https://mictosoft.skr.jp/
+Web site : (他のVPSに引っ越し中)
