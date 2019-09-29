@@ -1,28 +1,24 @@
 {% load static %}
 <html>
 
-<head>
-    <meta charset="utf-8">
-    {% block title %} {% endblock %}
-</head>
+    <head>
+        <meta charset="utf-8">
+        <title>MicToSoft:{% block title %} {% endblock %}</title>
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    </head>
 
-<body>
-    <!-- メニュー -->
-    サイトマップ
-        トップ
-            ホーム
-                会員登録
-                問い合わせ
-            MicToSoft について
-               チーム紹介
-            掲示板
-               モデル
-                学習データ
-            マイページ
-                モデル管理
-                会員情報管理
-    
-    {% block content %} {% endblock %}
-</body>
+    <body>
+        <div class="page-header">
+            <h1><a href="/">MicToSoft</a></h1>
+            <a href="{% url 'home' %}" class="top-menu">home</a>
+            <a href="{% url 'about' %}" class="top-menu">about</a>
+            <a href="{% url 'board' %}" class="top-menu">board</a>
+            <a href="{% url 'my_page' %}" class="top-menu">my_page</a>
+        </div>
+
+        <div class="content">
+            {% block contents %} {% endblock %}
+        </div>
+    </body>
 
 </html>
