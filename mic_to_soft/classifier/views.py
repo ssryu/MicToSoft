@@ -23,14 +23,32 @@ def api(request):
             safe = False
         )
 
-def home(request):
-    return render(request, 'classifier/home.html', {})
+def signup(request):
+    return render(request, 'classifier/sign/signup.html', {})
 
-def about(request):
-    return render(request, 'classifier/about.html', {})
+def signin(request):
+    return render(request, 'classifier/sign/signin.html', {})
 
 def board(request):
-    return render(request, 'classifier/board.html', {})
+    return render(request, 'classifier/board/board.html', {})
 
-def my_page(request):
-    return render(request, 'classifier/my_page.html', {})
+def models(request):
+    return render(request, 'classifier/board/models.html', {})
+
+def data(request):
+    return render(request, 'classifier/board/data.html', {})
+
+def mypage(request):
+    return render(request, 'classifier/mypage/mypage.html', {})
+
+def account(request):
+    return render(request, 'classifier/mypage/account.html', {})
+
+def managemodels(request):
+    return render(request, 'classifier/mypage/managemodels.html', {})
+
+def about(request):
+    return render(request, 'classifier/about/about.html', {})
+
+def help(request):
+    return render(request, 'classifier/about/help.html', {})

@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+
+{% block title %} board {% endblock %}
+
+{% block contents %}
+    <p>board</p>
+    <p><a href="{% url 'models' %}" class="sub-menu">models</a></p>
+    <p><a href="{% url 'data' %}" class="sub-menu">data</a></p>
+{% endblock %}
