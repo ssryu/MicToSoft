@@ -4,4 +4,16 @@
 
 {% block contents %}
     <p>here is home</p>
+
+    datas
+    <form action="{% url 'index' %}" method="post" id="dataform" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Upload">
+    </form>
+    {% for data in datas %}
+        <p>----------</p>
+        {{ data.title }}
+        {{ data.textdata.url }}
+    {% endfor %}
 {% endblock %}
