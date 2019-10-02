@@ -1,12 +1,28 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 
 import json
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 
-# Create your views here.
+from .models import Classifier
+from .forms import ClassifierForm
+
 def index(request):
-    return render(request, 'classifier/index.html', context = {'test' : 'test text'})
+    if request.method == 'POST':
+        form = ClassifierForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            return redirect('/')
+
+    context = {'test' : 'test text'}
+
+    datas = Classifier.objects.all()
+    context['datas'] = datas
+
+    form = ClassifierForm()
+    context['form'] = form
+
+    return render(request, 'classifier/index.html', context)
 
 @csrf_exempt
 def api(request):
