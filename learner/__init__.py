@@ -5,7 +5,6 @@ from keras.layers.recurrent import LSTM
 from keras.optimizers import Adam
 from keras.callbacks import EarlyStopping
 from keras.utils.np_utils import to_categorical
-from janome.tokenizer import Tokenizer
 from gensim.models import KeyedVectors
 import numpy as np
 import pickle
