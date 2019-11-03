@@ -4,7 +4,6 @@ from keras.layers.core import Dense, Activation
 from keras.layers.recurrent import LSTM
 from keras.optimizers import Adam
 from keras.callbacks import EarlyStopping
-from keras.utils.np_utils import to_categorical
 from gensim.models import KeyedVectors
 import numpy as np
 import pickle
@@ -14,12 +13,12 @@ from .preprocess import *
 
 
 
-
 tokenizer = TextsTokenize()
 
 
 
 
+# word_vectorの読み込み、重いので基本読み込まない
 wmodel = None
 def load_word_vector(word_vec):
     global wmodel
@@ -29,9 +28,7 @@ def load_word_vector(word_vec):
 
 
 
-
-
-class Learner:
+class Common:
     def __init__(self):
         self.id_to_label = None
         self.word_to_vec = None
@@ -40,15 +37,20 @@ class Learner:
         self.model = None
 
 
+
+
+class Learner(Common):
     def fit(self, filename, word_vec, max_token=20):
         load_word_vector(word_vec)
 
+        # csvから文章とラベルを読み込み、形態素解析して単語リスト作る(ワードベクトルにない単語は除外)
         texts, labels = csv_to_data(filename)
         texts = tokenizer(texts)
         for i in range(len(texts)):
             texts[i] = [w for w in texts[i] if w in wmodel.vocab]
         vocab = texts_to_vocab(texts)
 
+        # 形態素に分けられた文章達をRNNに入れるために整形、それぞれの単語をベクトルに変換する
         for text in texts:
             if max_token < len(text):
                 max_token = len(text)
@@ -57,17 +59,19 @@ class Learner:
             for j in range(len(texts[i])):
                 g[i][j][...] = wmodel.word_vec(texts[i][j])
 
+        # ラベル達をRNNに入れるためにワンホットベクトルに変換して整形
         label_to_onehot, label_to_id = data_to_onehot(labels)
-
         h = np.zeros((len(labels), len(label_to_id)))
         for i in range(len(labels)):
             h[i][...] = label_to_onehot[labels[i]]
 
+        # RNNのパラメータ達
         length_of_sequence = max_token
         in_neurons = g.shape[2]
         out_neurons = h.shape[1]
         n_hidden = 200
 
+        # あとで必要そうなデータをオブジェクトに格納
         self.id_to_label = dict([(v, k) for k, v in label_to_id.items()])
         self.word_to_vec = {}
         for word in vocab:
@@ -75,6 +79,7 @@ class Learner:
         self.max_token = max_token
         self.vector_size = wmodel.vector_size
 
+        # RNNの生成
         self.model = Sequential()
         self.model.add(LSTM(n_hidden, batch_input_shape=(None, length_of_sequence, in_neurons), return_sequences=False))
         self.model.add(Dense(out_neurons))
@@ -93,18 +98,7 @@ class Learner:
 
 
 
-
-
-
-class Classifier:
-    def __init__(self):
-        self.id_to_label = None
-        self.word_to_vec = None
-        self.max_token = None
-        self.vector_size = None
-        self.model = None
-
-
+class Classifier(Common):
     def load(self, filename):
         with open(filename+'.bin', 'rb') as f:
             damy = pickle.load(f)
@@ -124,8 +118,7 @@ class Classifier:
             for j in range(len(tokenized_texts[i])):
                 g[i][j][...] = self.word_to_vec[tokenized_texts[i][j]]
 
-        y = self.model.predict(g)
-        y = np.argmax(y, axis=1)
+        y = np.argmax(self.model.predict(g), axis=1)
         y = [self.id_to_label[y[i]] for i in range(len(y))]
         for text, label in zip(texts, y):
             print("%s : %s" % (text, label))
