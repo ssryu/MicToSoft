@@ -4,7 +4,7 @@ from keras.layers.core import Dense, Activation
 from keras.layers.recurrent import LSTM
 from keras.optimizers import Adam
 from keras.callbacks import EarlyStopping
-from gensim.models import KeyedVectors
+from gensim.models import KeyedVectors, word2vec
 import numpy as np
 import pickle
 
@@ -14,16 +14,6 @@ from .preprocess import *
 
 
 tokenizer = TextsTokenize()
-
-
-
-
-# word_vectorの読み込み、重いので基本読み込まない
-wmodel = None
-def load_word_vector(word_vec):
-    global wmodel
-    if wmodel == None:
-        wmodel = KeyedVectors.load_word2vec_format(word_vec, binary=True)
 
 
 
@@ -40,12 +30,19 @@ class Common:
 
 
 class Learner(Common):
-    def fit(self, filename, word_vec, max_token=20):
-        load_word_vector(word_vec)
-
+    def fit(self, filename, wv_filename=None, max_token=20):
+        '''
+        モデルの作成と学習までをする
+        通常はfilenameに渡されたデータセットからword2vectorのモデルも作成する
+        他の学習ずみのwvモデルを使うときはそのファイル名をwv_filenameに渡すこと
+        '''
         # csvから文章とラベルを読み込み、形態素解析して単語リスト作る(ワードベクトルにない単語は除外)
         texts, labels = csv_to_data(filename)
         texts = tokenizer(texts)
+        if(wv_filename == None):
+            wmodel = word2vec.Word2Vec(texts, size=50, min_count=2, window=2).wv
+        else:
+            wmodel = KeyedVectors.load_word2vec_format(wv_filename, binary=True)
         for i in range(len(texts)):
             texts[i] = [w for w in texts[i] if w in wmodel.vocab]
         vocab = texts_to_vocab(texts)
