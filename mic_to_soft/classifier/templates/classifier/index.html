@@ -3,8 +3,15 @@
 {% block title %} top {% endblock %}
 
 {% block contents %}
-    <p>here is home</p>
+    <div class="tutorial">
+        <h1>tutorial discription</h1>
+    </div>
 
+
+    <a href="#">create account</a>
+
+
+    
     datas
     <form action="{% url 'index' %}" method="post" id="dataform" enctype="multipart/form-data">
         {% csrf_token %}
