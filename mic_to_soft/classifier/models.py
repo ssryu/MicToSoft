@@ -9,3 +9,12 @@ class Classifier(models.Model):
 
     def __str__(self):
         return self.title
+
+class Account(models.Model):
+    ID = models.CharField(max_length = 100)
+    PASSWORD = models.CharField(max_length = 200)
+    Email = models.CharField(max_length = 200)
+
+class LearningModel(models.Model):
+    learningmodel = models.FileField()
+    learningdata = models.FileField()

@@ -11,16 +11,17 @@
     <a href="#">create account</a>
 
 
-    
-    datas
+
+    <!-- datas
     <form action="{% url 'index' %}" method="post" id="dataform" enctype="multipart/form-data">
         {% csrf_token %}
         {{ form.as_p }}
         <input type="submit" value="Upload">
     </form>
+    {{ datas }}
     {% for data in datas %}
         <p>----------</p>
         {{ data.title }}
         {{ data.textdata.url }}
-    {% endfor %}
+    {% endfor %} -->
 {% endblock %}

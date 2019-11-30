@@ -3,5 +3,11 @@
 {% block title %} account {% endblock %}
 
 {% block contents %}
-    <p>account</p>
+    <form class="" action="{% url 'signup' %}" method="POST">
+        {% csrf_token %}
+        <p>ID:{{ form.ID }}</p>
+        <p>PASSWORD:{{ form.PASSWORD }}</p>
+        <p>E-mail:{{ form.Email }}</p>
+        <button type="submit" class="save btn btn-default">Update</button>
+    </form>
 {% endblock %}

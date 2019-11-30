@@ -6,6 +6,7 @@ from django.views.decorators.csrf import csrf_exempt
 
 from .models import Classifier
 from .forms import ClassifierForm
+from .forms import ClassifierAccount
 
 def index(request):
     if request.method == 'POST':
@@ -40,13 +41,30 @@ def api(request):
         )
 
 def signup(request):
-    return render(request, 'classifier/sign/signup.html', {})
+    if request.method == 'POST':
+        form = ClassifierAccount(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('/')
+    else:
+        form = ClassifierAccount()
+    return render(request, 'classifier/sign/signup.html', {'form': form})
 
 def signin(request):
-    return render(request, 'classifier/sign/signin.html', {})
+    if request.method == 'POST':
+        form = ClassifierAccount(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('/')
+    else:
+        form = ClassifierAccount()
+
+    return render(request, 'classifier/sign/signin.html', {'form': form})
 
 def board(request):
-    return render(request, 'classifier/board/board.html', {})
+    context = {'model' : 'model1', 'data' : 'data1'}
+
+    return render(request, 'classifier/board/board.html', context)
 
 def models(request):
     return render(request, 'classifier/board/models.html', {})
@@ -58,10 +76,13 @@ def mypage(request):
     return render(request, 'classifier/mypage/mypage.html', {})
 
 def account(request):
-    return render(request, 'classifier/mypage/account.html', {})
+    form = ClassifierAccount()
+    return render(request, 'classifier/mypage/account.html', {'form': form})
 
 def managemodels(request):
-    return render(request, 'classifier/mypage/managemodels.html', {})
+    context = {'model' : 'model1', 'data' : 'data1'}
+
+    return render(request, 'classifier/mypage/managemodels.html', context)
 
 def about(request):
     return render(request, 'classifier/about/about.html', {})
