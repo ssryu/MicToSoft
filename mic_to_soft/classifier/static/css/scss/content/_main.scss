@@ -1,3 +1,4 @@
 main{
-    @include outer-base
+    @include outer-base;
+    height: 5000px;
 }

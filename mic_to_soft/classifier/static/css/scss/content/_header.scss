@@ -32,14 +32,15 @@ header{
     ul{list-style: none;}
 
     @include rmedia(1){
-        position: absolute;
+        position: fixed;
         left: 0;
         top: 0;
         background-color: c(4);
-        height: 5000px;
+        height: 2000px;
         padding: 40px;
         a{text-align: left;}
         ul > li{padding-left: 20px;}
+        display: none;
     }
 
     @include desktop{
