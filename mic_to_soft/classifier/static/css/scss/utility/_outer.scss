@@ -1,0 +1,9 @@
+@mixin outer-base{
+    margin: auto;
+    padding: 0;
+    max-width: 1100;
+}
+
+@mixin outer1{
+    @include outer-base;
+}

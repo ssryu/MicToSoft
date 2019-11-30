@@ -1,67 +1,199 @@
-/* title */
+@charset "UTF-8";
+/*
+html5doctor.com Reset Stylesheet
+v1.4
+2009-07-27
+Author: Richard Clark - http://richclarkdesign.com
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, dialog, figure, footer, header,
+hgroup, menu, nav, section,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+article, aside, dialog, figure, footer, header,
+hgroup, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none;
+  list-style-type: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted #000;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, 游ゴシック, YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif; }
+
+header {
+  background-color: #3CB371;
+  margin: 0;
+  position: relative; }
+
 .page-header {
-  background-color: #3cb371;
-  margin-top: 0px;
-  padding: 10px 10px 0px 10px; }
-
-/* title*/
-.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
-  color: #ffffff;
-  font-size: 36pt;
-  text-decoration: none;
-  text-align: center; }
-
-.content {
-  margin-left: 40px; }
-
-h1, h2, h3, h4 {
-  font-family: 'Lobster', cursive; }
-
-.post-form textarea, .post-form input {
-  width: 100%; }
+  margin: auto;
+  padding: 0;
+  max-width: 1100;
+  border: none; }
+  .page-header h1 {
+    padding: 30px 0;
+    text-align: center; }
+    .page-header h1 > a {
+      font-size: 30px;
+      line-height: 40px;
+      font-weight: lighter;
+      color: white;
+      text-decoration: none; }
+      @media screen and (min-width: 481px) {
+        .page-header h1 > a {
+          font-size: 45px;
+          line-height: 55px; } }
+      @media screen and (min-width: 769px) {
+        .page-header h1 > a {
+          font-size: 60px;
+          line-height: 70px; } }
 
 .top-menu {
-  width: auto;
-  margin: 0 auto;
-  padding: 0;
-  display: flex;
-  justify-content: center; }
-  .top-menu li {
-    position: relative;
+  list-style: none; }
+  .top-menu a {
+    font-size: 28px;
+    line-height: 50px;
+    font-weight: lighter;
+    color: white;
+    /*font-size: 20px;
+    line-height: 40px;
+    font-weight: lighter;
+    color: white;
+    @include tablet{
+        font-size: 24px;
+        line-height: 44px;
+    }
+    @include desktop{
+        font-size: 28px;
+        line-height: 50px;
+    }*/
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    min-width: 180px; }
+  .top-menu ul {
     list-style: none; }
-    .top-menu li a {
-      display: block;
-      width: 200px;
-      height: 40px;
-      text-align: center;
-      color: #fff;
-      font-size: 14px;
-      line-height: 2.8;
-      background: #007e5d;
-      transition: 0.7s;
-      text-decoration: none;
-      border-right: 1px solid #eee;
-      box-sizing: border-box; }
-    .top-menu li ul {
-      top: 40px;
-      left: -40px;
-      position: absolute; }
-      .top-menu li ul li {
-        overflow: hidden;
-        height: 0;
-        transition: 0.2s; }
-        .top-menu li ul li a {
-          border-top: 1px solid #eee; }
-  .top-menu > li li:hover > a {
-    color: olive;
-    background: #afc6e2; }
-  .top-menu li:hover > ul > li {
-    overflow: visible;
-    height: 40px; }
-  .top-menu > li:hover > a {
-    color: orange; }
+  @media screen and (max-width: 769px) {
+    .top-menu {
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-color: #2B8051;
+      height: 5000px;
+      padding: 40px; }
+      .top-menu a {
+        text-align: left; }
+      .top-menu ul > li {
+        padding-left: 20px; } }
+  @media screen and (min-width: 769px) {
+    .top-menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center; }
+      .top-menu li {
+        transition: 0.3s; }
+        .top-menu li ul {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-wrap: wrap;
+          justify-content: center;
+          background-color: #2B8051;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          height: 70px;
+          width: 100%;
+          display: none; }
+        .top-menu li:hover > ul {
+          display: flex;
+          animation: show .5s; }
+    @keyframes show {
+      0% {
+        display: flex;
+        opacity: 0; }
+      100% {
+        opacity: 1; } } }
 
-.sub-menu {
-  color: #000080; }
+main {
+  margin: auto;
+  padding: 0;
+  max-width: 1100; }
 
-/*# sourceMappingURL=style.css.map */
+img {
+  max-width: 100%;
+  height: auto; }
+
+@media screen and (min-width: 769px) {
+  br[class="rep"] {
+    display: none; } }
