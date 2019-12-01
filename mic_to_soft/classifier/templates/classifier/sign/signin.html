@@ -3,6 +3,20 @@
 {% block title %} signin {% endblock %}
 
 {% block contents %}
-    <p>sign in</p>
-    <p>if you don't have an account, <a href="{% url 'signup' %}" class="sub-menu">signup</a></p>
+    <div class="signin-form">
+        <h1>Sign In</h1>
+        <form class="" action="{% url 'signin' %}" method="POST">
+            {% csrf_token %}
+            <p>ID:{{ form.ID }}</p>
+            <p>PASSWORD:{{ form.PASSWORD }}</p>
+            <button type="submit" class="save btn btn-default">sign in</button>
+        </form>
+
+        <h2>External authentication</h2>
+        <p>twitter facebook...</p>
+    </div>
+
+
+
+    <p>if you don't have your account, visit <a href="{% url 'signup' %}">sign up</a>.</p>
 {% endblock %}
