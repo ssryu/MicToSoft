@@ -95,8 +95,8 @@ header {
 
 .page-header {
   margin: auto;
-  padding: 0;
-  max-width: 1100;
+  padding: 0 30px;
+  max-width: 1200;
   border: none; }
   .page-header h1 {
     padding: 30px 0;
@@ -115,45 +115,52 @@ header {
         .page-header h1 > a {
           font-size: 60px;
           line-height: 70px; } }
+  .page-header h4 {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    display: none; }
+    .page-header h4:nth-child(3) {
+      right: 160px; }
+    .page-header h4 a {
+      font-size: 28px;
+      line-height: 40px;
+      font-weight: lighter;
+      color: white;
+      text-decoration: none; }
+    @media screen and (min-width: 769px) {
+      .page-header h4 {
+        display: inline; } }
 
 .top-menu {
-  list-style: none; }
+  list-style: none;
+  /*@include rmedia(1){
+        position: fixed;
+        left: 0;
+        top: 0;
+        background-color: c(4);
+        height: 2000px;
+        padding: 40px;
+        a{text-align: left;}
+        ul > li{padding-left: 20px;}
+        display: none;
+    }*/ }
   .top-menu a {
     font-size: 28px;
-    line-height: 50px;
-    font-weight: lighter;
-    color: white;
-    /*font-size: 20px;
     line-height: 40px;
     font-weight: lighter;
     color: white;
-    @include tablet{
-        font-size: 24px;
-        line-height: 44px;
-    }
-    @include desktop{
-        font-size: 28px;
-        line-height: 50px;
-    }*/
     text-decoration: none;
     text-align: center;
     display: block;
-    min-width: 180px; }
+    min-width: 190px;
+    border-right: white 1px solid; }
+  .top-menu li {
+    padding: 15px 0; }
+    .top-menu li:first-child > a {
+      border-left: white 1px solid; }
   .top-menu ul {
     list-style: none; }
-  @media screen and (max-width: 769px) {
-    .top-menu {
-      position: fixed;
-      left: 0;
-      top: 0;
-      background-color: #2B8051;
-      height: 2000px;
-      padding: 40px;
-      display: none; }
-      .top-menu a {
-        text-align: left; }
-      .top-menu ul > li {
-        padding-left: 20px; } }
   @media screen and (min-width: 769px) {
     .top-menu {
       display: flex;
@@ -161,21 +168,20 @@ header {
       align-items: center;
       flex-wrap: wrap;
       justify-content: center; }
-      .top-menu li {
+      .top-menu li ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: #2B8051;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        display: none; }
+      .top-menu li:hover {
         transition: 0.3s; }
-        .top-menu li ul {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          flex-wrap: wrap;
-          justify-content: center;
-          background-color: #2B8051;
-          position: absolute;
-          top: 100%;
-          left: 0;
-          height: 70px;
-          width: 100%;
-          display: none; }
         .top-menu li:hover > ul {
           display: flex;
           animation: show .5s; }
@@ -188,14 +194,21 @@ header {
 
 main {
   margin: auto;
-  padding: 0;
-  max-width: 1100;
-  height: 5000px; }
+  padding: 0 30px;
+  max-width: 1200;
+  margin-top: 40px;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 300; }
+  @media screen and (min-width: 481px) {
+    main {
+      font-size: 18px;
+      line-height: 30px; } }
+  @media screen and (min-width: 769px) {
+    main {
+      font-size: 20px;
+      line-height: 35px; } }
 
 img {
   max-width: 100%;
   height: auto; }
-
-@media screen and (min-width: 769px) {
-  br[class="rep"] {
-    display: none; } }
