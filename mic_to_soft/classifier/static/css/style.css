@@ -133,18 +133,7 @@ header {
         display: inline; } }
 
 .top-menu {
-  list-style: none;
-  /*@include rmedia(1){
-        position: fixed;
-        left: 0;
-        top: 0;
-        background-color: c(4);
-        height: 2000px;
-        padding: 40px;
-        a{text-align: left;}
-        ul > li{padding-left: 20px;}
-        display: none;
-    }*/ }
+  list-style: none; }
   .top-menu a {
     font-size: 28px;
     line-height: 40px;
@@ -191,6 +180,19 @@ header {
         opacity: 0; }
       100% {
         opacity: 1; } } }
+  @media screen and (max-width: 769px) {
+    .top-menu {
+      position: fixed;
+      left: 0;
+      top: 0;
+      background-color: #2B8051;
+      height: 2000px;
+      padding: 40px;
+      display: none; }
+      .top-menu a {
+        text-align: left; }
+      .top-menu ul > li {
+        padding-left: 20px; } }
 
 main {
   margin: auto;

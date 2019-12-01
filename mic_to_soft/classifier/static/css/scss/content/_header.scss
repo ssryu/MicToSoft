@@ -76,7 +76,7 @@ header{
         }
     }
 
-    /*@include rmedia(1){
+    @include rmedia(1){
         position: fixed;
         left: 0;
         top: 0;
@@ -86,5 +86,5 @@ header{
         a{text-align: left;}
         ul > li{padding-left: 20px;}
         display: none;
-    }*/
+    }
 }
