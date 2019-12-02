@@ -7,6 +7,7 @@ from django.views.decorators.csrf import csrf_exempt
 from .models import Classifier
 from .forms import ClassifierForm
 from .forms import ClassifierAccount
+from .forms import LearningModel
 
 def index(request):
     if request.method == 'POST':
@@ -62,12 +63,24 @@ def signin(request):
     return render(request, 'classifier/sign/signin.html', {'form': form})
 
 def board(request):
-    context = {'model' : 'model1', 'data' : 'data1'}
+    context = {'model1' : 'm1', 'data1' : 'd1'}
 
     return render(request, 'classifier/board/board.html', context)
 
 def models(request):
     return render(request, 'classifier/board/models.html', {})
+
+def newmodel(request):
+    if request.method == 'POST':
+        form = LearningModel(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('/')
+    else:
+        form = LearningModel()
+
+    form = LearningModel()
+    return render(request, 'classifier/mypage/newmodel.html', {'form' : form})
 
 def data(request):
     return render(request, 'classifier/board/data.html', {})
@@ -80,7 +93,7 @@ def account(request):
     return render(request, 'classifier/mypage/account.html', {'form': form})
 
 def managemodels(request):
-    context = {'model' : 'model1', 'data' : 'data1'}
+    context = {'model1' : 'm1', 'data1' : 'd1'}
 
     return render(request, 'classifier/mypage/managemodels.html', context)
 

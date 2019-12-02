@@ -13,6 +13,7 @@ urlpatterns = [
     path('mypage/', views.mypage, name='mypage'),
     path('mypage/account', views.account, name='account'),
     path('mypage/managemodels', views.managemodels, name='managemodels'),
+    path('mypage/newmodel', views.newmodel, name='newmodel'),
     path('about/', views.about, name='about'),
     path('about/help/', views.help, name='help'),
 ]

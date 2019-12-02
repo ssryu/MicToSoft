@@ -3,10 +3,11 @@
 {% block title %} managemodels {% endblock %}
 
 {% block contents %}
-    <p>management models</p>
-    <div class="management-models">
-        {{ model }}
-        {{ data }}
+    <a href="newmodel"><button type="submit" class="save btn btn-default">new model</button></a>
 
+    <div class="">
+        <p>model:{{ model1 }}</p>
+        <p>data:{{ data1 }}</p>
     </div>
+
 {% endblock %}

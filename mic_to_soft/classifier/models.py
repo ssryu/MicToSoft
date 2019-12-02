@@ -16,5 +16,7 @@ class Account(models.Model):
     Email = models.CharField(max_length = 200)
 
 class LearningModel(models.Model):
-    learningmodel = models.FileField()
+    title = models.CharField(max_length = 100)
+    description = models.CharField(max_length = 500)
     learningdata = models.FileField()
+    learningmodel = models.CharField(max_length = 100)
