@@ -10,8 +10,8 @@
 
 // ホバーmixin 時間を渡せる
 @mixin hover($time: .3s){
-    transition: $time;
     &:hover{
+        transition: $time;
         @content;
     }
 }
