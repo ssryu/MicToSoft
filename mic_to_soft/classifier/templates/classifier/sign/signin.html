@@ -8,7 +8,7 @@
         <form class="" action="{% url 'signin' %}" method="POST">
             {% csrf_token %}
             <p>ID:{{ form.ID }}</p>
-            <p>PASSWORD:{{ form.PASSWORD }}</p>
+            <p>PASSWORD:{{ form.Password }}</p>
             <button type="submit" class="save btn btn-default">sign in</button>
         </form>
 

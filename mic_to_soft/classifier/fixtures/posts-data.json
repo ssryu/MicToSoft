@@ -1,0 +1,10 @@
+[
+    {
+        "model" : "classifier.account",
+        "fields" : {
+            "username" : "userhogehoge",
+            "password" : "passwordhogehoge",
+            "email" : "emailhogehoge"
+        }
+    }
+]

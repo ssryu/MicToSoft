@@ -1,22 +1,23 @@
 from django.db import models
+from django.utils import timezone
+
+class Account(models.Model):
+    username = models.CharField(max_length = 100)
+    password = models.CharField(max_length = 200)
+    email = models.CharField(max_length = 200)
+
+    def __str__(self):
+        return self.username
 
 class Classifier(models.Model):
+    userid = models.ForeignKey(Account, on_delete=models.CASCADE)
     title = models.CharField(max_length = 200)
-
-    textdata = models.FileField(upload_to = 'textdata/')
+    description = models.CharField(max_length = 500)
+    learningdata = models.FileField(upload_to = 'textdata/')
+    model = models.FileField(upload_to = 'model/')
+    created_date = models.DateTimeField(default=timezone.now)
 
     # pub_date = models.DateTimeField('date published')
 
     def __str__(self):
         return self.title
-
-class Account(models.Model):
-    ID = models.CharField(max_length = 100)
-    PASSWORD = models.CharField(max_length = 200)
-    Email = models.CharField(max_length = 200)
-
-class LearningModel(models.Model):
-    title = models.CharField(max_length = 100)
-    description = models.CharField(max_length = 500)
-    learningdata = models.FileField()
-    learningmodel = models.CharField(max_length = 100)

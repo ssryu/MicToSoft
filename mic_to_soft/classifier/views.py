@@ -5,9 +5,9 @@ from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 
 from .models import Classifier
+from .models import Account
 from .forms import ClassifierForm
 from .forms import ClassifierAccount
-from .forms import LearningModel
 
 def index(request):
     if request.method == 'POST':
@@ -18,7 +18,8 @@ def index(request):
 
     context = {'test' : 'test text'}
 
-    datas = Classifier.objects.all()
+    datas = Account.objects.all()
+
     context['datas'] = datas
 
     form = ClassifierForm()
@@ -63,8 +64,8 @@ def signin(request):
     return render(request, 'classifier/sign/signin.html', {'form': form})
 
 def board(request):
-    context = {'model1' : 'm1', 'data1' : 'd1'}
-
+    context = {'post' : {'model1' : 'm1', 'data1' : 'd1'}}
+    context['data'] = Classifier.objects.all()
     return render(request, 'classifier/board/board.html', context)
 
 def models(request):
@@ -72,14 +73,12 @@ def models(request):
 
 def newmodel(request):
     if request.method == 'POST':
-        form = LearningModel(request.POST)
+        form = ClassifierForm(request.POST)
         if form.is_valid():
             form.save()
             return redirect('/')
     else:
-        form = LearningModel()
-
-    form = LearningModel()
+        form = ClassifierForm()
     return render(request, 'classifier/mypage/newmodel.html', {'form' : form})
 
 def data(request):

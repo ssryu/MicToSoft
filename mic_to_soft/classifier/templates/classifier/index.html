@@ -10,9 +10,13 @@
 
     <a href="#">create account</a>
 
+    {% for data in datas %}
+        <p>----------</p>
+        {{ data. }}
+    {% endfor %}
 
 
-    <!-- datas
+    datas
     <form action="{% url 'index' %}" method="post" id="dataform" enctype="multipart/form-data">
         {% csrf_token %}
         {{ form.as_p }}
@@ -23,5 +27,5 @@
         <p>----------</p>
         {{ data.title }}
         {{ data.textdata.url }}
-    {% endfor %} -->
+    {% endfor %}
 {% endblock %}
