@@ -19,43 +19,25 @@
                 <h4><a href="{% url 'signin' %}" align="right">sign in</a></h4>
                 <ul class="top-menu">
                     <li><a href="{% url 'index' %}">home</a></li>
-                    <!-- <li><a href="{% url 'signin' %}">signin</a>
-                        <ul>
-                            <li><a href="{% url 'signup' %}" class="sub-menu">signup</a></li>
-                        </ul>
-                    </li> -->
-                    <li><a href="{% url 'board' %}">board</a>
-                        <!-- <ul>
-                            <li><a href="{% url 'models' %}">models</a></li>
-                            <li><a href="{% url 'data' %}">data</a></li>
-                        </ul> -->
-                    </li>
-                    <li><a href="{% url 'mypage' %}">mypage</a>
+                    <li><a href="{% url 'board' %}">board</a></li>
+                    <li><a href="#">mypage</a>
                         <ul>
                             <li><a href="{% url 'account' %}">account</a></li>
                             <li><a href="{% url 'managemodels' %}">managemodels</a></li>
                         </ul>
                     </li>
-                    <!-- <li><a href="{% url 'about' %}">about</a>
-                        <ul>
-                            <li><a href="{% url 'help' %}">help</a></li>
-                        </ul>
-                    </li> -->
                 </ul>
             </div>
-        </header>
+    </header>
 
-
-
-        <main>
-            <div class="content">
-                {% block contents %} {% endblock %}
-            </div>
-        </main>
-
-
+    <main>
+        <div class="content">
+            {% block contents %} {% endblock %}
+        </div>
+    </main>
 
         <footer>
+            <p>MicToSoft</p>
         </footer>
 
     </body>
