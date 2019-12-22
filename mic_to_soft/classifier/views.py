@@ -1,16 +1,13 @@
-from django.shortcuts import render, redirect, get_object_or_404
+from django.shortcuts import render, redirect
 
 import json
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
-from django.utils import timezone
 
 from .models import Classifier
 from .models import Account
 from .forms import ClassifierForm
 from .forms import ClassifierAccount
-
-import hashlib
 
 def index(request):
     if request.method == 'POST':
@@ -67,30 +64,9 @@ def signin(request):
     return render(request, 'classifier/sign/signin.html', {'form': form})
 
 def board(request):
-    # context = {'posts' : [{'model' : 'm1', 'data' : 'd1'}, {'model' : 'm2', 'data' : 'd2'}]}
-    classifiers = Classifier.objects.all()
-    return render(request, 'classifier/board/board.html', {'classifiers' : classifiers})
-
-def createmodel(request):
-    if request.method == 'POST':
-        form = ClassifierForm(request.POST)
-        if form.is_valid():
-            classifier = form.save(commit=False)
-            hash_value = classifier.userid+classifier.title
-            classifier.model_hash = hashlib.sha256(hash_value.encode()).hexdigest()
-            classifier.save()
-            return redirect('modeldetail', pk=classifier.pk)
-    else:
-        form = ClassifierForm()
-    return render(request, 'classifier/board/createmodel.html', {'form' : form})
-
-def created(request, pk):
-    classifier = get_object_or_404(Classifier, pk=pk)
-    return render(request, 'classifier/board/created.html', {'classifier': classifier})
-
-def modeldetail(request, pk):
-    classifier = get_object_or_404(Classifier, pk=pk)
-    return render(request, 'classifier/board/modeldetail.html', {'classifier': classifier})
+    context = {'post' : {'model1' : 'm1', 'data1' : 'd1'}}
+    context['data'] = Classifier.objects.all()
+    return render(request, 'classifier/board/board.html', context)
 
 def models(request):
     return render(request, 'classifier/board/models.html', {})

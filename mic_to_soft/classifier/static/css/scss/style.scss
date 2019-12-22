@@ -1,5 +1,5 @@
-// 本番出力 :static/css/ $ node-sass --watch scss --output . --output-style compressed
-// 試験出力 :static/css/ $ node-sass --watch scss --output . --output-style expand
+// 本番出力 :   node-sass --watch scss --output . --output-style compressed
+// 試験出力 :   node-sass --watch scss --output . --output-style expand
 
 @import "reset";
 

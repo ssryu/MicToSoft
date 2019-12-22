@@ -9,4 +9,4 @@ class ClassifierAccount(forms.ModelForm):
 class ClassifierForm(forms.ModelForm):
     class Meta:
         model = Classifier
-        fields = ['userid', 'password', 'title', 'description']
+        fields = ['userid', 'title', 'description', 'learningdata', 'created_date']

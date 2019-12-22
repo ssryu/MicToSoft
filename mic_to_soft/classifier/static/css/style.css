@@ -199,7 +199,6 @@ main {
   padding: 0 30px;
   max-width: 1200;
   margin-top: 40px;
-  margin-bottom: 40px;
   font-size: 15px;
   line-height: 25px;
   font-weight: 300; }
@@ -211,11 +210,6 @@ main {
     main {
       font-size: 20px;
       line-height: 35px; } }
-
-footer {
-  background-color: #3CB371;
-  margin: 0;
-  position: relative; }
 
 img {
   max-width: 100%;
