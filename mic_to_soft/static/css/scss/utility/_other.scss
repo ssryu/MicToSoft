@@ -1,0 +1,84 @@
+// フレックスmix
+@mixin flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
+// ホバーmixin 時間を渡せる
+@mixin hover($time: .3s){
+    &:hover{
+        transition: $time;
+        @content;
+    }
+}
+
+
+
+// メディアクリエリ関係
+$break-point: 769 481;
+@function break-point($index){
+    @return nth($break-point, $index);
+}
+@mixin media($index: 1){
+    @media screen and (min-width: break-point($index)+'px') {
+        @content;
+    }
+}
+@mixin rmedia($index: 1){
+    @media screen and (max-width: break-point($index)+'px') {
+        @content;
+    }
+}
+
+
+@mixin desktop{
+    @media screen and (min-width: '769px'){
+        @content;
+    }
+}
+@mixin tablet{
+    @media screen and (min-width: '481px'){
+        @content;
+    }
+}
+@mixin mobile{
+    @media screen and (max-width: '481px'){
+        @content;
+    }
+}
+
+
+
+
+
+// 指定されたブレークポイントによって非表示にする
+//
+// hide : 指定されたブレークポイント以上
+// rhide : 指定されたブレークポイント以下
+//
+@mixin hide($index: 1){
+    @include media($index){
+        display: none;
+    }
+}
+@mixin rhide($index: 1){
+    @include rmedia($index){
+        display: none;
+    }
+}
+
+
+
+
+
+// 色関係
+// 使用する色は全てここで管理する
+// 色を指定する時は全てc()を通す
+$c: white black #3CB371 #2B8051 #57FFA2 #164029 #4EE692;
+@function c($index){
+    @return nth($c, $index);
+}
