@@ -1,0 +1,30 @@
+footer{
+    background-color: $sub-sub-color;
+    &>div{
+        min-height: 150px;
+        position: relative;
+        @include outer-base;
+    }
+    p{@include nav-text;}
+}
+
+
+.top-return{
+    background-color: $sub-sub-color;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    i{line-height: 60px;}
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    transition: .5s;
+    &:hover{
+        top: -30px;
+        color: white;
+    }
+}

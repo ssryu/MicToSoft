@@ -4,31 +4,45 @@
     <head>
         <meta charset="utf-8">
         <title>MicToSoft:{% block title %} {% endblock %}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <!-- <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css"> -->
         <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/smooth-scroll@16/dist/smooth-scroll.min.js"></script>
     </head>
 
-    <header>
+    <body>
 
-        <body>
-            <div class="page-header">
-                <h1><a href="/">MicToSoft</a></h1>
-                <h4><a href="{% url 'signup' %}" align="right">sign up</a></h4>
-                <h4><a href="{% url 'signin' %}" align="right">sign in</a></h4>
-                <ul class="top-menu">
-                    <li><a href="{% url 'index' %}">home</a></li>
-                    <li><a href="{% url 'board' %}">board</a></li>
-                    <li><a href="#">mypage</a>
-                        <ul>
-                            <li><a href="{% url 'account' %}">account</a></li>
-                            <li><a href="{% url 'managemodels' %}">managemodels</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
+    <header>
+        <div>
+            <h1><a href="/">MicToSoft</a></h1>
+            <p id="menu-trigger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </p>
+        </div>
     </header>
+
+
+    <nav id="top-menu">
+        <ul>
+            <li><a href="{% url 'index' %}"><i class="fas fa-home"></i> home</a></li>
+            <li><a href="{% url 'board' %}"><i class="fas fa-rss-square"></i> board</a></li>
+            <li><p><i class="fas fa-address-card"></i> mypage</p>
+                <ul>
+                    <li><a href="{% url 'account' %}">account</a></li>
+                    <li><a href="{% url 'managemodels' %}">managemodels</a></li>
+                </ul>
+            </li>
+
+            <li class="signmenu"><a href="{% url 'signup' %}" align="right"> sign up</a></li>
+            <li class="signmenu"><a href="{% url 'signin' %}" align="right"> sign in</a></li>
+        </ul>
+      </nav>
+
 
     <main>
         <div class="content">
@@ -36,10 +50,13 @@
         </div>
     </main>
 
-        <footer>
+    <footer>
+        <div>
             <p>MicToSoft</p>
-        </footer>
+            <a href="#" class="top-return"><i class="fas fa-chevron-up"></i></a>
+        </div>
+    </footer>
 
     </body>
-
+    <script src="{% static 'js/base.js' %}"></script>
 </html>

@@ -1,6 +1,5 @@
 main{
     @include outer-base;
-    //height: 5000px;
-    margin-top: 40px;
     @include main-text;
+    min-height: 600px;
 }
