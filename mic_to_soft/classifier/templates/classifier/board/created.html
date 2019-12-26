@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block title %} created {% endblock %}
+
+{% block contents %}
+    <div class="">
+        <p>user:{{ classifier.userid }}</p>
+        <p>title:{{ classifier.title }}</p>
+        <p>description:{{ classifier.description }}</p>
+        <p>train_data:{{ classifier.train_data }}</p>
+        <p>created_date:{{ classifier.created_date }}</p>
+    </div>
+{% endblock %}
