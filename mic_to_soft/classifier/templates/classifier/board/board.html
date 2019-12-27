@@ -12,7 +12,7 @@
         {% for classifier in classifiers %}
             <div class="post">
                 <a href="{% url 'modeldetail' pk=classifier.pk %}">
-                    <h1>{{classifier.title}}</h1>
+                    <h1>{{ classifier.id }} : {{ classifier.title }}</h1>
                 </a>
                 <p>---------</p>
             </div>

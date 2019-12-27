@@ -24,8 +24,10 @@ class Classifier(models.Model):
     model = models.FileField(upload_to = 'model/', blank=True, null=True)
     model_hash = models.CharField(max_length=100, blank=True, null=False)
 
-    created_date = models.DateTimeField(default=timezone.now)
-    modified_date = models.DateTimeField(default=timezone.now, blank=True, null=True) # あとで修正
+    created_date = models.DateTimeField(auto_now_add = True)
+    modified_date = models.DateTimeField(auto_now = True)
+    # created_date = models.DateTimeField(default=timezone.now)
+    # modified_date = models.DateTimeField(default=timezone.now, blank=True, null=True) # あとで修正
 
     # pub_date = models.DateTimeField('date published')
 

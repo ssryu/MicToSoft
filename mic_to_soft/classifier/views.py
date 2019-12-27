@@ -73,11 +73,12 @@ def board(request):
 
 def createmodel(request):
     if request.method == 'POST':
-        form = ClassifierForm(request.POST)
+        form = ClassifierForm(request.POST, request.FILES)
         if form.is_valid():
             classifier = form.save(commit=False)
-            hash_value = classifier.userid+classifier.title
+            hash_value = classifier.userid + classifier.title
             classifier.model_hash = hashlib.sha256(hash_value.encode()).hexdigest()
+            classifier.acc_rate = 98.7
             classifier.save()
             return redirect('modeldetail', pk=classifier.pk)
     else:

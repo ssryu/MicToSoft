@@ -7,9 +7,16 @@
 
     <p>user:{{ classifier.userid }}</p>
     <p>password:{{ classifier.password }}</p>
+
     <p>title:{{ classifier.title }}</p>
     <p>description:{{ classifier.description }}</p>
-    <!-- <p>train_data:{{ form.train_data }}</p> -->
+    <p>acc_rate:{{ classifier.acc_rate }}</p>
 
-    </form>
+    <p>train_data:{{ classifier.train_data }}</p>
+    <p>model:{{ classifier.model }}</p>
+    <p>model_hash:{{ classifier.model_hash }}</p>
+
+    <p>created_date:{{ classifier.created_date }}</p>
+    <p>modified_date:{{ classifier.modified_date }}</p>
+
 {% endblock %}
