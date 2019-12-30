@@ -81,16 +81,27 @@ class Learner(Common):
         self.model.add(LSTM(n_hidden, batch_input_shape=(None, length_of_sequence, in_neurons), return_sequences=False))
         self.model.add(Dense(out_neurons))
         self.model.add(Activation("sigmoid"))
-        self.model.compile(loss="categorical_crossentropy", optimizer=Adam(lr=0.001))
+        self.model.compile(loss="categorical_crossentropy", optimizer=Adam(lr=0.001), metrics=['acc'])
         early_stopping = EarlyStopping(monitor='val_loss', mode='auto', patience=20)
-        self.model.fit(g, h, batch_size=300, epochs=100, validation_split=0.1, callbacks=[early_stopping], verbose=0)
+        his = self.model.fit(g, h, batch_size=300, epochs=100, validation_split=0.1, callbacks=[early_stopping], verbose=0)
+
+        #データの保持
+        self.filename = filename
+        self.acc = his.history['acc'][-1]
 
 
-    def save(self, filename):
-        self.model.save(filename+'.keras', include_optimizer=False)
+
+    def save(self, modelname):
+        self.model.save(modelname+'.keras', include_optimizer=False)
         self.model = None
-        with open(filename+'.bin', 'wb') as f:
+        with open(modelname+'.bin', 'wb') as f:
             pickle.dump(self, f)
+        params = {
+            'name' : modelname,
+            'dataset' : self.filename,
+            'acc' : self.acc,
+        }
+        return params
 
 
 
