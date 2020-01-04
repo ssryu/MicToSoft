@@ -10,6 +10,7 @@ from .models import Account
 from .forms import ClassifierForm
 from .forms import ClassifierAccount
 
+# for generate hash of models
 import hashlib
 
 def index(request):
@@ -45,84 +46,24 @@ def api(request):
             safe = False
         )
 
-def signup(request):
-    if request.method == 'POST':
-        form = ClassifierAccount(request.POST)
-        if form.is_valid():
-            form.save()
-            return redirect('/')
-    else:
-        form = ClassifierAccount()
-    return render(request, 'classifier/sign/signup.html', {'form': form})
-
-def signin(request):
-    if request.method == 'POST':
-        form = ClassifierAccount(request.POST)
-        if form.is_valid():
-            form.save()
-            return redirect('/')
-    else:
-        form = ClassifierAccount()
-
-    return render(request, 'classifier/sign/signin.html', {'form': form})
-
-def board(request):
-    # context = {'posts' : [{'model' : 'm1', 'data' : 'd1'}, {'model' : 'm2', 'data' : 'd2'}]}
+def board_models(request):
     classifiers = Classifier.objects.all()
-    return render(request, 'classifier/board/board.html', {'classifiers' : classifiers})
+    return render(request, 'classifier/board/models/models.html', {'classifiers' : classifiers})
 
-def createmodel(request):
+def model_create(request):
     if request.method == 'POST':
         form = ClassifierForm(request.POST, request.FILES)
         if form.is_valid():
             classifier = form.save(commit=False)
-            hash_value = classifier.userid + classifier.title
+            hash_value = str(classifier.id)
             classifier.model_hash = hashlib.sha256(hash_value.encode()).hexdigest()
             classifier.acc_rate = 98.7
             classifier.save()
-            return redirect('modeldetail', pk=classifier.pk)
+            return redirect('detail', pk=classifier.pk)
     else:
         form = ClassifierForm()
-    return render(request, 'classifier/board/createmodel.html', {'form' : form})
+    return render(request, 'classifier/board/models/create.html', {'form' : form})
 
-def created(request, pk):
+def model_detail(request, pk):
     classifier = get_object_or_404(Classifier, pk=pk)
-    return render(request, 'classifier/board/created.html', {'classifier': classifier})
-
-def modeldetail(request, pk):
-    classifier = get_object_or_404(Classifier, pk=pk)
-    return render(request, 'classifier/board/modeldetail.html', {'classifier': classifier})
-
-def models(request):
-    return render(request, 'classifier/board/models.html', {})
-
-def newmodel(request):
-    if request.method == 'POST':
-        form = ClassifierForm(request.POST)
-        if form.is_valid():
-            form.save()
-            return redirect('/')
-    else:
-        form = ClassifierForm()
-    return render(request, 'classifier/mypage/newmodel.html', {'form' : form})
-
-def data(request):
-    return render(request, 'classifier/board/data.html', {})
-
-def mypage(request):
-    return render(request, 'classifier/mypage/mypage.html', {})
-
-def account(request):
-    form = ClassifierAccount()
-    return render(request, 'classifier/mypage/account.html', {'form': form})
-
-def managemodels(request):
-    context = {'model1' : 'm1', 'data1' : 'd1'}
-
-    return render(request, 'classifier/mypage/managemodels.html', context)
-
-def about(request):
-    return render(request, 'classifier/about/about.html', {})
-
-def help(request):
-    return render(request, 'classifier/about/help.html', {})
+    return render(request, 'classifier/board/models/detail.html', {'classifier': classifier})

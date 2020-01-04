@@ -4,15 +4,16 @@
 
 {% block contents %}
     <div class="create-model">
-        <a href="{% url 'createmodel' %}">create model</a>
+        <a href="{% url 'model_create' %}">create model</a>
     </div>
 
-    <div class="board">
+    <div class="models">
         <p>---------</p>
         {% for classifier in classifiers %}
-            <div class="post">
-                <a href="{% url 'modeldetail' pk=classifier.pk %}">
-                    <h1>{{ classifier.id }} : {{ classifier.title }}</h1>
+            <div class="model">
+                <a href="{% url 'model_detail' pk=classifier.pk %}">
+                    <h1>{{ classifier.title }}</h1>
+                    <h1>{{ classifier.created_date }}</h1>
                 </a>
                 <p>---------</p>
             </div>

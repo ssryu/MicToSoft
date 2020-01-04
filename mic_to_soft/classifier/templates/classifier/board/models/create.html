@@ -1,11 +1,11 @@
 {% extends "layout.html" %}
 
-{% block title %} createmodel {% endblock %}
+{% block title %} create {% endblock %}
 
 {% block contents %}
     <h1>created model</h1>
 
-    <form class="create-model" action="{% url 'createmodel' %}" method="POST" enctype="multipart/form-data">
+    <form class="model-create" action="{% url 'model_create' %}" method="POST" enctype="multipart/form-data">
         {% csrf_token %}
         <p>user:{{ form.userid }}</p>
         <p>password:{{ form.password }}</p>
