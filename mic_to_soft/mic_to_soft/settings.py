@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'classifier',
+    'lineBot',
     'django_celery_results',
     'django_cleanup.apps.CleanupConfig',
 ]

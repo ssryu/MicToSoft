@@ -21,6 +21,7 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('', include('classifier.urls')),
+    path('', include('lineBot.urls')),
     path('admin/', admin.site.urls),
 ]
 
