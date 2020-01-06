@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'classifier',
+    'django_celery_results',
+    'django_cleanup.apps.CleanupConfig',
 ]
 
 MIDDLEWARE = [
@@ -130,6 +132,9 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+CELERY_BROKER_URL = "redis://localhost:6379/1"
+CELERY_RESULT_BACKEND = "django-db"
 
 # logging_setting。デフォルト設定に対して、ファイル出力するように設定を追加し、時間も記録できるようにフォーマットを追加したもの
 LOGGING = {

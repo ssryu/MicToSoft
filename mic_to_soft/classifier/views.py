@@ -4,6 +4,7 @@ import json
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from django.utils import timezone
+from django.conf import settings
 
 from .models import Classifier
 from .models import Account
@@ -11,6 +12,7 @@ from .forms import ClassifierForm
 from .forms import ClassifierAccount
 
 import hashlib
+from mic_to_soft.tasks import learn, classify
 
 def index(request):
     if request.method == 'POST':
@@ -69,17 +71,24 @@ def signin(request):
 def board(request):
     # context = {'posts' : [{'model' : 'm1', 'data' : 'd1'}, {'model' : 'm2', 'data' : 'd2'}]}
     classifiers = Classifier.objects.all()
-    return render(request, 'classifier/board/board.html', {'classifiers' : classifiers})
+    return render(request, 'classifier/board/board.html', context = {'classifiers' : classifiers})
 
 def createmodel(request):
     if request.method == 'POST':
         form = ClassifierForm(request.POST, request.FILES)
         if form.is_valid():
             classifier = form.save(commit=False)
+
             hash_value = classifier.userid + classifier.title
+            media_root = settings.MEDIA_ROOT
+            train_data = 'textdata/' + str(classifier.train_data)
+            model = train_data.replace('textdata', 'model')
+
             classifier.model_hash = hashlib.sha256(hash_value.encode()).hexdigest()
-            classifier.acc_rate = 98.7
+            classifier.model = model
             classifier.save()
+
+            learn(hash_value, media_root, train_data, model)
             return redirect('modeldetail', pk=classifier.pk)
     else:
         form = ClassifierForm()
