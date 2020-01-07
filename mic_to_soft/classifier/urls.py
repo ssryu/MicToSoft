@@ -19,5 +19,5 @@ urlpatterns = [
     path('mypage/newmodel', views.newmodel, name='newmodel'),
     path('about/', views.about, name='about'),
     path('about/help/', views.help, name='help'),
-    path('learning-finished/', views.learning_finished, name='learning-finished'),
+    path('learning-finished', views.learning_finished, name='learning-finished'),
 ]
