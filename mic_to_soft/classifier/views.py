@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect, get_object_or_404
 
 import json
+import os
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from django.utils import timezone
@@ -36,12 +37,21 @@ def index(request):
 def api(request):
     if request.method == "POST":
         form = request.POST
+        model_hash = form['model_hash']
+        text = form['text']
+
+        classifier = get_object_or_404(Classifier, model_hash = model_hash)
+        media_root = settings.MEDIA_ROOT
+        model = os.path.join(media_root, str(classifier.model))
+
+        result = classify(model, text)
+
         return JsonResponse(
             json.dumps(
                 {
                     'req' : str(request),
                     'data' : form,
-                    'text' : form['text'].split(" ")
+                    'text' : result
                 }
             ),
             safe = False
@@ -49,56 +59,14 @@ def api(request):
 
 @csrf_exempt
 def learning_finished(request):
-    return JsonResponse(
-        json.dumps(
-            {
-                'req' : str(request),
-                'result' : 'OK'
-            }
-        ),
-        safe = False
-    )
     if request.method == "POST":
         form = request.POST
-        return JsonResponse(
-            json.dumps(
-                {
-                    'req' : str(request),
-                    'data' : form,
-                    'result' : 'OK'
-                }
-            ),
-            safe = False
-        )
-
         model_hash = form['model_hash']
         acc = float(form['acc'])
-
-        return JsonResponse(
-            json.dumps(
-                {
-                    'req' : str(request),
-                    'data' : form,
-                    'result' : 'OK'
-                }
-            ),
-            safe = False
-        )
 
         classifier = get_object_or_404(Classifier, model_hash = model_hash)
         classifier.acc_rate = acc
         classifier.save()
-
-        return JsonResponse(
-            json.dumps(
-                {
-                    'req' : str(request),
-                    'data' : form,
-                    'result' : 'OK'
-                }
-            ),
-            safe = False
-        )
 
 def signup(request):
     if request.method == 'POST':

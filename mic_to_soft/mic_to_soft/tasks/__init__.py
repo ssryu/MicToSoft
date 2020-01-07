@@ -146,8 +146,10 @@ def learn(model_hash, media_root, data, model):
 
     return
 
-def classify():
+def classify(model, texts):
     C = Classifier()
-    texts = ['振込がしたい', 'お金を引き出しにきた', '金よこせ', '預けようかな']
-    C.load('bank')
-    C.predict(texts)
+    # texts = ['振込がしたい', 'お金を引き出しにきた', '金よこせ', '預けようかな']
+    C.load(model)
+    result = C.predict(texts)
+
+    return result
