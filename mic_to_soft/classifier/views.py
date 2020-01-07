@@ -51,6 +51,17 @@ def api(request):
 def learning_finished(request):
     if request.method == "POST":
         form = request.POST
+        return JsonResponse(
+            json.dumps(
+                {
+                    'req' : str(request),
+                    'data' : form,
+                    'result' : 'OK'
+                }
+            ),
+            safe = False
+        )
+
         model_hash = form['model_hash']
         acc = float(form['acc'])
 
