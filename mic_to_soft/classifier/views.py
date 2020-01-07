@@ -51,12 +51,14 @@ def api(request):
 def learning_finished(request):
     if request.method == "POST":
         form = request.POST
-        model_hash = form['hash']
+        model_hash = form['model_hash']
         acc = form['acc']
 
         classifier = get_object_or_404(Classifier, Classifier.model_hash = model_hash)
         classifier.acc_rate = acc
         classifier.save()
+
+        return 'OK'
 
 def signup(request):
     if request.method == 'POST':

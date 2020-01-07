@@ -138,7 +138,7 @@ def learn(model_hash, media_root, data, model):
     # リクエスト設定
     URL = 'http://133.130.121.247/learning-finished'
     data = {
-        'hash' : model_hash,
+        'model_hash' : model_hash,
         'acc' : params['acc']
     }
 
