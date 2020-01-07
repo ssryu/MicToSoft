@@ -3,20 +3,25 @@
 {% block title %} board {% endblock %}
 
 {% block contents %}
-    <div class="create-model">
-        <a href="{% url 'model_create' %}">create model</a>
-    </div>
-
+    <button type="button" class="btn btn-default btn-lg btn-block" onclick="location.href='{% url 'model_create' %}'">Create Model</button>
     <div class="models">
-        <p>---------</p>
         {% for classifier in classifiers %}
-            <div class="model">
-                <a href="{% url 'model_detail' pk=classifier.pk %}">
-                    <h1>{{ classifier.title }}</h1>
-                    <h1>{{ classifier.created_date }}</h1>
-                </a>
-                <p>---------</p>
-            </div>
+            <a href="{% url 'model_detail' pk=classifier.pk %}">
+                <div class="model">
+                    <div class="model-title">
+                        {{ classifier.title }}
+                    </div>
+
+                    <div class="model-description">
+                        {{ classifier.description }}
+                    </div>
+
+                    <div class="model-date">
+                        {{ classifier.created_date }}
+                    </div>
+
+                </div>
+            </a>
         {% endfor %}
     </div>
 {% endblock %}

@@ -1,7 +1,127 @@
 main{
     @include outer-base;
-    //height: 5000px;
     margin-top: 40px;
     margin-bottom: 40px;
     @include main-text;
+}
+.create-model-title{
+    text-align: center;
+    border: solid medium c(3);
+    margin: 30px 30px;
+    padding: 10px;
+}
+.models{
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    border: double 5px #2B8051;
+    a{
+        text-decoration: none;
+        color: #000;
+        &:hover{
+            color: inherit;
+        }
+        &:visited{
+            color: inherit;
+        }
+    }
+}
+
+.model{
+    margin: 2em 0;
+    // background: 000;
+
+    .model-title{
+        font-size: 1.2em;
+        background: #00d162;
+        padding: 4px;
+        text-align: center;
+        // color: #;
+        font-weight: bold;
+        letter-spacing: 0.05em;
+    }
+
+    .model-description{
+        font-size: 0.8em;
+        background: #c9ffe2;
+        padding: 4px;
+        letter-spacing: 0.05em;
+    }
+
+    .model-date{
+        font-size: 0.5em;
+        background: #c9ffe2;
+        padding: 4px;
+        letter-spacing: 0.05em;
+        text-align: right;
+    }
+
+    p{
+        padding: 15px 20px;
+        margin: 0;
+    }
+}
+
+
+.cp_iptxt {
+	position: relative;
+	width: 80%;
+	margin: 40px 3%;
+}
+.cp_iptxt input[type='text'] {
+	font: 15px/24px sans-serif;
+	box-sizing: border-box;
+	width: 100%;
+	letter-spacing: 1px;
+	padding-left: 4em;
+}
+.cp_iptxt input[type='text']:focus {
+	outline: none;
+}
+.ef {
+	padding: 4px 0;
+	border: 0;
+	border-bottom: 1px solid #1b2538;
+	background-color: transparent;
+}
+.ef ~ .focus_line {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 0;
+	height: 2px;
+	transition: 0.4s;
+	background-color: #da3c41;
+}
+.ef:focus ~ .focus_line,
+.cp_iptxt.ef ~ .focus_line {
+	width: 100%;
+	transition: 0.4s;
+}
+.ef ~ label {
+	position: absolute;
+	z-index: -1;
+	top: 4px;
+	left: 0;
+	width: 100%;
+	transition: 0.3s;
+	letter-spacing: 0.5px;
+	color: #aaaaaa;
+}
+.ef:focus ~ label, .cp_iptxt.ef ~ label {
+	font-size: 12px;
+	top: -16px;
+	transition: 0.3s;
+	color: #da3c41;
+}
+
+
+.create-model-form{
+    table{
+        background-color: #cdefff
+    }
+    th,td{
+
+    }
+
+
 }

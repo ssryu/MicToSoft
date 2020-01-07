@@ -3,15 +3,46 @@
 {% block title %} create {% endblock %}
 
 {% block contents %}
-    <h1>created model</h1>
+    <div class="create-model-title">
+        <p>CREATE MODEL</p>
+    </div>
 
-    <form class="model-create" action="{% url 'model_create' %}" method="POST" enctype="multipart/form-data">
+
+    <form class="create-model" action="{% url 'model_create' %}" method="POST" enctype="multipart/form-data">
         {% csrf_token %}
-        <p>user:{{ form.userid }}</p>
-        <p>password:{{ form.password }}</p>
-        <p>title:{{ form.title }}</p>
-        <p>description:{{ form.description }}</p>
-        <p>train_data:{{ form.train_data }}</p>
-        <button type="submit" class="save btn btn-default">Create model</button>
+        <!-- <div class="cp_iptxt">
+        	<input class="ef" type="text" placeholder="">
+        	<label>お名前</label>
+        	<span class="focus_line"></span>
+        </div> -->
+        <div class="create-mdoel-form">
+            <table border="1">
+                <tr>
+                    <td>{{ form.userid.label }}</td>
+                    <td>{{ form.userid }}</td>
+                </tr>
+
+                <tr>
+                    <td>{{ form.password.label }}</td>
+                    <td>{{ form.password }}</td>
+                </tr>
+
+                <tr>
+                    <td>{{ form.title.label }}</td>
+                    <td>{{ form.title }}</td>
+                </tr>
+
+                <tr>
+                    <td>{{ form.description.label }}</td>
+                    <td>{{ form.description }}</td>
+                </tr>
+
+                <tr>
+                    <td>{{ form.train_data.label }}</td>
+                    <td>{{ form.train_data }}</td>
+                </tr>
+            </table>
+        </div>
+        <button type="submit" class="btn btn-default btn-lg btn-block">Create Model</button>
     </form>
 {% endblock %}
