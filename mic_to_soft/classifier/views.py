@@ -49,6 +49,15 @@ def api(request):
 
 @csrf_exempt
 def learning_finished(request):
+    return JsonResponse(
+        json.dumps(
+            {
+                'req' : str(request),
+                'result' : 'OK'
+            }
+        ),
+        safe = False
+    )
     if request.method == "POST":
         form = request.POST
         return JsonResponse(
