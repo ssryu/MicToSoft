@@ -54,7 +54,7 @@ def learning_finished(request):
         model_hash = form['model_hash']
         acc = form['acc']
 
-        classifier = get_object_or_404(Classifier, Classifier.model_hash = model_hash)
+        classifier = get_object_or_404(Classifier, model_hash = model_hash)
         classifier.acc_rate = acc
         classifier.save()
 
