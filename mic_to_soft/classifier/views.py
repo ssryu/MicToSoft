@@ -58,7 +58,16 @@ def learning_finished(request):
         classifier.acc_rate = acc
         classifier.save()
 
-        return 'OK'
+        return JsonResponse(
+            json.dumps(
+                {
+                    'req' : str(request),
+                    'data' : form,
+                    'result' : 'OK'
+                }
+            ),
+            safe = False
+        )
 
 def signup(request):
     if request.method == 'POST':
