@@ -52,7 +52,18 @@ def learning_finished(request):
     if request.method == "POST":
         form = request.POST
         model_hash = form['model_hash']
-        acc = form['acc']
+        acc = float(form['acc'])
+
+        return JsonResponse(
+            json.dumps(
+                {
+                    'req' : str(request),
+                    'data' : form,
+                    'result' : 'OK'
+                }
+            ),
+            safe = False
+        )
 
         classifier = get_object_or_404(Classifier, model_hash = model_hash)
         classifier.acc_rate = acc
