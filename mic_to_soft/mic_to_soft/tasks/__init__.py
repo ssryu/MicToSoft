@@ -2,6 +2,8 @@
 # coding: UTF-8
 from ..celery import app
 
+import requests  
+import json
 import sys
 import keras
 import os
@@ -16,13 +18,7 @@ import pickle
 
 from .preprocess import *
 
-
-
-
 tokenizer = TextsTokenize()
-
-
-
 
 class Common:
     def __init__(self):
@@ -31,9 +27,6 @@ class Common:
         self.max_token = None
         self.vector_size = None
         self.model = None
-
-
-
 
 class Learner(Common):
     def fit(self, filename, wv_filename=None, max_token=20):
@@ -87,19 +80,25 @@ class Learner(Common):
         self.model.add(LSTM(n_hidden, batch_input_shape=(None, length_of_sequence, in_neurons), return_sequences=False))
         self.model.add(Dense(out_neurons))
         self.model.add(Activation("sigmoid"))
-        self.model.compile(loss="categorical_crossentropy", optimizer=Adam(lr=0.001))
+        self.model.compile(loss="categorical_crossentropy", optimizer=Adam(lr=0.001), metrics=['acc'])
         early_stopping = EarlyStopping(monitor='val_loss', mode='auto', patience=20)
-        self.model.fit(g, h, batch_size=300, epochs=100, validation_split=0.1, callbacks=[early_stopping], verbose=0)
+        his = self.model.fit(g, h, batch_size=300, epochs=100, validation_split=0.1, callbacks=[early_stopping], verbose=0)
 
+        #データの保持
+        self.filename = filename
+        self.acc = his.history['acc'][-1]
 
-    def save(self, filename):
-        self.model.save(filename+'.keras', include_optimizer=False)
+    def save(self, modelname):
+        self.model.save(modelname+'.keras', include_optimizer=False)
         self.model = None
-        with open(filename+'.bin', 'wb') as f:
+        with open(modelname+'.bin', 'wb') as f:
             pickle.dump(self, f)
-
-
-
+        params = {
+            'name' : modelname,
+            'dataset' : self.filename,
+            'acc' : self.acc,
+        }
+        return params
 
 class Classifier(Common):
     def load(self, filename):
@@ -127,17 +126,23 @@ class Classifier(Common):
             print("%s : %s" % (text, label))
         return y
 
-
-
 @app.task()
-def learn(hash, media_root, data, model):
+def learn(model_hash, media_root, data, model):
     L = Learner()
     
     dataset = os.path.join(media_root, data)
     model_dir = os.path.join(media_root, model)
     
     L.fit(dataset, wv_filename = None)
-    L.save(model_dir)
+    params = L.save(model_dir)
+    # リクエスト設定
+    URL = 'http://133.130.121.247/learning-finished'
+    data = {
+        'hash' : model_hash,
+        'acc' : params['acc']
+    }
+
+    requests.post(URL, data=data)
 
     return
 

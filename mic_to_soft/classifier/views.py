@@ -47,6 +47,17 @@ def api(request):
             safe = False
         )
 
+@csrf_exempt
+def learning_finished(request):
+    if request.method == "POST":
+        form = request.POST
+        model_hash = form['hash']
+        acc = form['acc']
+
+        classifier = get_object_or_404(Classifier, Classifier.model_hash = model_hash)
+        classifier.acc_rate = acc
+        classifier.save()
+
 def signup(request):
     if request.method == 'POST':
         form = ClassifierAccount(request.POST)
