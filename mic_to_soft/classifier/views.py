@@ -1,3 +1,4 @@
+# coding: UTF-8
 from django.shortcuts import render, redirect, get_object_or_404
 
 import json
@@ -100,12 +101,13 @@ def createmodel(request):
         if form.is_valid():
             classifier = form.save(commit=False)
 
-            hash_value = classifier.userid + classifier.title
+            hash_value = str(classifier.id) + classifier.userid + classifier.title
+            hash_value = hashlib.sha256(hash_value.encode()).hexdigest()
             media_root = settings.MEDIA_ROOT
             train_data = 'textdata/' + str(classifier.train_data)
             model = train_data.replace('textdata', 'model')
 
-            classifier.model_hash = hashlib.sha256(hash_value.encode()).hexdigest()
+            classifier.model_hash = hash_value
             classifier.model = model
             classifier.save()
 

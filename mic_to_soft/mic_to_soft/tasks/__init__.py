@@ -136,7 +136,7 @@ def learn(model_hash, media_root, data, model):
     L.fit(dataset, wv_filename = None)
     params = L.save(model_dir)
     # リクエスト設定
-    URL = 'http://133.130.121.247/learning-finished'
+    URL = 'http://localhost/learning-finished'
     data = {
         'model_hash' : model_hash,
         'acc' : params['acc']
@@ -149,6 +149,7 @@ def learn(model_hash, media_root, data, model):
 def classify(model, texts):
     C = Classifier()
     # texts = ['振込がしたい', 'お金を引き出しにきた', '金よこせ', '預けようかな']
+    texts = [texts]
     C.load(model)
     result = C.predict(texts)
 
