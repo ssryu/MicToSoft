@@ -2,19 +2,17 @@ main{
     @include outer-base;
     margin-top: 5vh;
     margin-bottom: 5vh;
-    height: 60vh;
     @include main-text;
 }
 .create-model-title{
     text-align: center;
-    //border: solid medium c(3);
     margin: 30px 30px;
     padding: 10px;
 }
 .models{
     padding: 0.5em 1em;
     margin: 2em 0;
-    border: double 5px #2B8051;
+    // border: double 5px #2B8051;
     a{
         text-decoration: none;
         color: #000;
@@ -29,45 +27,36 @@ main{
 }
 
 .model{
-    margin: 2em 0;
-    // background: 000;
+    margin: 5 0;
+    background: $main-color;
+    border: solid 3px #2B8051;
+    display: flex;
+    justify-content: space-between;
 
     .model-title{
-        display: inline-block;
+        padding: 0 1em;
         font-size: 1.2em;
-        background: c(3);
-        padding: 4px;
-        text-align: left;
-        color: #FFF;
         font-weight: bold;
+        color: #FFF;
         letter-spacing: 0.05em;
     }
 
     .model-user{
-        display: inline-block;
-        padding: 4px;
+        font-size: 0.9em;
+        padding: 0 1em;
         letter-spacing: 0.05em;
-    }
-    .model-description{
-        font-size: 0.8em;
-        background: #c9ffe2;
-        padding: 4px;
-        letter-spacing: 0.05em;
+        margin-left: auto;
     }
 
     .model-date{
-        display: inline-block;
-        // font-size: 0.5em;
-        background: #000;
-        padding: 4px;
+        font-size: 0.5em;
+        padding: 0 1em;
+        color: #FFF;
         letter-spacing: 0.05em;
-        text-align: right;
-
+        border: solid 1px #2B8051;
     }
 
     .model-contents{
-        background: #c9ffe2;
-        display: inline-block;
         // .model-description{
         //     font-size: 0.8em;
         //     background: #c9ffe2;
@@ -75,6 +64,8 @@ main{
         //     letter-spacing: 0.05em;
         // }
     }
+
+
 
     p{
         padding: 15px 20px;
@@ -145,4 +136,36 @@ main{
     }
 
 
+}
+
+
+.model-detail {
+    text-align: center;
+    margin: auto;
+
+    table.detail {
+        // border: solid 1px #000;
+        text-align: center;
+        margin: auto;
+        padding: auto;
+
+        tr{
+            td{
+                border: solid 1px;
+                padding: 0 20;
+                p{
+                    word-wrap: normal;
+                }
+            }
+        }
+
+    }
+}
+
+.button-set{
+    padding: 40;
+    text-align: right;
+    form{
+        display: inline-block;
+    }
 }

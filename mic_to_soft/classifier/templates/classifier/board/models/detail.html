@@ -4,9 +4,9 @@
 
 {% block contents %}
     <div class="model-detail">
-        <table border="1">
+        <table class="detail">
             <tr>
-                <td>userid</td>
+                <td>User ID</td>
                 <td>{{ classifier.userid }}</td>
             </tr>
             <tr>
@@ -15,7 +15,7 @@
             </tr>
             <tr>
                 <td>description</td>
-                <td>{{ classifier.description }}</td>
+                <td><p>{{ classifier.description }}</p></td>
             </tr>
             <tr>
                 <td>train_data</td>
@@ -32,17 +32,26 @@
 
             <tr>
                 <td>created_date</td>
-                <td>{{ classifier.created_date }}</td>
+                <td>{{ classifier.created_date|date:"y/m/d H:i:s" }}</td>
             </tr>
 
             <tr>
                 <td>modified_date</td>
-                <td>{{ classifier.modified_date }}</td>
+                <td>{{ classifier.modified_date|date:"y/m/d H:i:s" }}</td>
             </tr>
         </table>
 
-        <button type="button" class="btn btn-outline-primary btn-sm" name="button">edit</button>
-        <button type="button" class="btn btn-outline-danger btn-sm" name="button">delete</button>
+
+        <div class="button-set">
+            <form id="form_button2" action="{% url 'model_detail' classifier.pk %}" method="POST">
+                {% csrf_token %}
+                password
+                <input type="text" name="password" value="">
+                <button class="btn btn-primary" type="submit" name="edit" value="edit">EDIT</button>
+                <button class="btn btn-danger" type="submit" name="delete" value="delete">DELETE</button>
+            </form>
+        </div>
+
 
     </div>
 {% endblock %}

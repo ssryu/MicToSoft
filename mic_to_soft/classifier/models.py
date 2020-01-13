@@ -1,22 +1,14 @@
 from django.db import models
 from django.utils import timezone
 
-class Account(models.Model):
-    username = models.CharField(max_length = 100)
-    password = models.CharField(max_length = 200)
-    email = models.CharField(max_length = 200)
-
-    def __str__(self):
-        return self.username
-
 class Classifier(models.Model):
     #userid = models.ForeignKey(Account, on_delete=models.CASCADE)
 
-    userid = models.CharField(max_length = 100)
-    password = models.CharField(max_length = 100)
+    userid = models.CharField(max_length = 32)
+    password = models.CharField(max_length = 32)
 
-    title = models.CharField(max_length = 200)
-    description = models.CharField(max_length = 500)
+    title = models.CharField(max_length = 32)
+    description = models.CharField(max_length = 200)
     acc_rate = models.FloatField(blank=True, null=True)
 
     # traindata blank,null test:True -> deploy:false

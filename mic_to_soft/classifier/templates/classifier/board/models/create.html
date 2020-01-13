@@ -5,11 +5,6 @@
 {% block contents %}
     <form class="create-model" action="{% url 'model_create' %}" method="POST" enctype="multipart/form-data">
         {% csrf_token %}
-        <!-- <div class="cp_iptxt">
-        	<input class="ef" type="text" placeholder="">
-        	<label>お名前</label>
-        	<span class="focus_line"></span>
-        </div> -->
         <div class="create-mdoel-form">
             <table border="1">
                 <tr>

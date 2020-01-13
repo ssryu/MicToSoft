@@ -1,10 +1,5 @@
 from django import forms
-from .models import Classifier, Account
-
-class ClassifierAccount(forms.ModelForm):
-    class Meta:
-        model = Account
-        fields = ['username', 'password', 'email']
+from .models import Classifier
 
 class ClassifierForm(forms.ModelForm):
     class Meta:
