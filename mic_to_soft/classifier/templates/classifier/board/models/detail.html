@@ -3,20 +3,46 @@
 {% block title %} modeldetail {% endblock %}
 
 {% block contents %}
-    <h1>model detail</h1>
+    <div class="model-detail">
+        <table border="1">
+            <tr>
+                <td>userid</td>
+                <td>{{ classifier.userid }}</td>
+            </tr>
+            <tr>
+                <td>title</td>
+                <td>{{ classifier.title }}</td>
+            </tr>
+            <tr>
+                <td>description</td>
+                <td>{{ classifier.description }}</td>
+            </tr>
+            <tr>
+                <td>train_data</td>
+                <td>{{ classifier.train_data }}</td>
+            </tr>
+            <tr>
+                <td>acc_rate</td>
+                <td>{{ classifier.acc_rate }}</td>
+            </tr>
+            <tr>
+                <td>model_hash</td>
+                <td>{{ classifier.model_hash }}</td>
+            </tr>
 
-    <p>user:{{ classifier.userid }}</p>
-    <!-- <p>password:{{ classifier.password }}</p> -->
+            <tr>
+                <td>created_date</td>
+                <td>{{ classifier.created_date }}</td>
+            </tr>
 
-    <p>title:{{ classifier.title }}</p>
-    <p>description:{{ classifier.description }}</p>
-    <p>acc_rate:{{ classifier.acc_rate }}</p>
+            <tr>
+                <td>modified_date</td>
+                <td>{{ classifier.modified_date }}</td>
+            </tr>
+        </table>
 
-    <p>train_data:{{ classifier.train_data }}</p>
-    <p>model:{{ classifier.model }}</p>
-    <p>model_hash:{{ classifier.model_hash }}</p>
+        <button type="button" class="btn btn-outline-primary btn-sm" name="button">edit</button>
+        <button type="button" class="btn btn-outline-danger btn-sm" name="button">delete</button>
 
-    <p>created_date:{{ classifier.created_date }}</p>
-    <p>modified_date:{{ classifier.modified_date }}</p>
-
+    </div>
 {% endblock %}

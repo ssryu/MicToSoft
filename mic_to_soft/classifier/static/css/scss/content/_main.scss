@@ -1,12 +1,13 @@
 main{
     @include outer-base;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    height: 60vh;
     @include main-text;
 }
 .create-model-title{
     text-align: center;
-    border: solid medium c(3);
+    //border: solid medium c(3);
     margin: 30px 30px;
     padding: 10px;
 }
@@ -24,6 +25,7 @@ main{
             color: inherit;
         }
     }
+
 }
 
 .model{
@@ -31,15 +33,21 @@ main{
     // background: 000;
 
     .model-title{
+        display: inline-block;
         font-size: 1.2em;
-        background: #00d162;
+        background: c(3);
         padding: 4px;
-        text-align: center;
-        // color: #;
+        text-align: left;
+        color: #FFF;
         font-weight: bold;
         letter-spacing: 0.05em;
     }
 
+    .model-user{
+        display: inline-block;
+        padding: 4px;
+        letter-spacing: 0.05em;
+    }
     .model-description{
         font-size: 0.8em;
         background: #c9ffe2;
@@ -48,11 +56,24 @@ main{
     }
 
     .model-date{
-        font-size: 0.5em;
-        background: #c9ffe2;
+        display: inline-block;
+        // font-size: 0.5em;
+        background: #000;
         padding: 4px;
         letter-spacing: 0.05em;
         text-align: right;
+
+    }
+
+    .model-contents{
+        background: #c9ffe2;
+        display: inline-block;
+        // .model-description{
+        //     font-size: 0.8em;
+        //     background: #c9ffe2;
+        //     padding: 4px;
+        //     letter-spacing: 0.05em;
+        // }
     }
 
     p{

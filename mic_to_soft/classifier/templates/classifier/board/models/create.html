@@ -3,11 +3,6 @@
 {% block title %} create {% endblock %}
 
 {% block contents %}
-    <div class="create-model-title">
-        <p>CREATE MODEL</p>
-    </div>
-
-
     <form class="create-model" action="{% url 'model_create' %}" method="POST" enctype="multipart/form-data">
         {% csrf_token %}
         <!-- <div class="cp_iptxt">

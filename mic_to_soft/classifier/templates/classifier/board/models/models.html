@@ -4,6 +4,7 @@
 
 {% block contents %}
     <button type="button" class="btn btn-default btn-lg btn-block" onclick="location.href='{% url 'model_create' %}'">Create Model</button>
+
     <div class="models">
         {% for classifier in classifiers %}
             <a href="{% url 'model_detail' pk=classifier.pk %}">
@@ -12,14 +13,15 @@
                         {{ classifier.title }}
                     </div>
 
-                    <div class="model-description">
-                        {{ classifier.description }}
-                    </div>
+                    <div class="model-contents">
+                        <div class="model-user">
+                            {{ classifier.userid }}
+                        </div>
 
-                    <div class="model-date">
-                        {{ classifier.created_date }}
+                        <div class="model-date">
+                            {{ classifier.created_date }}
+                        </div>
                     </div>
-
                 </div>
             </a>
         {% endfor %}
