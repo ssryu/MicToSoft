@@ -135,7 +135,7 @@ def learn(model_hash, media_root, data, model):
     
     L.fit(dataset, wv_filename = None)
     params = L.save(model_dir)
-    # リクエスト設定
+    # request settings
     URL = 'http://localhost/learning-finished'
     data = {
         'model_hash' : model_hash,

@@ -69,6 +69,16 @@ def learning_finished(request):
         classifier.acc_rate = acc
         classifier.save()
 
+        return JsonResponse(
+            json.dumps({'result' : 'ok'}),
+            status=200
+            )
+
+    return JsonResponse(
+        json.dumps({'error' : 'something bad'}),
+        status=400
+        )
+
 def signup(request):
     if request.method == 'POST':
         form = ClassifierAccount(request.POST)
@@ -111,7 +121,7 @@ def createmodel(request):
             classifier.model = model
             classifier.save()
 
-            learn(hash_value, media_root, train_data, model)
+            learn.delay(hash_value, media_root, train_data, model)
             return redirect('modeldetail', pk=classifier.pk)
     else:
         form = ClassifierForm()
