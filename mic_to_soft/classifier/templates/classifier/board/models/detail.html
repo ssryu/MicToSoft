@@ -1,6 +1,6 @@
 {% extends "layout.html" %}
 
-{% block title %} modeldetail {% endblock %}
+{% block title %} detail {% endblock %}
 
 {% block contents %}
     <div class="model-detail">
@@ -15,7 +15,7 @@
             </tr>
             <tr>
                 <td>description</td>
-                <td><p>{{ classifier.description }}</p></td>
+                <td><p>{{ classifier.description|linebreaksbr }}</p></td>
             </tr>
             <tr>
                 <td>train_data</td>
@@ -41,17 +41,9 @@
             </tr>
         </table>
 
-
         <div class="button-set">
-            <form id="form_button2" action="{% url 'model_detail' classifier.pk %}" method="POST">
-                {% csrf_token %}
-                password
-                <input type="text" name="password" value="">
-                <button class="btn btn-primary" type="submit" name="edit" value="edit">EDIT</button>
-                <button class="btn btn-danger" type="submit" name="delete" value="delete">DELETE</button>
-            </form>
+            <button class="btn btn-primary" type=“button” onclick="location.href='{% url 'model_edit' pk=classifier.pk %}'">EDIT</button>
         </div>
-
 
     </div>
 {% endblock %}

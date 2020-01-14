@@ -265,6 +265,7 @@ main {
   margin: auto;
   margin-top: 5vh;
   margin-bottom: 5vh;
+  min-height: 90vh;
   font-size: 15px;
   line-height: 25px;
   font-weight: 300; }
@@ -371,8 +372,17 @@ main {
   transition: 0.3s;
   color: #da3c41; }
 
-.create-model-form table {
-  background-color: #cdefff; }
+.create-model {
+  margin: auto 0; }
+  .create-model .create-form {
+    margin: auto 0;
+    padding: 1vh; }
+    .create-model .create-form table {
+      margin: auto; }
+    .create-model .create-form th, .create-model .create-form td {
+      margin: auto;
+      padding: 1vw 2vw;
+      text-align: center; }
 
 .model-detail {
   text-align: center;
@@ -386,6 +396,18 @@ main {
       padding: 0 20; }
       .model-detail table.detail tr td p {
         word-wrap: normal; }
+
+.edit-model {
+  margin: auto 0; }
+  .edit-model .edit-form {
+    margin: auto 0;
+    padding: 1vh; }
+    .edit-model .edit-form table {
+      margin: auto; }
+    .edit-model .edit-form th, .edit-model .edit-form td {
+      margin: auto;
+      padding: 1vw 2vw;
+      text-align: center; }
 
 .button-set {
   padding: 40;

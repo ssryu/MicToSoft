@@ -9,7 +9,6 @@ from .models import Classifier
 
 from .forms import ClassifierForm
 
-
 # for generate hash of models
 import hashlib
 
@@ -55,30 +54,21 @@ def model_create(request):
         form = ClassifierForm()
     return render(request, 'classifier/board/models/create.html', {'form' : form})
 
-
-
 def model_detail(request, pk):
     classifier = get_object_or_404(Classifier, pk=pk)
-    if request.method == 'POST':
-        if request.POST.__contains__("password"):
-            print(request.POST.__getitem__("password"))
-            if request.POST.__getitem__("password") == classifier.password:
-                if request.POST.__contains__("edit"):
-                    # print("edit")
-                    pass
-                    # return render('classifier/board/models/create.html', {'forms':forms})
-                elif request.POST.__contains__("delete"):
-                    # print("delete")
-                    Classifier.objects.filter(pk=classifier.pk).delete()
-                    return redirect('models')
-            else:
-                print("not match")
     return render(request, 'classifier/board/models/detail.html', {'classifier': classifier})
 
-def  model_edit(request, pk):
+def model_edit(request, pk):
+    classifier = get_object_or_404(Classifier, pk=pk)
     if request.method == "POST":
-        forms = ClassifierForm(request.POST)
-        if forms.is_valid():
-            return render(request, 'classifier/board/models/create', {'forms': forms});
+        form = ClassifierForm(request.POST, request.FILES, instance=classifier)
+        if form.is_valid():
+            classifier = form.save(commit=False)
+            classifier.modified_date = timezone.now()
+            classifier.save()
 
-    return render(request, 'classifier/board/models/models.html')
+            return redirect('model_detail', pk=classifier.pk)
+    else:
+        form = ClassifierForm(instance=classifier)
+
+    return render(request, 'classifier/board/models/edit.html', {'form': form})

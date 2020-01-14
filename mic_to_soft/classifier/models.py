@@ -12,7 +12,7 @@ class Classifier(models.Model):
     acc_rate = models.FloatField(blank=True, null=True)
 
     # traindata blank,null test:True -> deploy:false
-    train_data = models.FileField(upload_to = 'textdata/', blank=True, null=True)
+    train_data = models.FileField(upload_to = 'textdata/')
     model = models.FileField(upload_to = 'model/', blank=True, null=True)
     model_hash = models.CharField(max_length=100, blank=True, null=False)
 

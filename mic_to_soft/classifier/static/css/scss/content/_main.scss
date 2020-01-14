@@ -2,13 +2,16 @@ main{
     @include outer-base;
     margin-top: 5vh;
     margin-bottom: 5vh;
+    min-height: 90vh;
     @include main-text;
 }
+
 .create-model-title{
     text-align: center;
     margin: 30px 30px;
     padding: 10px;
 }
+
 .models{
     padding: 0.5em 1em;
     margin: 2em 0;
@@ -126,18 +129,22 @@ main{
 	color: #da3c41;
 }
 
+.create-model{
+    margin: auto 0;
+    .create-form{
+        margin: auto 0;
+        padding: 1vh;
 
-.create-model-form{
-    table{
-        background-color: #cdefff
+        table{
+            margin: auto;
+        }
+        th,td{
+            margin: auto;
+            padding: 1vw 2vw;
+            text-align: center;
+        }
     }
-    th,td{
-
-    }
-
-
 }
-
 
 .model-detail {
     text-align: center;
@@ -159,6 +166,23 @@ main{
             }
         }
 
+    }
+}
+
+.edit-model {
+    margin: auto 0;
+    .edit-form {
+        margin: auto 0;
+        padding: 1vh;
+
+        table{
+            margin: auto;
+        }
+        th,td{
+            margin: auto;
+            padding: 1vw 2vw;
+            text-align: center;
+        }
     }
 }
 
