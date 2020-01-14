@@ -263,12 +263,13 @@ main {
   padding: 15px 10px;
   max-width: 1200px;
   margin: auto;
-  margin-top: 5vh;
-  margin-bottom: 5vh;
+  margin: 3vh 0 3vh 0;
   min-height: 90vh;
   font-size: 15px;
   line-height: 25px;
-  font-weight: 300; }
+  font-weight: 300;
+  text-align: center;
+  display: block; }
   @media screen and (min-width: 481px) {
     main {
       font-size: 18px;
@@ -277,18 +278,24 @@ main {
     main {
       font-size: 20px;
       line-height: 35px; } }
+  main .content {
+    text-align: center; }
 
 .create-model-title {
   text-align: center;
   margin: 30px 30px;
   padding: 10px; }
 
+.model-board {
+  margin: 2vh 5vw;
+  width: 90vw; }
+
 .models {
   padding: 0.5em 1em;
   margin: 2em 0; }
   .models a {
     text-decoration: none;
-    color: #000; }
+    color: black; }
     .models a:hover {
       color: inherit; }
     .models a:visited {
@@ -373,7 +380,8 @@ main {
   color: #da3c41; }
 
 .create-model {
-  margin: auto 0; }
+  margin: 5vh 10vw;
+  width: 80vw; }
   .create-model .create-form {
     margin: auto 0;
     padding: 1vh; }
@@ -386,7 +394,8 @@ main {
 
 .model-detail {
   text-align: center;
-  margin: auto; }
+  margin: auto;
+  width: 90vw; }
   .model-detail table.detail {
     text-align: center;
     margin: auto;
@@ -410,10 +419,24 @@ main {
       text-align: center; }
 
 .button-set {
-  padding: 40;
-  text-align: right; }
-  .button-set form {
-    display: inline-block; }
+  margin: auto;
+  width: 80vw;
+  padding: 1vh 1vw;
+  text-align: center; }
+  .button-set .left {
+    display: inline-block;
+    text-align: left;
+    width: 35vw;
+    text-align: left; }
+    .button-set .left form {
+      display: inline-block; }
+  .button-set .right {
+    display: inline-block;
+    text-align: right;
+    width: 35vw;
+    text-align: right; }
+    .button-set .right form {
+      display: inline-block; }
 
 footer {
   background-color: #164029; }

@@ -13,11 +13,6 @@
                 </tr>
 
                 <tr>
-                    <td>{{ form.password.label }}</td>
-                    <td>{{ form.password }}</td>
-                </tr>
-
-                <tr>
                     <td>{{ form.title.label }}</td>
                     <td>{{ form.title }}</td>
                 </tr>
@@ -33,9 +28,16 @@
                 </tr>
             </table>
 
-            <input type="text" name="" value="">
+
+
             <div class="button-set">
-                <button type="submit" class="btn btn-primary" name="button" >Done</button>
+
+                {% if passcheck %}
+                    password is wrong!
+                {% endif %}
+                <input type="text" name="original-password" value="" placeholder="password">
+                <button type="submit" class="btn btn-primary" name="done" value="Done">Done</button>
+                <button type="submit" class="btn btn-danger" name="delete" value="Delete">Delete</button>
             </div>
 
         </form>

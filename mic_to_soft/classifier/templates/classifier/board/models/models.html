@@ -3,28 +3,44 @@
 {% block title %} models {% endblock %}
 
 {% block contents %}
-    <button type="button" class="btn btn-default btn-lg btn-block" onclick="location.href='{% url 'model_create' %}'">Create Model</button>
+    <div class="model-board">
+        <button type="button" class="btn btn-default btn-lg btn-block" onclick="location.href='{% url 'model_create' %}'">Create Model</button>
 
-    <div class="models">
-
-        {% for classifier in classifiers %}
-            <a href="{% url 'model_detail' pk=classifier.pk %}">
-                <div class="model">
-                    <!-- {{ classifier.pk }} -->
-                    <div class="model-title">
-                        {{ classifier.title }}
-                    </div>
-
-                    <div class="model-user">
-                        {{ classifier.userid }}
-                    </div>
-
-                    <div class="model-date">
-                        {{ classifier.created_date|date:"y/m/d H:i:s" }}
-                    </div>
+        <div class="models">
+            <div class="model">
+                <div class="model-title">
+                    TITLE
                 </div>
-            </a>
-        {% endfor %}
 
+                <div class="model-user">
+                    USERID
+                </div>
+
+                <div class="model-date">
+                    DATE　　　　　　
+                </div>
+            </div>
+
+            <br>
+
+            {% for classifier in classifiers %}
+                <a href="{% url 'model_detail' pk=classifier.pk %}">
+                    <div class="model">
+                        <div class="model-title">
+                            {{ classifier.title }}
+                        </div>
+
+                        <div class="model-user">
+                            {{ classifier.userid }}
+                        </div>
+
+                        <div class="model-date">
+                            {{ classifier.created_date|date:"y/m/d H:i:s" }}
+                        </div>
+                    </div>
+                </a>
+            {% endfor %}
+
+        </div>
     </div>
 {% endblock %}

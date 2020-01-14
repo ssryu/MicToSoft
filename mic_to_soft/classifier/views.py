@@ -8,6 +8,7 @@ from django.utils import timezone
 from .models import Classifier
 
 from .forms import ClassifierForm
+from .forms import ClassifierEditForm
 
 # for generate hash of models
 import hashlib
@@ -60,15 +61,33 @@ def model_detail(request, pk):
 
 def model_edit(request, pk):
     classifier = get_object_or_404(Classifier, pk=pk)
+    passcheck = False
+    print(classifier.password)
     if request.method == "POST":
-        form = ClassifierForm(request.POST, request.FILES, instance=classifier)
-        if form.is_valid():
-            classifier = form.save(commit=False)
-            classifier.modified_date = timezone.now()
-            classifier.save()
+        form = ClassifierEditForm(request.POST, request.FILES, instance=classifier)
+        print(request.POST)
 
-            return redirect('model_detail', pk=classifier.pk)
+        if request.POST['original-password'] == classifier.password:
+            # done selected
+            if request.POST.__contains__('done'):
+                if form.is_valid():
+                    classifier = form.save(commit=False)
+                    classifier.modified_date = timezone.now()
+                    classifier.save()
+                    return redirect('model_detail', pk=classifier.pk)
+            # delete selected
+            elif request.POST.__contains__('delete'):
+                Classifier.objects.filter(pk=pk).delete()
+                return redirect('models')
+        # password is wrong
+        else:
+            passcheck = True
+
     else:
-        form = ClassifierForm(instance=classifier)
+        form = ClassifierEditForm(instance=classifier)
 
-    return render(request, 'classifier/board/models/edit.html', {'form': form})
+    context = {
+        'form': form,
+        'passcheck':passcheck,
+    }
+    return render(request, 'classifier/board/models/edit.html', context)

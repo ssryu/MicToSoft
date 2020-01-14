@@ -42,7 +42,12 @@
         </table>
 
         <div class="button-set">
-            <button class="btn btn-primary" type=“button” onclick="location.href='{% url 'model_edit' pk=classifier.pk %}'">EDIT</button>
+            <div class="left">
+                <button class="btn btn-success" type=“button” onclick="location.href='{% url 'models'%}'">←MODELS</button>
+            </div>
+            <div class="right">
+                <button class="btn btn-primary" type=“button” onclick="location.href='{% url 'model_edit' pk=classifier.pk %}'">EDIT</button>
+            </div>
         </div>
 
     </div>
