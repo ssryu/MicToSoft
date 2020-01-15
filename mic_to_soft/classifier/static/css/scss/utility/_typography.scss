@@ -25,25 +25,26 @@ body{
 }
 
 
+
 @mixin header-title{
     font-size: 30px;
-    line-height: 40px;
-    font-weight: lighter;
     color: white;
+    font-weight: lighter;
+    text-align: left;
     @include tablet{
-        font-size: 45px;
-        line-height: 55px;
+        font-size: 50px;
+        text-align: center;
     }
     @include desktop{
-        font-size: 60px;
-        line-height: 70px;
+        font-size: 70px;
     }
 }
 
 
-@mixin header-text{
-    font-size: 28px;
+@mixin nav-text{
+    font-size: 25px;
     line-height: 40px;
-    font-weight: lighter;
     color: white;
+    font-weight: lighter;
+    text-decoration: none;
 }

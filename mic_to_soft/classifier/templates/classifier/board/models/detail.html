@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+
+{% block title %} detail {% endblock %}
+
+{% block contents %}
+    <div class="model-detail">
+        <table class="detail">
+            <tr>
+                <td>User ID</td>
+                <td>{{ classifier.userid }}</td>
+            </tr>
+            <tr>
+                <td>title</td>
+                <td>{{ classifier.title }}</td>
+            </tr>
+            <tr>
+                <td>description</td>
+                <td><p>{{ classifier.description|linebreaksbr }}</p></td>
+            </tr>
+            <tr>
+                <td>train_data</td>
+                <td>{{ classifier.train_data }}</td>
+            </tr>
+            <tr>
+                <td>acc_rate</td>
+                <td>{{ classifier.acc_rate }}</td>
+            </tr>
+            <tr>
+                <td>model_hash</td>
+                <td>{{ classifier.model_hash }}</td>
+            </tr>
+
+            <tr>
+                <td>created_date</td>
+                <td>{{ classifier.created_date|date:"y/m/d H:i:s" }}</td>
+            </tr>
+
+            <tr>
+                <td>modified_date</td>
+                <td>{{ classifier.modified_date|date:"y/m/d H:i:s" }}</td>
+            </tr>
+        </table>
+
+        <div class="button-set">
+            <div class="left">
+                <button class="btn btn-success" type=“button” onclick="location.href='{% url 'models'%}'">←MODELS</button>
+            </div>
+            <div class="right">
+                <button class="btn btn-primary" type=“button” onclick="location.href='{% url 'model_edit' pk=classifier.pk %}'">EDIT</button>
+            </div>
+        </div>
+
+    </div>
+{% endblock %}

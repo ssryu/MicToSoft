@@ -1,0 +1,1132 @@
+INFO 2020-01-02 14:21:13,711 autoreload 6057 4610153920 Watching for file changes with StatReloader
+INFO 2020-01-02 14:22:52,063 autoreload 6057 4610153920 /Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/classifier/urls.py changed, reloading.
+INFO 2020-01-02 14:22:52,440 autoreload 6091 4594466240 Watching for file changes with StatReloader
+INFO 2020-01-02 14:23:00,159 autoreload 6091 4594466240 /Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/classifier/urls.py changed, reloading.
+INFO 2020-01-02 14:23:00,506 autoreload 6095 4618206656 Watching for file changes with StatReloader
+INFO 2020-01-02 14:23:12,531 autoreload 6095 4618206656 /Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/classifier/urls.py changed, reloading.
+INFO 2020-01-02 14:23:12,915 autoreload 6099 4516642240 Watching for file changes with StatReloader
+INFO 2020-01-02 14:25:58,702 autoreload 6099 4516642240 /Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/classifier/views.py changed, reloading.
+INFO 2020-01-02 14:25:59,081 autoreload 6133 4652862912 Watching for file changes with StatReloader
+INFO 2020-01-02 14:26:38,435 autoreload 6133 4652862912 /Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/classifier/views.py changed, reloading.
+INFO 2020-01-02 14:26:38,793 autoreload 6140 4735839680 Watching for file changes with StatReloader
+INFO 2020-01-02 14:34:24,222 autoreload 6140 4735839680 /Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/classifier/urls.py changed, reloading.
+INFO 2020-01-02 14:34:24,596 autoreload 6191 4591623616 Watching for file changes with StatReloader
+INFO 2020-01-02 14:34:50,816 autoreload 6191 4591623616 /Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/classifier/urls.py changed, reloading.
+INFO 2020-01-02 14:34:51,174 autoreload 6195 4612361664 Watching for file changes with StatReloader
+INFO 2020-01-02 14:34:54,561 autoreload 6195 4612361664 /Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/classifier/urls.py changed, reloading.
+INFO 2020-01-02 14:34:54,965 autoreload 6200 4497198528 Watching for file changes with StatReloader
+INFO 2020-01-02 14:35:44,992 autoreload 6200 4497198528 /Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/classifier/views.py changed, reloading.
+INFO 2020-01-02 14:35:45,361 autoreload 6204 4715036096 Watching for file changes with StatReloader
+INFO 2020-01-02 14:36:08,274 autoreload 6204 4715036096 /Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/classifier/views.py changed, reloading.
+INFO 2020-01-02 14:36:08,639 autoreload 6222 4612124096 Watching for file changes with StatReloader
+INFO 2020-01-02 14:36:29,412 autoreload 6222 4612124096 /Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/classifier/views.py changed, reloading.
+INFO 2020-01-02 14:36:29,782 autoreload 6227 4454424000 Watching for file changes with StatReloader
+INFO 2020-01-02 14:37:00,461 autoreload 6233 4388093376 Watching for file changes with StatReloader
+INFO 2020-01-02 14:37:12,579 autoreload 6233 4388093376 /Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/classifier/urls.py changed, reloading.
+INFO 2020-01-02 14:37:12,925 autoreload 6236 4603387328 Watching for file changes with StatReloader
+WARNING 2020-01-02 14:37:14,280 log 6236 123145429803008 Not Found: /board/1
+WARNING 2020-01-02 14:37:14,281 basehttp 6236 123145429803008 "GET /board/1 HTTP/1.1" 404 2959
+WARNING 2020-01-02 14:37:35,712 log 6236 123145429803008 Not Found: /board/1
+WARNING 2020-01-02 14:37:35,712 basehttp 6236 123145429803008 "GET /board/1 HTTP/1.1" 404 2959
+WARNING 2020-01-02 14:38:00,902 log 6236 123145429803008 Not Found: /board/1
+WARNING 2020-01-02 14:38:00,903 basehttp 6236 123145429803008 "GET /board/1 HTTP/1.1" 404 2959
+INFO 2020-01-02 14:38:32,477 autoreload 6236 4603387328 /Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/classifier/urls.py changed, reloading.
+INFO 2020-01-02 14:38:32,831 autoreload 6250 4685958592 Watching for file changes with StatReloader
+WARNING 2020-01-02 14:38:51,297 log 6250 123145528287232 Not Found: /board/1
+WARNING 2020-01-02 14:38:51,298 basehttp 6250 123145528287232 "GET /board/1 HTTP/1.1" 404 2959
+WARNING 2020-01-02 14:40:36,248 log 6250 123145528287232 Not Found: /board/1
+WARNING 2020-01-02 14:40:36,248 basehttp 6250 123145528287232 "GET /board/1 HTTP/1.1" 404 2959
+WARNING 2020-01-02 14:40:36,271 log 6250 123145533542400 Not Found: /apple-touch-icon-precomposed.png
+WARNING 2020-01-02 14:40:36,271 basehttp 6250 123145533542400 "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 3034
+WARNING 2020-01-02 14:40:36,276 log 6250 123145533542400 Not Found: /apple-touch-icon.png
+WARNING 2020-01-02 14:40:36,277 basehttp 6250 123145533542400 "GET /apple-touch-icon.png HTTP/1.1" 404 2998
+WARNING 2020-01-02 14:41:31,663 log 6250 123145528287232 Not Found: /board/1
+WARNING 2020-01-02 14:41:31,664 basehttp 6250 123145528287232 "GET /board/1 HTTP/1.1" 404 2959
+WARNING 2020-01-02 14:42:05,479 log 6250 123145528287232 Not Found: /board/1
+WARNING 2020-01-02 14:42:05,479 basehttp 6250 123145528287232 "GET /board/1 HTTP/1.1" 404 2959
+WARNING 2020-01-02 14:42:06,406 log 6250 123145528287232 Not Found: /board/1
+WARNING 2020-01-02 14:42:06,406 basehttp 6250 123145528287232 "GET /board/1 HTTP/1.1" 404 2959
+WARNING 2020-01-02 14:42:06,612 log 6250 123145528287232 Not Found: /board/1
+WARNING 2020-01-02 14:42:06,612 basehttp 6250 123145528287232 "GET /board/1 HTTP/1.1" 404 2959
+WARNING 2020-01-02 14:42:06,808 log 6250 123145528287232 Not Found: /board/1
+WARNING 2020-01-02 14:42:06,809 basehttp 6250 123145528287232 "GET /board/1 HTTP/1.1" 404 2959
+WARNING 2020-01-02 14:42:18,315 log 6250 123145528287232 Not Found: /board/
+WARNING 2020-01-02 14:42:18,315 basehttp 6250 123145528287232 "GET /board/ HTTP/1.1" 404 2956
+INFO 2020-01-02 14:42:25,794 basehttp 6250 123145528287232 "GET /board/models HTTP/1.1" 301 0
+ERROR 2020-01-02 14:42:25,977 log 6250 123145528287232 Internal Server Error: /board/models/
+Traceback (most recent call last):
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/classifier/views.py", line 51, in models
+    return render(request, 'classifier/board/models/models.html', {'classifiers' : classifiers})
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/template/defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/urls/base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/urls/resolvers.py", line 673, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'signup' not found. 'signup' is not a valid view function or pattern name.
+ERROR 2020-01-02 14:42:25,979 basehttp 6250 123145528287232 "GET /board/models/ HTTP/1.1" 500 140033
+WARNING 2020-01-02 14:42:26,116 log 6250 123145533542400 Not Found: /favicon.ico
+WARNING 2020-01-02 14:42:26,117 basehttp 6250 123145533542400 "GET /favicon.ico HTTP/1.1" 404 2971
+ERROR 2020-01-02 14:42:31,362 log 6250 123145528287232 Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/classifier/views.py", line 31, in index
+    return render(request, 'classifier/index.html', context)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/template/defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/urls/base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/urls/resolvers.py", line 673, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'signup' not found. 'signup' is not a valid view function or pattern name.
+ERROR 2020-01-02 14:42:31,364 basehttp 6250 123145528287232 "GET / HTTP/1.1" 500 135767
+ERROR 2020-01-02 14:42:33,404 log 6250 123145528287232 Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/classifier/views.py", line 31, in index
+    return render(request, 'classifier/index.html', context)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/template/defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/urls/base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/urls/resolvers.py", line 673, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'signup' not found. 'signup' is not a valid view function or pattern name.
+ERROR 2020-01-02 14:42:33,406 basehttp 6250 123145528287232 "GET / HTTP/1.1" 500 135767
+ERROR 2020-01-02 14:43:38,113 log 6250 123145528287232 Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/classifier/views.py", line 31, in index
+    return render(request, 'classifier/index.html', context)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/template/defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/urls/base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/urls/resolvers.py", line 673, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'signin' not found. 'signin' is not a valid view function or pattern name.
+ERROR 2020-01-02 14:43:38,114 basehttp 6250 123145528287232 "GET / HTTP/1.1" 500 134552
+ERROR 2020-01-02 14:43:41,247 log 6250 123145528287232 Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/classifier/views.py", line 31, in index
+    return render(request, 'classifier/index.html', context)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/template/defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/urls/base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/urls/resolvers.py", line 673, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'signin' not found. 'signin' is not a valid view function or pattern name.
+ERROR 2020-01-02 14:43:41,249 basehttp 6250 123145528287232 "GET / HTTP/1.1" 500 134552
+INFO 2020-01-02 14:43:53,975 basehttp 6250 123145528287232 "GET / HTTP/1.1" 200 2280
+INFO 2020-01-02 14:43:53,988 basehttp 6250 123145528287232 "GET /static/css/style.css HTTP/1.1" 200 4834
+ERROR 2020-01-02 14:43:56,437 log 6250 123145528287232 Internal Server Error: /board/models/
+Traceback (most recent call last):
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/classifier/views.py", line 51, in models
+    return render(request, 'classifier/board/models/models.html', {'classifiers' : classifiers})
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/template/defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/urls/base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/urls/resolvers.py", line 673, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'createmodel' not found. 'createmodel' is not a valid view function or pattern name.
+ERROR 2020-01-02 14:43:56,438 basehttp 6250 123145528287232 "GET /board/models/ HTTP/1.1" 500 153933
+INFO 2020-01-02 14:44:45,565 basehttp 6250 123145528287232 "GET /board/models/ HTTP/1.1" 200 4460
+ERROR 2020-01-02 14:44:47,293 log 6250 123145528287232 Internal Server Error: /board/models/create
+Traceback (most recent call last):
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/classifier/views.py", line 65, in create
+    return render(request, 'classifier/board/models/create.html', {'form' : form})
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: classifier/board/models/create.html
+ERROR 2020-01-02 14:44:47,294 basehttp 6250 123145528287232 "GET /board/models/create HTTP/1.1" 500 79950
+WARNING 2020-01-02 14:44:47,351 log 6250 123145533542400 Not Found: /favicon.ico
+WARNING 2020-01-02 14:44:47,351 basehttp 6250 123145533542400 "GET /favicon.ico HTTP/1.1" 404 2971
+INFO 2020-01-02 14:54:34,923 autoreload 6461 4546428352 Watching for file changes with StatReloader
+ERROR 2020-01-02 14:55:41,262 log 6461 123145318158336 Internal Server Error: /board/models/create
+Traceback (most recent call last):
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/classifier/views.py", line 65, in create
+    return render(request, 'classifier/board/models/create.html', {'form' : form})
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: classifier/board/models/create.html
+ERROR 2020-01-02 14:55:41,263 basehttp 6461 123145318158336 "GET /board/models/create HTTP/1.1" 500 79950
+ERROR 2020-01-02 14:55:42,011 log 6461 123145318158336 Internal Server Error: /board/models/create
+Traceback (most recent call last):
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/classifier/views.py", line 65, in create
+    return render(request, 'classifier/board/models/create.html', {'form' : form})
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: classifier/board/models/create.html
+ERROR 2020-01-02 14:55:42,012 basehttp 6461 123145318158336 "GET /board/models/create HTTP/1.1" 500 79950
+ERROR 2020-01-02 14:55:42,427 log 6461 123145318158336 Internal Server Error: /board/models/create
+Traceback (most recent call last):
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/classifier/views.py", line 65, in create
+    return render(request, 'classifier/board/models/create.html', {'form' : form})
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/myvenv/lib/python3.7/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: classifier/board/models/create.html
+ERROR 2020-01-02 14:55:42,428 basehttp 6461 123145318158336 "GET /board/models/create HTTP/1.1" 500 79950
+INFO 2020-01-02 14:59:33,133 basehttp 6461 123145318158336 "GET /board/models/create HTTP/1.1" 200 1949
+INFO 2020-01-02 14:59:36,533 basehttp 6461 123145318158336 "GET /board/models/ HTTP/1.1" 200 4460
+INFO 2020-01-02 14:59:37,750 basehttp 6461 123145318158336 "GET /board/models/1 HTTP/1.1" 200 1483
+WARNING 2020-01-02 14:59:37,937 log 6461 123145323413504 Not Found: /favicon.ico
+WARNING 2020-01-02 14:59:37,937 basehttp 6461 123145323413504 "GET /favicon.ico HTTP/1.1" 404 2971
+INFO 2020-01-02 14:59:39,287 basehttp 6461 123145318158336 "GET /board/models/ HTTP/1.1" 200 4460
+INFO 2020-01-02 14:59:40,630 basehttp 6461 123145318158336 "GET /board/models/create HTTP/1.1" 200 1949
+INFO 2020-01-02 14:59:41,416 basehttp 6461 123145318158336 "GET / HTTP/1.1" 200 2280
+INFO 2020-01-02 14:59:47,284 basehttp 6461 123145318158336 "GET / HTTP/1.1" 200 2280
+INFO 2020-01-02 14:59:51,421 basehttp 6461 123145318158336 "GET /board/models/ HTTP/1.1" 200 4460
+INFO 2020-01-02 14:59:54,249 basehttp 6461 123145318158336 "GET / HTTP/1.1" 200 2280
+INFO 2020-01-02 14:59:57,233 basehttp 6461 123145318158336 "GET /board/models/ HTTP/1.1" 200 4460
+INFO 2020-01-02 14:59:58,347 basehttp 6461 123145318158336 "GET / HTTP/1.1" 200 2280
+INFO 2020-01-02 15:00:00,718 basehttp 6461 123145318158336 "GET /board/models/ HTTP/1.1" 200 4460
+INFO 2020-01-02 15:00:01,637 basehttp 6461 123145318158336 "GET / HTTP/1.1" 200 2280
+INFO 2020-01-02 15:00:05,155 basehttp 6461 123145318158336 "GET /board/models/ HTTP/1.1" 200 4460
+INFO 2020-01-02 15:00:13,384 basehttp 6461 123145318158336 "GET /board/models/2 HTTP/1.1" 200 1481
+WARNING 2020-01-02 15:00:13,571 log 6461 123145323413504 Not Found: /favicon.ico
+WARNING 2020-01-02 15:00:13,572 basehttp 6461 123145323413504 "GET /favicon.ico HTTP/1.1" 404 2971
+INFO 2020-01-02 15:00:15,371 basehttp 6461 123145318158336 "GET /board/models/1 HTTP/1.1" 200 1483
+INFO 2020-01-02 15:00:17,698 basehttp 6461 123145318158336 "GET /board/models/3 HTTP/1.1" 200 1518
+WARNING 2020-01-02 15:00:18,026 log 6461 123145323413504 Not Found: /favicon.ico
+WARNING 2020-01-02 15:00:18,027 basehttp 6461 123145323413504 "GET /favicon.ico HTTP/1.1" 404 2971
+INFO 2020-01-02 15:00:20,711 basehttp 6461 123145318158336 "GET /board/models/4 HTTP/1.1" 200 1509
+WARNING 2020-01-02 15:00:20,945 log 6461 123145323413504 Not Found: /favicon.ico
+WARNING 2020-01-02 15:00:20,945 basehttp 6461 123145323413504 "GET /favicon.ico HTTP/1.1" 404 2971
+INFO 2020-01-02 15:00:46,628 autoreload 6461 4546428352 /Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/classifier/views.py changed, reloading.
+INFO 2020-01-02 15:00:47,023 autoreload 6511 4516695488 Watching for file changes with StatReloader
+INFO 2020-01-02 15:01:31,912 autoreload 6511 4516695488 /Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/classifier/views.py changed, reloading.
+INFO 2020-01-02 15:01:32,307 autoreload 6519 4485311936 Watching for file changes with StatReloader
+INFO 2020-01-02 15:01:33,059 basehttp 6519 123145471291392 "GET /board/models/2 HTTP/1.1" 200 1481
+INFO 2020-01-02 15:01:34,322 basehttp 6519 123145471291392 "GET /board/models/2 HTTP/1.1" 200 1481
+INFO 2020-01-02 15:01:38,249 basehttp 6519 123145471291392 "GET /board/models/2 HTTP/1.1" 200 1481
+INFO 2020-01-02 15:01:39,837 basehttp 6519 123145471291392 "GET / HTTP/1.1" 200 2280
+INFO 2020-01-02 15:01:41,203 basehttp 6519 123145471291392 "GET /board/models/ HTTP/1.1" 200 4460
+INFO 2020-01-02 15:01:42,997 basehttp 6519 123145471291392 "GET /board/models/12 HTTP/1.1" 200 1516
+WARNING 2020-01-02 15:01:43,176 log 6519 123145476546560 Not Found: /favicon.ico
+WARNING 2020-01-02 15:01:43,177 basehttp 6519 123145476546560 "GET /favicon.ico HTTP/1.1" 404 2971
+INFO 2020-01-02 15:01:44,979 basehttp 6519 123145471291392 "GET /board/models/ HTTP/1.1" 200 4460
+INFO 2020-01-02 15:01:46,181 basehttp 6519 123145471291392 "GET /board/models/create HTTP/1.1" 200 1949
+INFO 2020-01-02 15:01:57,964 basehttp 6519 123145471291392 "POST /board/models/create HTTP/1.1" 302 0
+INFO 2020-01-02 15:01:58,093 basehttp 6519 123145471291392 "GET /board/models/17 HTTP/1.1" 200 1552
+WARNING 2020-01-02 15:01:58,314 log 6519 123145476546560 Not Found: /favicon.ico
+WARNING 2020-01-02 15:01:58,314 basehttp 6519 123145476546560 "GET /favicon.ico HTTP/1.1" 404 2971
+INFO 2020-01-02 15:02:05,310 basehttp 6519 123145471291392 "GET /board/models/ HTTP/1.1" 200 4663
+INFO 2020-01-02 17:59:00,265 autoreload 6519 4485311936 /Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/classifier/views.py changed, reloading.
+INFO 2020-01-02 17:59:00,666 autoreload 6748 4509920704 Watching for file changes with StatReloader
+INFO 2020-01-02 17:59:24,758 autoreload 6748 4509920704 /Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/classifier/urls.py changed, reloading.
+INFO 2020-01-02 17:59:25,118 autoreload 6754 4716064192 Watching for file changes with StatReloader
+INFO 2020-01-02 18:04:40,471 autoreload 6754 4716064192 /Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/classifier/urls.py changed, reloading.
+INFO 2020-01-02 18:04:40,813 autoreload 6791 4583599552 Watching for file changes with StatReloader
+INFO 2020-01-02 18:07:34,435 autoreload 6791 4583599552 /Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/classifier/views.py changed, reloading.
+INFO 2020-01-02 18:07:34,788 autoreload 6797 4555320768 Watching for file changes with StatReloader
+INFO 2020-01-02 18:07:40,372 autoreload 6797 4555320768 /Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/classifier/views.py changed, reloading.
+INFO 2020-01-02 18:07:40,759 autoreload 6801 4719578560 Watching for file changes with StatReloader
+INFO 2020-01-02 18:07:53,897 autoreload 6801 4719578560 /Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/classifier/views.py changed, reloading.
+INFO 2020-01-02 18:07:54,248 autoreload 6806 4683857344 Watching for file changes with StatReloader
+INFO 2020-01-02 18:11:18,806 autoreload 6806 4683857344 /Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/classifier/urls.py changed, reloading.
+INFO 2020-01-02 18:11:19,252 autoreload 6822 4778974656 Watching for file changes with StatReloader
+INFO 2020-01-02 18:11:21,470 basehttp 6822 123145364815872 "GET /board/models/ HTTP/1.1" 200 5250
+INFO 2020-01-02 18:11:24,560 basehttp 6822 123145364815872 "GET /board/models/1 HTTP/1.1" 200 1483
+INFO 2020-01-02 18:11:37,722 basehttp 6822 123145364815872 "GET /board/models/1 HTTP/1.1" 200 1483
+INFO 2020-01-02 18:11:38,034 basehttp 6822 123145364815872 "GET /board/models/ HTTP/1.1" 200 5471
+INFO 2020-01-02 19:12:16,634 basehttp 6822 123145364815872 "GET / HTTP/1.1" 200 2280
+INFO 2020-01-02 19:12:17,787 basehttp 6822 123145364815872 "GET /board/models/ HTTP/1.1" 200 5471
+INFO 2020-01-02 19:12:18,807 basehttp 6822 123145364815872 "GET /board/models/1 HTTP/1.1" 200 1483
+INFO 2020-01-02 19:12:20,436 basehttp 6822 123145364815872 "GET / HTTP/1.1" 200 2280
+INFO 2020-01-02 19:12:21,586 basehttp 6822 123145364815872 "GET /board/models/ HTTP/1.1" 200 5471
+INFO 2020-01-08 02:43:15,896 autoreload 12071 4464156096 Watching for file changes with StatReloader
+INFO 2020-01-08 02:43:23,325 basehttp 12071 123145485983744 "GET / HTTP/1.1" 200 2280
+INFO 2020-01-08 02:43:23,335 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 200 4968
+WARNING 2020-01-08 02:43:24,185 log 12071 123145491238912 Not Found: /favicon.ico
+WARNING 2020-01-08 02:43:24,186 basehttp 12071 123145491238912 "GET /favicon.ico HTTP/1.1" 404 2983
+WARNING 2020-01-08 02:43:24,282 log 12071 123145496494080 Not Found: /apple-touch-icon-precomposed.png
+WARNING 2020-01-08 02:43:24,283 basehttp 12071 123145496494080 "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 3046
+WARNING 2020-01-08 02:43:24,296 log 12071 123145496494080 Not Found: /apple-touch-icon.png
+WARNING 2020-01-08 02:43:24,297 basehttp 12071 123145496494080 "GET /apple-touch-icon.png HTTP/1.1" 404 3010
+INFO 2020-01-08 02:43:38,168 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 5471
+INFO 2020-01-08 02:43:38,189 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 02:44:07,851 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 4885
+INFO 2020-01-08 02:44:07,859 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 03:33:16,056 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 4885
+INFO 2020-01-08 03:33:16,063 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 200 4981
+INFO 2020-01-08 03:33:16,735 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 4885
+INFO 2020-01-08 03:33:16,745 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 03:33:17,521 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 4885
+INFO 2020-01-08 03:33:17,527 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 03:34:50,998 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 6842
+INFO 2020-01-08 03:34:51,007 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 03:35:59,335 basehttp 12071 123145485983744 "GET /board/models/2 HTTP/1.1" 200 1481
+INFO 2020-01-08 03:35:59,348 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 200 5256
+INFO 2020-01-08 03:35:59,771 basehttp 12071 123145485983744 "GET /board/models/2 HTTP/1.1" 200 1481
+INFO 2020-01-08 03:35:59,777 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 03:36:01,979 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 6842
+INFO 2020-01-08 03:36:01,995 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 03:36:02,967 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 6842
+INFO 2020-01-08 03:36:02,977 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 03:36:03,529 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 6842
+INFO 2020-01-08 03:36:03,539 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 03:36:04,126 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 6842
+INFO 2020-01-08 03:36:04,133 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 03:36:04,323 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 6842
+INFO 2020-01-08 03:36:04,480 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 6842
+INFO 2020-01-08 03:36:13,181 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 6842
+INFO 2020-01-08 03:36:13,190 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 03:56:44,393 basehttp 12071 123145485983744 "GET /board/models/3 HTTP/1.1" 200 1518
+INFO 2020-01-08 03:56:44,411 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 200 5256
+INFO 2020-01-08 03:56:45,048 basehttp 12071 123145485983744 "GET /board/models/3 HTTP/1.1" 200 1518
+INFO 2020-01-08 03:56:46,601 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 6842
+INFO 2020-01-08 03:56:47,282 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 6842
+INFO 2020-01-08 03:56:47,292 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 03:56:47,579 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 6842
+INFO 2020-01-08 03:56:47,752 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 6842
+INFO 2020-01-08 03:56:47,928 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 6842
+INFO 2020-01-08 03:56:48,214 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 6842
+INFO 2020-01-08 03:57:02,687 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 6842
+INFO 2020-01-08 03:57:02,695 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 200 5275
+INFO 2020-01-08 03:57:03,282 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 6842
+INFO 2020-01-08 03:57:03,291 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 03:57:03,478 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 6842
+INFO 2020-01-08 03:57:03,490 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 03:57:03,633 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 6842
+INFO 2020-01-08 03:57:03,641 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 03:57:04,486 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 6842
+INFO 2020-01-08 03:57:04,494 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 03:57:04,879 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 6842
+INFO 2020-01-08 03:57:04,886 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 03:57:05,837 basehttp 12071 123145485983744 "GET /board/models/1 HTTP/1.1" 200 1483
+INFO 2020-01-08 03:57:05,852 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 03:57:08,674 basehttp 12071 123145485983744 "GET /board/models/1 HTTP/1.1" 200 1483
+INFO 2020-01-08 03:57:08,688 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 03:57:32,411 basehttp 12071 123145491238912 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 03:57:32,424 basehttp 12071 123145485983744 "GET / HTTP/1.1" 200 2280
+INFO 2020-01-08 03:57:38,412 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 6842
+INFO 2020-01-08 03:57:38,428 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 03:57:39,764 basehttp 12071 123145485983744 "GET /board/models/1 HTTP/1.1" 200 1483
+INFO 2020-01-08 03:59:14,924 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 6842
+INFO 2020-01-08 03:59:14,932 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 200 5293
+INFO 2020-01-08 03:59:15,610 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 6842
+INFO 2020-01-08 03:59:15,619 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 03:59:16,413 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 6842
+INFO 2020-01-08 03:59:16,425 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 03:59:17,241 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 6842
+INFO 2020-01-08 03:59:17,248 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 03:59:17,605 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 6842
+INFO 2020-01-08 03:59:17,612 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 04:00:23,839 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9239
+INFO 2020-01-08 04:00:23,847 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 04:00:40,423 basehttp 12071 123145485983744 "GET /board/models/2 HTTP/1.1" 200 1481
+INFO 2020-01-08 04:00:40,434 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 200 5560
+INFO 2020-01-08 04:00:43,205 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9239
+INFO 2020-01-08 04:00:43,221 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 04:02:04,862 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9239
+INFO 2020-01-08 04:02:04,873 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 200 5548
+INFO 2020-01-08 04:02:05,647 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9239
+INFO 2020-01-08 04:02:05,654 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 04:02:06,050 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9239
+INFO 2020-01-08 04:02:06,059 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 04:02:13,425 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9664
+INFO 2020-01-08 04:02:13,436 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 04:02:15,522 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9664
+INFO 2020-01-08 04:02:15,531 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 04:02:43,891 basehttp 12071 123145485983744 "GET /board/models/1 HTTP/1.1" 200 1483
+INFO 2020-01-08 04:02:43,910 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 04:02:44,491 basehttp 12071 123145485983744 "GET /board/models/1 HTTP/1.1" 200 1483
+INFO 2020-01-08 04:02:45,287 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 10361
+INFO 2020-01-08 04:02:45,818 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 10361
+INFO 2020-01-08 04:02:46,255 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 10361
+INFO 2020-01-08 04:04:38,836 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9664
+INFO 2020-01-08 04:04:38,844 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 200 5570
+INFO 2020-01-08 04:04:39,377 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9664
+INFO 2020-01-08 04:04:39,384 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 04:04:40,019 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9664
+INFO 2020-01-08 04:04:40,026 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 04:04:40,266 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9664
+INFO 2020-01-08 04:04:40,435 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9664
+INFO 2020-01-08 04:04:40,442 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 04:04:41,199 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9664
+INFO 2020-01-08 04:04:41,210 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 04:04:41,428 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9664
+INFO 2020-01-08 04:04:41,437 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 04:04:41,604 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9664
+INFO 2020-01-08 04:04:41,611 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 04:04:41,735 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9664
+INFO 2020-01-08 04:04:41,741 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 04:04:41,879 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9664
+INFO 2020-01-08 04:04:41,887 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 04:04:42,080 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9664
+INFO 2020-01-08 04:04:42,087 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 04:04:45,029 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9664
+INFO 2020-01-08 04:04:45,035 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 04:04:45,201 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9664
+INFO 2020-01-08 04:04:45,342 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9664
+INFO 2020-01-08 04:04:45,494 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9664
+INFO 2020-01-08 04:04:46,782 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9664
+INFO 2020-01-08 04:04:46,791 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 04:05:06,286 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9970
+INFO 2020-01-08 04:05:06,294 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 04:05:06,866 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9970
+INFO 2020-01-08 04:05:25,751 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9970
+INFO 2020-01-08 04:05:25,761 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 200 5562
+INFO 2020-01-08 04:05:26,497 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9970
+INFO 2020-01-08 04:05:26,503 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 04:05:27,609 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9970
+INFO 2020-01-08 04:05:27,616 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 04:06:09,771 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9749
+INFO 2020-01-08 04:06:09,779 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 04:07:35,399 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9341
+INFO 2020-01-08 04:07:35,409 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 04:07:36,248 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9341
+INFO 2020-01-08 04:08:12,051 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9341
+INFO 2020-01-08 04:08:12,063 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 200 5503
+INFO 2020-01-08 04:08:12,955 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9341
+INFO 2020-01-08 04:08:12,964 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 04:08:13,692 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9341
+INFO 2020-01-08 04:08:13,702 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 04:08:13,956 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9341
+INFO 2020-01-08 04:08:13,963 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 04:26:42,507 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9341
+INFO 2020-01-08 04:26:42,515 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 04:26:43,252 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9341
+INFO 2020-01-08 04:27:43,495 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9120
+INFO 2020-01-08 04:27:44,207 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9120
+INFO 2020-01-08 04:28:01,460 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9120
+INFO 2020-01-08 04:28:02,084 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9120
+INFO 2020-01-08 04:28:02,723 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9120
+INFO 2020-01-08 04:28:03,907 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9120
+INFO 2020-01-08 04:28:04,160 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9120
+INFO 2020-01-08 04:28:04,371 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9120
+INFO 2020-01-08 04:28:05,051 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9120
+INFO 2020-01-08 04:28:05,285 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9120
+INFO 2020-01-08 04:28:05,466 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9120
+INFO 2020-01-08 04:28:05,623 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9120
+INFO 2020-01-08 04:28:05,752 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9120
+INFO 2020-01-08 04:28:05,908 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9120
+INFO 2020-01-08 04:28:25,440 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 8898
+INFO 2020-01-08 04:28:43,989 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9545
+INFO 2020-01-08 04:28:43,998 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 200 5492
+INFO 2020-01-08 04:51:49,468 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 10191
+INFO 2020-01-08 04:51:49,480 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 200 5492
+INFO 2020-01-08 04:51:50,184 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 10191
+INFO 2020-01-08 04:51:50,194 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 04:52:06,883 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 6451
+INFO 2020-01-08 04:52:06,892 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 200 5205
+INFO 2020-01-08 04:53:08,930 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 6451
+INFO 2020-01-08 04:53:08,938 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 04:53:20,090 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 7624
+INFO 2020-01-08 04:53:20,099 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 200 5394
+INFO 2020-01-08 04:53:48,236 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 7624
+INFO 2020-01-08 04:53:48,248 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 200 5347
+INFO 2020-01-08 04:54:20,691 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 7726
+INFO 2020-01-08 04:54:20,698 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 04:54:26,683 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 7777
+INFO 2020-01-08 04:54:26,690 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 04:54:36,756 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 7624
+INFO 2020-01-08 04:54:36,764 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 04:55:39,905 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 8661
+INFO 2020-01-08 04:55:39,913 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 200 5465
+INFO 2020-01-08 04:55:56,525 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 8661
+INFO 2020-01-08 04:55:56,535 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 200 5457
+INFO 2020-01-08 04:56:09,931 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 8661
+INFO 2020-01-08 04:56:09,939 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 200 5440
+INFO 2020-01-08 04:56:29,032 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 8355
+INFO 2020-01-08 04:56:29,042 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 04:59:31,211 basehttp 12071 123145485983744 "GET /board/models/2 HTTP/1.1" 200 1481
+INFO 2020-01-08 04:59:31,230 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 200 5525
+INFO 2020-01-08 04:59:31,949 basehttp 12071 123145485983744 "GET /board/models/2 HTTP/1.1" 200 1481
+INFO 2020-01-08 04:59:31,961 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 04:59:32,808 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 8355
+INFO 2020-01-08 04:59:32,825 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 04:59:34,087 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 8355
+INFO 2020-01-08 04:59:34,094 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 04:59:36,477 basehttp 12071 123145485983744 "GET /board/models/1 HTTP/1.1" 200 1483
+INFO 2020-01-08 04:59:36,496 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 04:59:44,599 basehttp 12071 123145485983744 "GET /board/models/1 HTTP/1.1" 200 1483
+INFO 2020-01-08 04:59:44,614 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 05:00:37,162 basehttp 12071 123145485983744 "GET /board/models/2 HTTP/1.1" 200 1481
+INFO 2020-01-08 05:00:37,174 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 05:00:37,908 basehttp 12071 123145485983744 "GET /board/models/2 HTTP/1.1" 200 1481
+INFO 2020-01-08 05:00:40,402 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 8355
+INFO 2020-01-08 05:00:40,898 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 8355
+INFO 2020-01-08 05:00:41,632 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 8355
+INFO 2020-01-08 05:00:45,252 basehttp 12071 123145485983744 "GET /board/models/1 HTTP/1.1" 200 1483
+INFO 2020-01-08 05:00:45,268 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 200 5547
+INFO 2020-01-08 05:00:48,628 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 8355
+INFO 2020-01-08 05:00:48,635 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 05:00:49,282 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 8355
+INFO 2020-01-08 05:00:49,288 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 05:00:49,698 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 8355
+INFO 2020-01-08 05:00:49,705 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 05:00:50,008 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 8355
+INFO 2020-01-08 05:00:50,017 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 05:00:50,349 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 8355
+INFO 2020-01-08 05:00:51,659 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 8355
+INFO 2020-01-08 05:00:51,669 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 05:00:57,637 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 8355
+INFO 2020-01-08 05:00:57,644 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 200 5547
+INFO 2020-01-08 05:00:58,292 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 8355
+INFO 2020-01-08 05:00:58,298 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 05:01:37,868 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 8355
+INFO 2020-01-08 05:01:37,878 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 200 5570
+INFO 2020-01-08 05:01:53,601 basehttp 12071 123145485983744 "GET /board/models/5 HTTP/1.1" 200 1516
+INFO 2020-01-08 05:01:53,617 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+WARNING 2020-01-08 05:01:53,870 log 12071 123145491238912 Not Found: /favicon.ico
+WARNING 2020-01-08 05:01:53,871 basehttp 12071 123145491238912 "GET /favicon.ico HTTP/1.1" 404 2983
+INFO 2020-01-08 05:02:03,422 basehttp 12071 123145485983744 "GET /board/models/6 HTTP/1.1" 200 1516
+INFO 2020-01-08 05:02:03,438 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+WARNING 2020-01-08 05:02:03,596 log 12071 123145491238912 Not Found: /favicon.ico
+WARNING 2020-01-08 05:02:03,597 basehttp 12071 123145491238912 "GET /favicon.ico HTTP/1.1" 404 2983
+INFO 2020-01-08 05:02:10,905 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 8355
+INFO 2020-01-08 05:02:10,913 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 05:02:11,910 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 8355
+INFO 2020-01-08 06:27:55,475 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9103
+INFO 2020-01-08 06:27:55,484 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 06:27:57,339 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9103
+INFO 2020-01-08 06:28:16,927 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2023
+INFO 2020-01-08 06:33:55,593 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 1955
+INFO 2020-01-08 06:33:58,786 basehttp 12071 123145485983744 "GET / HTTP/1.1" 200 2280
+INFO 2020-01-08 06:33:59,515 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9193
+INFO 2020-01-08 06:34:02,591 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 1955
+INFO 2020-01-08 06:34:30,042 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 1955
+INFO 2020-01-08 06:34:30,838 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9188
+INFO 2020-01-08 06:34:31,559 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9188
+INFO 2020-01-08 06:34:38,033 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9187
+INFO 2020-01-08 06:34:46,376 basehttp 12071 123145485983744 "GET /board/models/14 HTTP/1.1" 200 1521
+WARNING 2020-01-08 06:34:46,584 log 12071 123145491238912 Not Found: /favicon.ico
+WARNING 2020-01-08 06:34:46,585 basehttp 12071 123145491238912 "GET /favicon.ico HTTP/1.1" 404 2983
+INFO 2020-01-08 06:35:01,678 basehttp 12071 123145485983744 "GET /board/models/11 HTTP/1.1" 200 1516
+WARNING 2020-01-08 06:35:01,937 log 12071 123145491238912 Not Found: /favicon.ico
+WARNING 2020-01-08 06:35:01,938 basehttp 12071 123145491238912 "GET /favicon.ico HTTP/1.1" 404 2983
+INFO 2020-01-08 06:36:33,734 basehttp 12071 123145485983744 "GET /board/models/1 HTTP/1.1" 200 1483
+INFO 2020-01-08 06:36:33,753 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 200 5570
+INFO 2020-01-08 06:36:35,645 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9187
+INFO 2020-01-08 06:36:36,369 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9187
+INFO 2020-01-08 06:36:37,093 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9187
+INFO 2020-01-08 06:37:09,090 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9187
+INFO 2020-01-08 06:37:09,102 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 06:37:09,818 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9187
+INFO 2020-01-08 06:37:10,365 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9187
+INFO 2020-01-08 06:37:11,168 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9187
+INFO 2020-01-08 06:37:27,861 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9187
+INFO 2020-01-08 06:37:27,869 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 06:37:28,473 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9187
+INFO 2020-01-08 06:37:28,827 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9187
+INFO 2020-01-08 06:37:29,058 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9187
+INFO 2020-01-08 06:37:38,960 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9187
+INFO 2020-01-08 06:37:39,385 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9187
+INFO 2020-01-08 06:37:39,739 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9187
+INFO 2020-01-08 06:37:39,987 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9187
+INFO 2020-01-08 06:37:40,268 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9187
+INFO 2020-01-08 06:37:40,500 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9187
+INFO 2020-01-08 06:37:40,507 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 06:37:40,810 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9187
+INFO 2020-01-08 06:37:41,455 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9187
+INFO 2020-01-08 06:37:44,949 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9187
+INFO 2020-01-08 06:37:45,173 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9187
+INFO 2020-01-08 06:37:45,376 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9187
+INFO 2020-01-08 06:37:45,549 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9187
+INFO 2020-01-08 06:37:45,738 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9187
+INFO 2020-01-08 06:37:45,909 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9187
+INFO 2020-01-08 06:37:47,170 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9187
+INFO 2020-01-08 06:37:51,515 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9187
+INFO 2020-01-08 06:37:51,734 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9187
+INFO 2020-01-08 06:37:51,913 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9187
+INFO 2020-01-08 06:37:52,078 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9187
+INFO 2020-01-08 06:39:15,137 basehttp 12071 123145485983744 "GET / HTTP/1.1" 200 2280
+INFO 2020-01-08 06:39:15,150 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 06:39:16,102 basehttp 12071 123145485983744 "GET / HTTP/1.1" 200 2280
+INFO 2020-01-08 06:39:16,954 basehttp 12071 123145485983744 "GET / HTTP/1.1" 200 2280
+INFO 2020-01-08 06:39:17,180 basehttp 12071 123145485983744 "GET / HTTP/1.1" 200 2280
+INFO 2020-01-08 06:39:17,559 basehttp 12071 123145485983744 "GET / HTTP/1.1" 200 2280
+INFO 2020-01-08 06:39:19,218 basehttp 12071 123145485983744 "GET / HTTP/1.1" 200 2280
+INFO 2020-01-08 06:39:32,762 basehttp 12071 123145485983744 "GET / HTTP/1.1" 200 2280
+INFO 2020-01-08 06:39:33,203 basehttp 12071 123145485983744 "GET / HTTP/1.1" 200 2280
+INFO 2020-01-08 06:39:33,784 basehttp 12071 123145485983744 "GET / HTTP/1.1" 200 2280
+INFO 2020-01-08 06:39:34,152 basehttp 12071 123145485983744 "GET / HTTP/1.1" 200 2280
+INFO 2020-01-08 06:39:34,480 basehttp 12071 123145485983744 "GET / HTTP/1.1" 200 2280
+INFO 2020-01-08 06:39:34,715 basehttp 12071 123145485983744 "GET / HTTP/1.1" 200 2280
+INFO 2020-01-08 06:39:55,459 basehttp 12071 123145485983744 "GET / HTTP/1.1" 200 2280
+INFO 2020-01-08 06:39:55,466 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 06:39:56,340 basehttp 12071 123145485983744 "GET / HTTP/1.1" 200 2280
+INFO 2020-01-08 06:39:56,842 basehttp 12071 123145485983744 "GET / HTTP/1.1" 200 2280
+INFO 2020-01-08 06:39:57,586 basehttp 12071 123145485983744 "GET / HTTP/1.1" 200 2280
+INFO 2020-01-08 06:39:57,828 basehttp 12071 123145485983744 "GET / HTTP/1.1" 200 2280
+INFO 2020-01-08 06:39:58,006 basehttp 12071 123145485983744 "GET / HTTP/1.1" 200 2280
+INFO 2020-01-08 06:40:45,611 basehttp 12071 123145485983744 "GET / HTTP/1.1" 200 2288
+INFO 2020-01-08 06:40:45,620 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 06:40:47,593 basehttp 12071 123145485983744 "GET / HTTP/1.1" 200 2288
+INFO 2020-01-08 06:40:48,354 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9195
+INFO 2020-01-08 06:40:53,545 basehttp 12071 123145485983744 "GET /board/models/1 HTTP/1.1" 200 1491
+INFO 2020-01-08 06:42:54,236 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9195
+INFO 2020-01-08 06:42:54,255 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 06:44:17,285 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9195
+INFO 2020-01-08 06:44:17,293 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 06:44:17,688 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9195
+INFO 2020-01-08 06:44:18,004 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9195
+INFO 2020-01-08 06:44:18,257 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9195
+INFO 2020-01-08 06:44:19,872 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9195
+INFO 2020-01-08 06:44:41,456 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9195
+INFO 2020-01-08 06:44:42,090 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9195
+INFO 2020-01-08 06:44:42,304 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9195
+INFO 2020-01-08 06:44:42,760 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9195
+INFO 2020-01-08 06:44:54,095 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9195
+INFO 2020-01-08 06:44:54,334 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9195
+INFO 2020-01-08 06:44:54,647 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9195
+INFO 2020-01-08 06:44:55,074 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9195
+INFO 2020-01-08 06:46:10,133 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9229
+INFO 2020-01-08 06:46:10,144 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 06:46:10,838 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9229
+INFO 2020-01-08 06:46:11,429 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9229
+INFO 2020-01-08 06:46:22,793 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9229
+INFO 2020-01-08 06:46:23,312 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9229
+INFO 2020-01-08 06:46:23,717 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9229
+INFO 2020-01-08 06:46:23,988 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9229
+INFO 2020-01-08 06:46:24,190 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9229
+INFO 2020-01-08 06:46:24,392 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9229
+INFO 2020-01-08 06:46:30,749 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9229
+INFO 2020-01-08 06:46:30,760 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 200 5570
+WARNING 2020-01-08 06:46:30,911 log 12071 123145491238912 Not Found: /favicon.ico
+WARNING 2020-01-08 06:46:30,911 basehttp 12071 123145491238912 "GET /favicon.ico HTTP/1.1" 404 2983
+INFO 2020-01-08 06:46:31,062 basehttp 12071 123145496494080 "GET / HTTP/1.1" 200 2288
+WARNING 2020-01-08 06:46:31,090 log 12071 123145501749248 Not Found: /apple-touch-icon-precomposed.png
+WARNING 2020-01-08 06:46:31,091 basehttp 12071 123145501749248 "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 3046
+WARNING 2020-01-08 06:46:31,108 log 12071 123145501749248 Not Found: /apple-touch-icon.png
+WARNING 2020-01-08 06:46:31,109 basehttp 12071 123145501749248 "GET /apple-touch-icon.png HTTP/1.1" 404 3010
+WARNING 2020-01-08 06:46:31,118 log 12071 123145501749248 Not Found: /favicon.ico
+WARNING 2020-01-08 06:46:31,119 basehttp 12071 123145501749248 "GET /favicon.ico HTTP/1.1" 404 2983
+WARNING 2020-01-08 06:46:31,127 log 12071 123145501749248 Not Found: /apple-touch-icon-precomposed.png
+WARNING 2020-01-08 06:46:31,128 basehttp 12071 123145501749248 "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 3046
+WARNING 2020-01-08 06:46:31,137 log 12071 123145501749248 Not Found: /apple-touch-icon.png
+WARNING 2020-01-08 06:46:31,137 basehttp 12071 123145501749248 "GET /apple-touch-icon.png HTTP/1.1" 404 3010
+WARNING 2020-01-08 06:46:31,144 log 12071 123145501749248 Not Found: /favicon.ico
+WARNING 2020-01-08 06:46:31,145 basehttp 12071 123145501749248 "GET /favicon.ico HTTP/1.1" 404 2983
+INFO 2020-01-08 06:46:31,175 basehttp 12071 123145496494080 "GET / HTTP/1.1" 200 2288
+WARNING 2020-01-08 06:46:31,195 log 12071 123145501749248 Not Found: /apple-touch-icon-precomposed.png
+WARNING 2020-01-08 06:46:31,196 basehttp 12071 123145501749248 "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 3046
+WARNING 2020-01-08 06:46:31,205 log 12071 123145501749248 Not Found: /apple-touch-icon.png
+WARNING 2020-01-08 06:46:31,206 basehttp 12071 123145501749248 "GET /apple-touch-icon.png HTTP/1.1" 404 3010
+WARNING 2020-01-08 06:46:31,213 log 12071 123145501749248 Not Found: /favicon.ico
+WARNING 2020-01-08 06:46:31,214 basehttp 12071 123145501749248 "GET /favicon.ico HTTP/1.1" 404 2983
+WARNING 2020-01-08 06:46:31,221 log 12071 123145501749248 Not Found: /apple-touch-icon-precomposed.png
+WARNING 2020-01-08 06:46:31,222 basehttp 12071 123145501749248 "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 3046
+WARNING 2020-01-08 06:46:31,230 log 12071 123145501749248 Not Found: /apple-touch-icon.png
+WARNING 2020-01-08 06:46:31,231 basehttp 12071 123145501749248 "GET /apple-touch-icon.png HTTP/1.1" 404 3010
+WARNING 2020-01-08 06:46:31,240 log 12071 123145501749248 Not Found: /favicon.ico
+WARNING 2020-01-08 06:46:31,241 basehttp 12071 123145501749248 "GET /favicon.ico HTTP/1.1" 404 2983
+INFO 2020-01-08 06:46:32,071 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9229
+WARNING 2020-01-08 06:46:32,332 log 12071 123145501749248 Not Found: /apple-touch-icon-precomposed.png
+WARNING 2020-01-08 06:46:32,336 basehttp 12071 123145501749248 "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 3046
+WARNING 2020-01-08 06:46:32,345 log 12071 123145501749248 Not Found: /apple-touch-icon.png
+WARNING 2020-01-08 06:46:32,345 basehttp 12071 123145501749248 "GET /apple-touch-icon.png HTTP/1.1" 404 3010
+INFO 2020-01-08 06:46:38,761 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9229
+INFO 2020-01-08 06:46:56,199 basehttp 12071 123145485983744 "GET /board/models/1 HTTP/1.1" 200 1491
+WARNING 2020-01-08 06:46:56,382 log 12071 123145491238912 Not Found: /favicon.ico
+WARNING 2020-01-08 06:46:56,382 basehttp 12071 123145491238912 "GET /favicon.ico HTTP/1.1" 404 2983
+INFO 2020-01-08 06:46:58,201 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9229
+INFO 2020-01-08 06:46:58,694 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9229
+INFO 2020-01-08 06:47:17,723 basehttp 12071 123145485983744 "GET / HTTP/1.1" 200 2288
+WARNING 2020-01-08 06:47:17,889 log 12071 123145491238912 Not Found: /favicon.ico
+WARNING 2020-01-08 06:47:17,890 basehttp 12071 123145491238912 "GET /favicon.ico HTTP/1.1" 404 2983
+INFO 2020-01-08 06:47:22,296 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9229
+INFO 2020-01-08 06:47:23,272 basehttp 12071 123145485983744 "GET / HTTP/1.1" 200 2288
+INFO 2020-01-08 06:47:26,421 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9229
+INFO 2020-01-08 06:47:35,921 basehttp 12071 123145485983744 "GET /board/models/1 HTTP/1.1" 200 1491
+INFO 2020-01-08 06:48:20,445 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9229
+INFO 2020-01-08 06:48:20,456 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 06:48:20,959 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9229
+INFO 2020-01-08 06:48:21,337 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9229
+INFO 2020-01-08 06:48:21,639 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9229
+INFO 2020-01-08 06:48:21,868 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9229
+INFO 2020-01-08 06:48:22,053 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9229
+INFO 2020-01-08 06:48:37,123 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9229
+INFO 2020-01-08 06:48:38,130 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9229
+INFO 2020-01-08 06:48:38,566 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9229
+INFO 2020-01-08 06:48:47,325 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9229
+INFO 2020-01-08 06:48:47,797 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9229
+INFO 2020-01-08 06:48:48,216 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9229
+INFO 2020-01-08 06:50:17,328 basehttp 12071 123145485983744 "GET /board/models/1 HTTP/1.1" 200 1491
+INFO 2020-01-08 06:50:17,350 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 06:50:25,451 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9229
+INFO 2020-01-08 06:50:32,820 basehttp 12071 123145485983744 "GET / HTTP/1.1" 200 2288
+INFO 2020-01-08 06:50:36,398 basehttp 12071 123145485983744 "GET / HTTP/1.1" 200 2288
+INFO 2020-01-08 06:50:36,941 basehttp 12071 123145485983744 "GET / HTTP/1.1" 200 2288
+INFO 2020-01-08 06:50:37,229 basehttp 12071 123145485983744 "GET / HTTP/1.1" 200 2288
+INFO 2020-01-08 06:50:37,417 basehttp 12071 123145485983744 "GET / HTTP/1.1" 200 2288
+INFO 2020-01-08 06:50:37,586 basehttp 12071 123145485983744 "GET / HTTP/1.1" 200 2288
+INFO 2020-01-08 06:50:39,619 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9229
+INFO 2020-01-08 06:50:40,438 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9229
+INFO 2020-01-08 06:50:40,598 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9229
+INFO 2020-01-08 06:50:40,769 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9229
+INFO 2020-01-08 06:50:40,948 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9229
+INFO 2020-01-08 06:50:42,067 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 1963
+WARNING 2020-01-08 06:50:42,317 log 12071 123145491238912 Not Found: /favicon.ico
+WARNING 2020-01-08 06:50:42,317 basehttp 12071 123145491238912 "GET /favicon.ico HTTP/1.1" 404 2983
+INFO 2020-01-08 06:52:28,214 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9229
+INFO 2020-01-08 06:52:28,234 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 06:52:28,931 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9229
+INFO 2020-01-08 06:52:29,213 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9229
+INFO 2020-01-08 06:52:29,431 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9229
+INFO 2020-01-08 06:52:29,688 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9229
+INFO 2020-01-08 06:52:29,888 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9229
+INFO 2020-01-08 06:52:30,099 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9229
+INFO 2020-01-08 06:52:34,024 basehttp 12071 123145485983744 "GET /board/models/16 HTTP/1.1" 200 1547
+WARNING 2020-01-08 06:52:34,931 log 12071 123145491238912 Not Found: /favicon.ico
+WARNING 2020-01-08 06:52:34,931 basehttp 12071 123145491238912 "GET /favicon.ico HTTP/1.1" 404 2983
+INFO 2020-01-08 06:52:45,098 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9229
+INFO 2020-01-08 06:52:46,052 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9229
+INFO 2020-01-08 06:52:47,938 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9229
+INFO 2020-01-08 06:53:01,299 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9229
+INFO 2020-01-08 06:53:01,878 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9229
+INFO 2020-01-08 06:53:02,244 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9229
+INFO 2020-01-08 06:53:02,499 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9229
+INFO 2020-01-08 06:53:02,685 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9229
+INFO 2020-01-08 06:53:06,208 basehttp 12071 123145485983744 "GET /board/models/8 HTTP/1.1" 200 1524
+WARNING 2020-01-08 06:53:06,468 log 12071 123145491238912 Not Found: /favicon.ico
+WARNING 2020-01-08 06:53:06,468 basehttp 12071 123145491238912 "GET /favicon.ico HTTP/1.1" 404 2983
+INFO 2020-01-08 06:53:29,280 basehttp 12071 123145485983744 "GET /board/models/1 HTTP/1.1" 200 1491
+INFO 2020-01-08 06:53:35,078 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 1963
+INFO 2020-01-08 06:53:58,627 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 1960
+INFO 2020-01-08 06:55:20,647 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2013
+INFO 2020-01-08 06:55:20,665 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 200 5642
+INFO 2020-01-08 06:55:21,196 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2013
+INFO 2020-01-08 06:55:21,213 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 06:55:26,886 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9229
+INFO 2020-01-08 06:55:26,935 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 06:55:55,945 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9229
+INFO 2020-01-08 06:55:55,969 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 200 5642
+INFO 2020-01-08 06:55:58,255 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9229
+INFO 2020-01-08 06:55:58,274 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 06:56:15,685 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9229
+INFO 2020-01-08 06:56:15,705 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 200 5642
+INFO 2020-01-08 06:56:33,820 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9229
+INFO 2020-01-08 06:56:33,845 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 200 5642
+INFO 2020-01-08 06:56:51,507 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9229
+INFO 2020-01-08 06:56:51,526 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 200 5642
+INFO 2020-01-08 06:57:18,270 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9229
+INFO 2020-01-08 06:57:18,293 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 200 5642
+INFO 2020-01-08 06:57:38,620 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9229
+INFO 2020-01-08 06:57:38,639 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 200 5642
+INFO 2020-01-08 07:01:40,684 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9229
+INFO 2020-01-08 07:01:40,721 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 200 5665
+INFO 2020-01-08 07:01:41,303 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9229
+INFO 2020-01-08 07:01:41,322 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 07:01:48,643 basehttp 12071 123145485983744 "GET / HTTP/1.1" 200 2288
+INFO 2020-01-08 07:01:48,671 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 07:01:53,356 basehttp 12071 123145485983744 "GET / HTTP/1.1" 200 2288
+INFO 2020-01-08 07:01:53,376 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 07:01:56,648 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9229
+INFO 2020-01-08 07:01:56,675 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 07:02:28,731 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9229
+INFO 2020-01-08 07:02:28,760 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 200 5664
+INFO 2020-01-08 07:02:54,870 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9229
+INFO 2020-01-08 07:02:54,890 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 200 5664
+INFO 2020-01-08 07:02:55,474 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9229
+INFO 2020-01-08 07:02:55,488 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 07:03:08,056 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9229
+INFO 2020-01-08 07:03:08,078 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 200 5662
+INFO 2020-01-08 07:04:19,244 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9229
+INFO 2020-01-08 07:04:19,264 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 200 5664
+INFO 2020-01-08 07:04:33,553 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9229
+INFO 2020-01-08 07:04:33,575 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 200 5647
+INFO 2020-01-08 07:04:40,247 basehttp 12071 123145485983744 "GET / HTTP/1.1" 200 2288
+INFO 2020-01-08 07:04:40,273 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 07:05:11,631 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9229
+INFO 2020-01-08 07:05:11,654 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 200 5647
+INFO 2020-01-08 07:05:12,704 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2013
+INFO 2020-01-08 07:05:12,727 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 07:05:15,138 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2013
+INFO 2020-01-08 07:05:15,161 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 07:05:32,272 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2013
+INFO 2020-01-08 07:05:32,296 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 200 5669
+INFO 2020-01-08 07:05:38,848 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2013
+INFO 2020-01-08 07:05:38,865 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 200 5662
+INFO 2020-01-08 07:05:47,749 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2013
+INFO 2020-01-08 07:05:47,764 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 200 5663
+INFO 2020-01-08 07:06:11,144 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2013
+INFO 2020-01-08 07:06:11,165 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 200 5670
+INFO 2020-01-08 07:06:23,814 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2013
+INFO 2020-01-08 07:06:23,831 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 200 5669
+INFO 2020-01-08 07:06:25,471 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2013
+INFO 2020-01-08 07:06:25,487 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 07:06:25,982 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2013
+INFO 2020-01-08 07:06:25,999 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 07:07:11,757 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2013
+INFO 2020-01-08 07:07:11,782 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 200 5669
+INFO 2020-01-08 07:07:22,432 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2013
+INFO 2020-01-08 07:07:22,456 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 200 5671
+INFO 2020-01-08 07:07:23,635 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2013
+INFO 2020-01-08 07:07:23,653 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 07:07:43,154 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2013
+INFO 2020-01-08 07:07:43,173 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 200 5671
+INFO 2020-01-08 07:07:58,811 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2013
+INFO 2020-01-08 07:07:58,831 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 200 5709
+INFO 2020-01-08 07:09:20,645 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2025
+INFO 2020-01-08 07:09:20,673 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 07:09:21,329 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2025
+INFO 2020-01-08 07:17:31,865 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2202
+INFO 2020-01-08 07:17:31,897 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 07:17:33,035 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2202
+INFO 2020-01-08 07:17:53,369 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2219
+INFO 2020-01-08 07:17:54,218 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2219
+INFO 2020-01-08 07:18:02,550 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2236
+INFO 2020-01-08 07:18:03,827 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2236
+INFO 2020-01-08 07:18:12,687 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2221
+INFO 2020-01-08 07:18:13,218 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2221
+INFO 2020-01-08 07:18:17,335 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2222
+INFO 2020-01-08 07:18:25,689 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2302
+INFO 2020-01-08 07:18:47,391 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2302
+INFO 2020-01-08 07:18:47,414 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 200 6602
+INFO 2020-01-08 07:18:48,564 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2302
+INFO 2020-01-08 07:18:48,582 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 07:29:36,400 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2302
+INFO 2020-01-08 07:29:36,420 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 07:30:35,503 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2304
+INFO 2020-01-08 07:30:36,739 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2304
+INFO 2020-01-08 07:31:37,267 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2304
+INFO 2020-01-08 07:31:37,289 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 07:33:16,270 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2304
+INFO 2020-01-08 07:33:16,290 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 07:34:41,666 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2214
+INFO 2020-01-08 07:34:42,310 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2214
+INFO 2020-01-08 07:36:27,925 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2381
+INFO 2020-01-08 07:36:27,948 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 07:37:35,218 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2422
+INFO 2020-01-08 07:37:57,103 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2421
+INFO 2020-01-08 07:38:53,493 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2421
+INFO 2020-01-08 07:38:53,517 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 07:39:02,753 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2425
+INFO 2020-01-08 07:39:03,423 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2425
+INFO 2020-01-08 07:39:06,357 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2425
+INFO 2020-01-08 07:39:06,876 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2425
+INFO 2020-01-08 07:39:07,945 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2425
+INFO 2020-01-08 07:39:17,072 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2338
+INFO 2020-01-08 07:40:25,655 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2338
+INFO 2020-01-08 07:40:26,350 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2338
+INFO 2020-01-08 07:40:26,856 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2338
+INFO 2020-01-08 07:40:27,065 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2338
+INFO 2020-01-08 07:40:27,268 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2338
+INFO 2020-01-08 07:40:27,472 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2338
+INFO 2020-01-08 07:41:00,427 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2338
+INFO 2020-01-08 07:41:00,448 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 200 6648
+INFO 2020-01-08 07:41:00,923 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2338
+INFO 2020-01-08 07:41:02,808 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2338
+INFO 2020-01-08 07:41:03,364 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2338
+INFO 2020-01-08 07:42:43,269 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2338
+INFO 2020-01-08 07:42:43,287 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 07:44:52,795 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2611
+INFO 2020-01-08 07:44:52,810 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 07:47:23,752 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2632
+INFO 2020-01-08 07:47:23,777 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 200 6654
+INFO 2020-01-08 07:47:41,975 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2632
+INFO 2020-01-08 07:47:42,002 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 200 6637
+INFO 2020-01-08 07:47:52,493 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2632
+INFO 2020-01-08 07:47:52,523 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 200 6659
+INFO 2020-01-08 07:47:53,571 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2632
+INFO 2020-01-08 07:47:53,587 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 07:48:02,550 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2632
+INFO 2020-01-08 07:48:02,568 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 200 6665
+INFO 2020-01-08 07:48:39,515 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2632
+INFO 2020-01-08 07:48:39,534 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 200 6742
+INFO 2020-01-08 07:48:40,116 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2632
+INFO 2020-01-08 07:48:40,131 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 07:48:40,506 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2632
+INFO 2020-01-08 07:48:40,522 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 07:48:40,763 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2632
+INFO 2020-01-08 07:48:40,777 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 07:48:56,396 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2632
+INFO 2020-01-08 07:48:56,414 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 200 6737
+INFO 2020-01-08 07:48:57,759 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2632
+INFO 2020-01-08 07:48:57,778 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 07:48:58,351 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2632
+INFO 2020-01-08 07:48:58,367 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 07:48:58,569 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2632
+INFO 2020-01-08 07:48:58,586 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 07:48:58,745 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2632
+INFO 2020-01-08 07:48:58,758 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 07:48:58,918 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2632
+INFO 2020-01-08 07:48:58,936 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 07:49:57,661 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2632
+INFO 2020-01-08 07:49:57,679 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 200 6784
+INFO 2020-01-08 07:49:58,077 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2632
+INFO 2020-01-08 07:49:58,094 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 07:49:58,315 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2632
+INFO 2020-01-08 07:49:58,332 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 07:49:58,881 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2632
+INFO 2020-01-08 07:49:58,911 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 07:51:45,816 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2754
+INFO 2020-01-08 07:51:45,848 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 200 6854
+INFO 2020-01-08 07:51:46,472 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2754
+INFO 2020-01-08 07:51:46,491 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 07:52:26,067 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2754
+INFO 2020-01-08 07:52:26,086 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 200 6602
+INFO 2020-01-08 07:52:27,139 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2754
+INFO 2020-01-08 07:52:27,156 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 07:52:28,272 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2754
+INFO 2020-01-08 07:52:28,290 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 07:52:28,647 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2754
+INFO 2020-01-08 07:52:28,662 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 07:52:29,929 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2754
+INFO 2020-01-08 07:52:29,945 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 07:52:46,192 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2754
+INFO 2020-01-08 07:52:46,209 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 200 6661
+INFO 2020-01-08 07:52:46,799 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2754
+INFO 2020-01-08 07:52:46,821 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 07:52:47,574 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2754
+INFO 2020-01-08 07:52:47,592 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 07:53:09,826 basehttp 12071 123145491238912 "GET / HTTP/1.1" 200 2288
+WARNING 2020-01-08 07:53:09,849 log 12071 123145496494080 Not Found: /apple-touch-icon-precomposed.png
+WARNING 2020-01-08 07:53:09,849 basehttp 12071 123145496494080 "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 3046
+WARNING 2020-01-08 07:53:09,859 log 12071 123145496494080 Not Found: /apple-touch-icon.png
+WARNING 2020-01-08 07:53:09,859 basehttp 12071 123145496494080 "GET /apple-touch-icon.png HTTP/1.1" 404 3010
+WARNING 2020-01-08 07:53:09,877 log 12071 123145496494080 Not Found: /favicon.ico
+WARNING 2020-01-08 07:53:09,878 basehttp 12071 123145496494080 "GET /favicon.ico HTTP/1.1" 404 2983
+WARNING 2020-01-08 07:53:09,888 log 12071 123145496494080 Not Found: /apple-touch-icon-precomposed.png
+WARNING 2020-01-08 07:53:09,889 basehttp 12071 123145496494080 "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 3046
+WARNING 2020-01-08 07:53:09,897 log 12071 123145496494080 Not Found: /apple-touch-icon.png
+WARNING 2020-01-08 07:53:09,897 basehttp 12071 123145496494080 "GET /apple-touch-icon.png HTTP/1.1" 404 3010
+WARNING 2020-01-08 07:53:09,903 log 12071 123145496494080 Not Found: /favicon.ico
+WARNING 2020-01-08 07:53:09,903 basehttp 12071 123145496494080 "GET /favicon.ico HTTP/1.1" 404 2983
+INFO 2020-01-08 07:53:09,944 basehttp 12071 123145491238912 "GET / HTTP/1.1" 200 2288
+WARNING 2020-01-08 07:53:09,962 log 12071 123145496494080 Not Found: /apple-touch-icon-precomposed.png
+WARNING 2020-01-08 07:53:09,962 basehttp 12071 123145496494080 "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 3046
+WARNING 2020-01-08 07:53:09,971 log 12071 123145496494080 Not Found: /apple-touch-icon.png
+WARNING 2020-01-08 07:53:09,971 basehttp 12071 123145496494080 "GET /apple-touch-icon.png HTTP/1.1" 404 3010
+WARNING 2020-01-08 07:53:09,981 log 12071 123145496494080 Not Found: /favicon.ico
+WARNING 2020-01-08 07:53:09,982 basehttp 12071 123145496494080 "GET /favicon.ico HTTP/1.1" 404 2983
+WARNING 2020-01-08 07:53:09,994 log 12071 123145496494080 Not Found: /apple-touch-icon-precomposed.png
+WARNING 2020-01-08 07:53:09,994 basehttp 12071 123145496494080 "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 3046
+WARNING 2020-01-08 07:53:10,005 log 12071 123145496494080 Not Found: /apple-touch-icon.png
+WARNING 2020-01-08 07:53:10,006 basehttp 12071 123145496494080 "GET /apple-touch-icon.png HTTP/1.1" 404 3010
+WARNING 2020-01-08 07:53:10,011 log 12071 123145496494080 Not Found: /favicon.ico
+WARNING 2020-01-08 07:53:10,012 basehttp 12071 123145496494080 "GET /favicon.ico HTTP/1.1" 404 2983
+INFO 2020-01-08 07:53:10,208 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2754
+INFO 2020-01-08 07:53:10,231 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 200 6661
+WARNING 2020-01-08 07:53:10,497 log 12071 123145491238912 Not Found: /favicon.ico
+WARNING 2020-01-08 07:53:10,498 basehttp 12071 123145491238912 "GET /favicon.ico HTTP/1.1" 404 2983
+WARNING 2020-01-08 07:53:10,505 log 12071 123145496494080 Not Found: /apple-touch-icon-precomposed.png
+WARNING 2020-01-08 07:53:10,506 basehttp 12071 123145496494080 "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 3046
+WARNING 2020-01-08 07:53:10,515 log 12071 123145496494080 Not Found: /apple-touch-icon.png
+WARNING 2020-01-08 07:53:10,536 basehttp 12071 123145496494080 "GET /apple-touch-icon.png HTTP/1.1" 404 3010
+INFO 2020-01-08 07:53:13,223 basehttp 12071 123145501749248 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 07:53:13,231 basehttp 12071 123145485983744 "GET /board/models/create HTTP/1.1" 200 2754
+INFO 2020-01-08 07:53:13,251 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-08 07:53:43,215 basehttp 12071 123145485983744 "GET /board/models/ HTTP/1.1" 200 9182
+INFO 2020-01-08 07:53:43,249 basehttp 12071 123145485983744 "GET /static/css/style.css HTTP/1.1" 304 0
+WARNING 2020-01-08 07:53:43,436 log 12071 123145491238912 Not Found: /favicon.ico
+WARNING 2020-01-08 07:53:43,436 basehttp 12071 123145491238912 "GET /favicon.ico HTTP/1.1" 404 2983
+INFO 2020-01-08 07:53:47,967 basehttp 12071 123145485983744 "GET / HTTP/1.1" 200 2288
+WARNING 2020-01-08 07:53:48,239 log 12071 123145491238912 Not Found: /favicon.ico
+WARNING 2020-01-08 07:53:48,239 basehttp 12071 123145491238912 "GET /favicon.ico HTTP/1.1" 404 2983
+INFO 2020-01-11 16:10:22,687 autoreload 22302 4658265536 Watching for file changes with StatReloader
