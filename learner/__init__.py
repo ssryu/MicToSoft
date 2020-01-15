@@ -84,9 +84,9 @@ class Learner(Common):
         self.model.add(LSTM(n_hidden, batch_input_shape=(None, length_of_sequence, in_neurons), return_sequences=False))
         self.model.add(Dense(out_neurons))
         self.model.add(Activation("sigmoid"))
-        self.model.compile(loss="categorical_crossentropy", optimizer=SGD(lr=0.01), metrics=['acc'])
-        early_stopping = EarlyStopping(monitor='loss', mode='auto', patience=10)
-        his = self.model.fit(g, h, batch_size=batch_size, epochs=500, validation_split=0.1)#, callbacks=[early_stopping])#, verbose=0)
+        self.model.compile(loss="categorical_crossentropy", optimizer=Adam(lr=0.01), metrics=['acc'])
+        early_stopping = EarlyStopping(monitor='val_loss', mode='auto', patience=5)
+        his = self.model.fit(g, h, batch_size=batch_size, epochs=100, validation_split=0.1)#, callbacks=[early_stopping])#, verbose=0)
 
         #データの保持
         self.filename = filename
@@ -118,6 +118,7 @@ class Classifier(Common):
         self.max_token = damy.max_token
         self.vector_size = damy.vector_size
         self.model = keras.models.load_model(filename+'.keras', compile=False)
+        #print(self.id_to_label)
 
 
     def predict(self, texts):
