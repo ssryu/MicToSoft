@@ -2,7 +2,7 @@ import keras
 from keras.models import Sequential
 from keras.layers.core import Dense, Activation
 from keras.layers.recurrent import LSTM
-from keras.optimizers import Adam
+from keras.optimizers import Adam, SGD
 from keras.callbacks import EarlyStopping
 from gensim.models import KeyedVectors, word2vec
 import numpy as np
@@ -38,14 +38,17 @@ class Learner(Common):
         '''
         # csvから文章とラベルを読み込み、形態素解析して単語リスト作る(ワードベクトルにない単語は除外)
         texts, labels = csv_to_data(filename)
+        batch_size = int(len(texts) / 20)
         texts = tokenizer(texts)
         if(wv_filename == None):
-            wmodel = word2vec.Word2Vec(texts, size=50, min_count=2, window=2).wv
+            wmodel = word2vec.Word2Vec(texts, size=200, min_count=2, window=2, iter=5).wv
         else:
             wmodel = KeyedVectors.load_word2vec_format(wv_filename, binary=True)
         for i in range(len(texts)):
             texts[i] = [w for w in texts[i] if w in wmodel.vocab]
         vocab = texts_to_vocab(texts)
+
+        # print(vocab)
 
         # 形態素に分けられた文章達をRNNに入れるために整形、それぞれの単語をベクトルに変換する
         for text in texts:
@@ -66,7 +69,7 @@ class Learner(Common):
         length_of_sequence = max_token
         in_neurons = g.shape[2]
         out_neurons = h.shape[1]
-        n_hidden = 200
+        n_hidden = 400
 
         # あとで必要そうなデータをオブジェクトに格納
         self.id_to_label = dict([(v, k) for k, v in label_to_id.items()])
@@ -81,9 +84,9 @@ class Learner(Common):
         self.model.add(LSTM(n_hidden, batch_input_shape=(None, length_of_sequence, in_neurons), return_sequences=False))
         self.model.add(Dense(out_neurons))
         self.model.add(Activation("sigmoid"))
-        self.model.compile(loss="categorical_crossentropy", optimizer=Adam(lr=0.001), metrics=['acc'])
-        early_stopping = EarlyStopping(monitor='val_loss', mode='auto', patience=20)
-        his = self.model.fit(g, h, batch_size=300, epochs=100, validation_split=0.1, callbacks=[early_stopping], verbose=0)
+        self.model.compile(loss="categorical_crossentropy", optimizer=SGD(lr=0.01), metrics=['acc'])
+        early_stopping = EarlyStopping(monitor='loss', mode='auto', patience=10)
+        his = self.model.fit(g, h, batch_size=batch_size, epochs=500, validation_split=0.1)#, callbacks=[early_stopping])#, verbose=0)
 
         #データの保持
         self.filename = filename
