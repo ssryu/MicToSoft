@@ -7,3 +7,4 @@ db.sqlite3
 .DS_Store
 mic_to_soft/properties.json
 /media
+word_vector.*
