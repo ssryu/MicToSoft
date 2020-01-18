@@ -30,7 +30,7 @@ class Common:
 
 
 class Learner(Common):
-    def fit(self, filename, wv_filename=None, max_token=20):
+    def fit(self, filename, wv_filename=None, max_token=40, expected_acc_rate=0.8, n_learning=3):
         '''
         モデルの作成と学習までをする
         通常はfilenameに渡されたデータセットからword2vectorのモデルも作成する
@@ -39,9 +39,10 @@ class Learner(Common):
         # csvから文章とラベルを読み込み、形態素解析して単語リスト作る(ワードベクトルにない単語は除外)
         texts, labels = csv_to_data(filename)
         batch_size = int(len(texts) / 20)
+        window_size = int(sum([len(text) for text in texts]) / len(texts) / 5) + 1
         texts = tokenizer(texts)
         if(wv_filename == None):
-            wmodel = word2vec.Word2Vec(texts, size=200, min_count=2, window=2, iter=5).wv
+            wmodel = word2vec.Word2Vec(texts, size=200, min_count=1, window=window_size, iter=5).wv
         else:
             wmodel = KeyedVectors.load_word2vec_format(wv_filename, binary=True)
         for i in range(len(texts)):
@@ -85,12 +86,24 @@ class Learner(Common):
         self.model.add(Dense(out_neurons))
         self.model.add(Activation("sigmoid"))
         self.model.compile(loss="categorical_crossentropy", optimizer=Adam(lr=0.01), metrics=['acc'])
-        early_stopping = EarlyStopping(monitor='val_loss', mode='auto', patience=5)
-        his = self.model.fit(g, h, batch_size=batch_size, epochs=100, validation_split=0.1)#, callbacks=[early_stopping])#, verbose=0)
+        early_stopping = EarlyStopping(monitor='val_loss', mode='auto', patience=15)
+        his = self.model.fit(g, h, batch_size=batch_size, epochs=100, validation_split=0.1, callbacks=[early_stopping])#, verbose=0)
 
         #データの保持
         self.filename = filename
         self.acc = his.history['acc'][-1]
+
+        #様子をみて再学習
+        fit_n = 1
+        while self.acc < expected_acc_rate and fit_n < n_learning:
+            print('\n\nfit onemore!! {} / {}\n\n'.format(fit_n, n_learning))
+            self.model.compile(loss="categorical_crossentropy", optimizer=Adam(lr=0.01), metrics=['acc'])
+            his = self.model.fit(g, h, batch_size=batch_size, epochs=100, validation_split=0.1, callbacks=[early_stopping])#, verbose=0)
+            self.acc = his.history['acc'][-1]
+            fit_n += 1
+
+        if self.acc < expected_acc_rate:
+            print('I failed to learn. acc-rate is {} under than {}'.format(self.acc, expected_acc_rate))
 
 
 
@@ -122,6 +135,12 @@ class Classifier(Common):
 
 
     def predict(self, texts):
+        if type(texts) is str: #単文の入力にも対応
+            texts = [texts]
+            a_text = True
+        else:
+            a_text = False
+
         tokenized_texts = tokenizer(texts)
         for i in range(len(tokenized_texts)):
             tokenized_texts[i] = [w for w in tokenized_texts[i] if w in self.word_to_vec]
@@ -130,8 +149,12 @@ class Classifier(Common):
             for j in range(len(tokenized_texts[i])):
                 g[i][j][...] = self.word_to_vec[tokenized_texts[i][j]]
 
-        y = np.argmax(self.model.predict(g), axis=1)
+        y = self.model.predict(g)
+        y = np.argmax(y, axis=1)
         y = [self.id_to_label[y[i]] for i in range(len(y))]
         for text, label in zip(texts, y):
             print("%s : %s" % (text, label))
+
+        if a_text:
+            return y[0]
         return y
