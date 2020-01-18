@@ -5,27 +5,10 @@
 {% block contents %}
     <div class="tutorial">
         <h1>tutorial discription</h1>
+        <h4>bring training data</h4>
+        <h4>learn</h4>
+        <h4>created model</h4>
+
     </div>
 
-
-    <a href="#">create account</a>
-
-    {% for data in datas %}
-        <p>----------</p>
-        {{ data. }}
-    {% endfor %}
-
-
-    datas
-    <form action="{% url 'index' %}" method="post" id="dataform" enctype="multipart/form-data">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <input type="submit" value="Upload">
-    </form>
-    {{ datas }}
-    {% for data in datas %}
-        <p>----------</p>
-        {{ data.title }}
-        {{ data.textdata.url }}
-    {% endfor %}
 {% endblock %}

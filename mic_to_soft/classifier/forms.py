@@ -1,12 +1,12 @@
 from django import forms
-from .models import Classifier, Account
-
-class ClassifierAccount(forms.ModelForm):
-    class Meta:
-        model = Account
-        fields = ['username', 'password', 'email']
+from .models import Classifier
 
 class ClassifierForm(forms.ModelForm):
     class Meta:
         model = Classifier
-        fields = ['userid', 'title', 'description', 'learningdata', 'created_date']
+        fields = ['userid', 'password', 'title', 'description', 'train_data']
+
+class ClassifierEditForm(forms.ModelForm):
+    class Meta:
+        model = Classifier
+        fields = ['userid', 'title', 'description', 'train_data']

@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block title %} create {% endblock %}
+
+{% block contents %}
+    <div class="edit-model">
+        <form class="edit-form" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <table>
+                <tr>
+                    <td>{{ form.userid.label }}</td>
+                    <td>{{ form.userid }}</td>
+                </tr>
+
+                <tr>
+                    <td>{{ form.title.label }}</td>
+                    <td>{{ form.title }}</td>
+                </tr>
+
+                <tr>
+                    <td>{{ form.description.label }}</td>
+                    <td>{{ form.description }}</td>
+                </tr>
+
+                <tr>
+                    <td>{{ form.train_data.label }}</td>
+                    <td>{{ form.train_data }}</td>
+                </tr>
+            </table>
+
+
+
+            <div class="button-set">
+
+                {% if passcheck %}
+                    password is wrong!
+                {% endif %}
+                <input type="text" name="original-password" value="" placeholder="password">
+                <button type="submit" class="btn btn-primary" name="done" value="Done">Done</button>
+                <button type="submit" class="btn btn-danger" name="delete" value="Delete">Delete</button>
+            </div>
+
+        </form>
+    </div>
+
+{% endblock %}
