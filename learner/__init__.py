@@ -1,3 +1,5 @@
+import os
+
 import keras
 from keras.models import Sequential
 from keras.layers.core import Dense, Activation
@@ -18,6 +20,13 @@ tokenizer = TextsTokenize()
 
 
 
+# word_vector.model : 日本語wikiより作成
+wv_filename = "word_vector.model"
+wmodel = word2vec.Word2Vec.load(os.path.dirname(__file__) + '/' + wv_filename).wv
+
+
+
+
 class Common:
     def __init__(self):
         self.id_to_label = None
@@ -30,7 +39,8 @@ class Common:
 
 
 class Learner(Common):
-    def fit(self, filename, wv_filename=None, max_token=40, expected_acc_rate=0.8, n_learning=3):
+    # wv_filename は要らなくなったね　一応残す
+    def fit(self, filename, wv_filename=None, max_token=40, expected_acc_rate=0.8, n_re_learning=3):
         '''
         モデルの作成と学習までをする
         通常はfilenameに渡されたデータセットからword2vectorのモデルも作成する
@@ -39,17 +49,10 @@ class Learner(Common):
         # csvから文章とラベルを読み込み、形態素解析して単語リスト作る(ワードベクトルにない単語は除外)
         texts, labels = csv_to_data(filename)
         batch_size = int(len(texts) / 20)
-        window_size = int(sum([len(text) for text in texts]) / len(texts) / 5) + 1
         texts = tokenizer(texts)
-        if(wv_filename == None):
-            wmodel = word2vec.Word2Vec(texts, size=200, min_count=1, window=window_size, iter=5).wv
-        else:
-            wmodel = KeyedVectors.load_word2vec_format(wv_filename, binary=True)
         for i in range(len(texts)):
             texts[i] = [w for w in texts[i] if w in wmodel.vocab]
         vocab = texts_to_vocab(texts)
-
-        # print(vocab)
 
         # 形態素に分けられた文章達をRNNに入れるために整形、それぞれの単語をベクトルに変換する
         for text in texts:
@@ -95,8 +98,8 @@ class Learner(Common):
 
         #様子をみて再学習
         fit_n = 1
-        while self.acc < expected_acc_rate and fit_n < n_learning:
-            print('\n\nfit onemore!! {} / {}\n\n'.format(fit_n, n_learning))
+        while self.acc < expected_acc_rate and fit_n < n_re_learning:
+            print('\n\nfit onemore!! {} / {}\n\n'.format(fit_n, n_re_learning))
             self.model.compile(loss="categorical_crossentropy", optimizer=Adam(lr=0.01), metrics=['acc'])
             his = self.model.fit(g, h, batch_size=batch_size, epochs=100, validation_split=0.1, callbacks=[early_stopping])#, verbose=0)
             self.acc = his.history['acc'][-1]
