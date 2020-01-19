@@ -15,7 +15,7 @@
             </tr>
             <tr>
                 <td>説明</td>
-                <td><p>{{ classifier.description|linebreaksbr }}</p></td>
+                <td>{{ classifier.description|linebreaksbr }}</td>
             </tr>
             <tr>
                 <td>学習データ</td>
@@ -41,18 +41,22 @@
             </tr>
         </table>
 
-
+        <br>
+        
         <form class="classify" method="GET">
             モデル分類サンプル
             <input type="text" name="sentence" placeholder="分類したい文章">
-            <button class="btn btn-primary" type="submit" name="classify-btn">分類</button>
+            <button class="btn btn-default" type="submit" name="classify-btn">分類</button>
         </form>
 
-        {% if classified %}
-            <p>分類結果　{{ classified }}</p>
-        {% else %}
-            <br>
-        {% endif %}
+        <div class="classified-result">
+            {% if classified %}
+                <p>分類結果　{{ classified }}</p>
+            {% else %}
+                <br>
+            {% endif %}
+        </div>
+
         <br>
 
         <div class="button-set">

@@ -31,9 +31,6 @@
 
 
             <div class="button-set">
-
-                <button class="btn btn-success" type=“button” onclick="location.href='{% url 'models'%}'">モデル一覧</button>
-
                 {% if passcheck %}
                     password is wrong!
                 {% endif %}
@@ -43,6 +40,15 @@
             </div>
 
         </form>
+
+        <div class="button-set">
+            <div class="left">
+                <button class="btn btn-success" type=“button” onclick="location.href='{% url 'models'%}'">モデル一覧</button>
+            </div>
+            <div class="right">
+
+            </div>
+        </div>
     </div>
 
 {% endblock %}

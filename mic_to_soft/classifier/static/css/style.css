@@ -420,11 +420,12 @@ main {
     text-align: center;
     margin: auto;
     padding: auto; }
-    .model-detail table.detail tr td {
-      border: solid 1px;
-      padding: 0 20; }
-      .model-detail table.detail tr td p {
-        word-wrap: normal; }
+    .model-detail table.detail table {
+      margin: auto; }
+    .model-detail table.detail th, .model-detail table.detail td {
+      margin: auto;
+      padding: 1vw 2vw;
+      text-align: center; }
 
 .edit-model {
   margin: auto 0; }
@@ -441,8 +442,7 @@ main {
 .button-set {
   margin: auto;
   width: 80vw;
-  padding: 1vh 1vw;
-  text-align: center; }
+  padding: 1vh 1vw; }
   .button-set .left {
     display: inline-block;
     text-align: left;

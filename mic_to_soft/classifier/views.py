@@ -17,6 +17,8 @@ from .forms import ClassifierEditForm
 import hashlib
 from mic_to_soft.tasks import learn, classify
 
+import requests
+
 def index(request):
     return render(request, 'classifier/index.html')
 
@@ -38,7 +40,7 @@ def api(request):
                 {
                     'req' : str(request),
                     'data' : form,
-                    'text' : result[0]
+                    'class' : result[0]
                 }
             ),
             safe = False
@@ -101,10 +103,17 @@ def model_detail(request, pk):
         if request.GET.__contains__('sentence'):
             context['classified'] = False
             if request.GET['sentence'] != '':
-                sentence = request.GET['sentence']
-                model_hash = classifier.model_hash
-                # function(sentence, model_hash)
-                classified = 'xxx'
+                URL = 'http://www.mictosoft.work/api'
+                data = {
+                    'model_hash' : classifier.model_hash,
+                    'text' : request.GET['sentence'],
+                }
+
+                response = requests.post(URL, data=data)
+                result_dict = json.loads(response.json())
+                result_class = result_dict['class']
+
+                classified = result_class[0]
                 context['classified'] = classified
 
     return render(request, 'classifier/board/models/detail.html', context)
@@ -128,8 +137,11 @@ def model_edit(request, pk):
             elif request.POST.__contains__('delete'):
                 Classifier.objects.filter(pk=pk).delete()
                 return redirect('models')
+
         # password is wrong
         else:
+            if request.POST.__contains__('models'):
+                return redirect('models')
             passcheck = True
     else:
         form = ClassifierEditForm(instance=classifier)
