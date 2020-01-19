@@ -6,9 +6,49 @@ main{
     text-align: center;
     display: block;
 
-    .content{
+    .contents{
+
         text-align: center;
+
+
+        .overview{
+            text-align: left;
+
+        }
+        .tutorial{
+            text-align: left;
+            .section{
+                &::before{
+                    content: '';
+                    display: inline-block;
+                    width: 17px;
+                    height: 25px;
+                    background-image: url(../home/section.png);
+                    background-size: contain;
+                    vertical-align: middle;
+                }
+            }
+            .danger{
+                color: red;
+
+                &::before{
+                    content: "※"
+                }
+
+            }
+            .notice{
+                border-bottom: solid 1px blue;
+
+            }
+
+            img{
+                border: solid 1px;
+            }
+
+        }
     }
+
+
 }
 
 .create-model-title{

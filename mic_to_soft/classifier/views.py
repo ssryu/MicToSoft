@@ -18,12 +18,6 @@ import hashlib
 from mic_to_soft.tasks import learn, classify
 
 def index(request):
-    # if request.method == 'POST':
-    #     form = ClassifierForm(request.POST, request.FILES)
-    #     if form.is_valid():
-    #         form.save()
-    #         return redirect('/')
-
     return render(request, 'classifier/index.html')
 
 @csrf_exempt
@@ -98,18 +92,31 @@ def model_create(request):
     return render(request, 'classifier/board/models/create.html', {'form' : form})
 
 def model_detail(request, pk):
+    context = {}
+    print(request.GET)
     classifier = get_object_or_404(Classifier, pk=pk)
-    return render(request, 'classifier/board/models/detail.html', {'classifier': classifier})
+    context['classifier'] = classifier
+
+    if request.method == "GET":
+        if request.GET.__contains__('sentence'):
+            context['classified'] = False
+            if request.GET['sentence'] != '':
+                sentence = request.GET['sentence']
+                model_hash = classifier.model_hash
+                # function(sentence, model_hash)
+                classified = 'xxx'
+                context['classified'] = classified
+
+    return render(request, 'classifier/board/models/detail.html', context)
 
 def model_edit(request, pk):
+    print(request.POST)
     classifier = get_object_or_404(Classifier, pk=pk)
     passcheck = False
-    print(classifier.password)
     if request.method == "POST":
         form = ClassifierEditForm(request.POST, request.FILES, instance=classifier)
-        print(request.POST)
 
-        if request.POST['original-password'] == classifier.password:
+        if request.POST['entered-password'] == classifier.password:
             # done selected
             if request.POST.__contains__('done'):
                 if form.is_valid():
@@ -124,7 +131,6 @@ def model_edit(request, pk):
         # password is wrong
         else:
             passcheck = True
-
     else:
         form = ClassifierEditForm(instance=classifier)
 

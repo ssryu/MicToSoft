@@ -6,49 +6,62 @@
     <div class="model-detail">
         <table class="detail">
             <tr>
-                <td>User ID</td>
+                <td>ユーザID</td>
                 <td>{{ classifier.userid }}</td>
             </tr>
             <tr>
-                <td>title</td>
+                <td>タイトル</td>
                 <td>{{ classifier.title }}</td>
             </tr>
             <tr>
-                <td>description</td>
+                <td>説明</td>
                 <td><p>{{ classifier.description|linebreaksbr }}</p></td>
             </tr>
             <tr>
-                <td>train_data</td>
+                <td>学習データ</td>
                 <td>{{ classifier.train_data }}</td>
             </tr>
             <tr>
-                <td>acc_rate</td>
+                <td>正解率</td>
                 <td>{{ classifier.acc_rate }}</td>
             </tr>
             <tr>
-                <td>model_hash</td>
+                <td>モデルハッシュ</td>
                 <td>{{ classifier.model_hash }}</td>
             </tr>
 
             <tr>
-                <td>created_date</td>
+                <td>作成日</td>
                 <td>{{ classifier.created_date|date:"y/m/d H:i:s" }}</td>
             </tr>
 
             <tr>
-                <td>modified_date</td>
+                <td>最終編集日</td>
                 <td>{{ classifier.modified_date|date:"y/m/d H:i:s" }}</td>
             </tr>
         </table>
 
+
+        <form class="classify" method="GET">
+            モデル分類サンプル
+            <input type="text" name="sentence" placeholder="分類したい文章">
+            <button class="btn btn-primary" type="submit" name="classify-btn">分類</button>
+        </form>
+
+        {% if classified %}
+            <p>分類結果　{{ classified }}</p>
+        {% else %}
+            <br>
+        {% endif %}
+        <br>
+
         <div class="button-set">
             <div class="left">
-                <button class="btn btn-success" type=“button” onclick="location.href='{% url 'models'%}'">←MODELS</button>
+                <button class="btn btn-success" type=“button” onclick="location.href='{% url 'models'%}'">モデル一覧</button>
             </div>
             <div class="right">
-                <button class="btn btn-primary" type=“button” onclick="location.href='{% url 'model_edit' pk=classifier.pk %}'">EDIT</button>
+                <button class="btn btn-primary" type=“button” onclick="location.href='{% url 'model_edit' pk=classifier.pk %}'">編集</button>
             </div>
         </div>
-
     </div>
 {% endblock %}
