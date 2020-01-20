@@ -50,9 +50,9 @@ def api(request):
         return JsonResponse(
             json.dumps(
                 {
-                    'req' : str(request),
-                    'data' : form,
-                    'text' : result
+                    # 'req' : str(request),
+                    # 'data' : form,
+                    'class' : result
                 }
             ),
             safe = False
@@ -67,6 +67,8 @@ def learning_finished(request):
 
         classifier = get_object_or_404(Classifier, model_hash = model_hash)
         classifier.acc_rate = acc
+        model = str(classifier.train_data).replace('textdata', 'model')
+        classifier.model = model
         classifier.save()
 
         return JsonResponse(
