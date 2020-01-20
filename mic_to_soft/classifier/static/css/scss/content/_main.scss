@@ -6,9 +6,49 @@ main{
     text-align: center;
     display: block;
 
-    .content{
+    .contents{
+
         text-align: center;
+
+
+        .overview{
+            text-align: left;
+
+        }
+        .tutorial{
+            text-align: left;
+            .section{
+                &::before{
+                    content: '';
+                    display: inline-block;
+                    width: 17px;
+                    height: 25px;
+                    background-image: url(../home/section.png);
+                    background-size: contain;
+                    vertical-align: middle;
+                }
+            }
+            .danger{
+                color: red;
+
+                &::before{
+                    content: "※"
+                }
+
+            }
+            .notice{
+                border-bottom: solid 1px blue;
+
+            }
+
+            img{
+                border: solid 1px;
+            }
+
+        }
     }
+
+
 }
 
 .create-model-title{
@@ -167,14 +207,13 @@ main{
         margin: auto;
         padding: auto;
 
-        tr{
-            td{
-                border: solid 1px;
-                padding: 0 20;
-                p{
-                    word-wrap: normal;
-                }
-            }
+        table{
+            margin: auto;
+        }
+        th,td{
+            margin: auto;
+            padding: 1vw 2vw;
+            text-align: center;
         }
 
     }
@@ -201,7 +240,7 @@ main{
     margin: auto;
     width: 80vw;
     padding: 1vh 1vw;
-    text-align: center;
+    
 
     .left{
         display: inline-block;

@@ -17,13 +17,9 @@ from .forms import ClassifierEditForm
 import hashlib
 from mic_to_soft.tasks import learn, classify
 
-def index(request):
-    # if request.method == 'POST':
-    #     form = ClassifierForm(request.POST, request.FILES)
-    #     if form.is_valid():
-    #         form.save()
-    #         return redirect('/')
+import requests
 
+def index(request):
     return render(request, 'classifier/index.html')
 
 @csrf_exempt
@@ -44,7 +40,7 @@ def api(request):
                 {
                     'req' : str(request),
                     'data' : form,
-                    'text' : result[0]
+                    'class' : result[0]
                 }
             ),
             safe = False
@@ -98,18 +94,38 @@ def model_create(request):
     return render(request, 'classifier/board/models/create.html', {'form' : form})
 
 def model_detail(request, pk):
+    context = {}
+    print(request.GET)
     classifier = get_object_or_404(Classifier, pk=pk)
-    return render(request, 'classifier/board/models/detail.html', {'classifier': classifier})
+    context['classifier'] = classifier
+
+    if request.method == "GET":
+        if request.GET.__contains__('sentence'):
+            context['classified'] = False
+            if request.GET['sentence'] != '':
+                URL = 'http://www.mictosoft.work/api'
+                data = {
+                    'model_hash' : classifier.model_hash,
+                    'text' : request.GET['sentence'],
+                }
+
+                response = requests.post(URL, data=data)
+                result_dict = json.loads(response.json())
+                result_class = result_dict['class']
+
+                classified = result_class[0]
+                context['classified'] = classified
+
+    return render(request, 'classifier/board/models/detail.html', context)
 
 def model_edit(request, pk):
+    print(request.POST)
     classifier = get_object_or_404(Classifier, pk=pk)
     passcheck = False
-    print(classifier.password)
     if request.method == "POST":
         form = ClassifierEditForm(request.POST, request.FILES, instance=classifier)
-        print(request.POST)
 
-        if request.POST['original-password'] == classifier.password:
+        if request.POST['entered-password'] == classifier.password:
             # done selected
             if request.POST.__contains__('done'):
                 if form.is_valid():
@@ -121,10 +137,12 @@ def model_edit(request, pk):
             elif request.POST.__contains__('delete'):
                 Classifier.objects.filter(pk=pk).delete()
                 return redirect('models')
+
         # password is wrong
         else:
+            if request.POST.__contains__('models'):
+                return redirect('models')
             passcheck = True
-
     else:
         form = ClassifierEditForm(instance=classifier)
 

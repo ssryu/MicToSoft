@@ -29,14 +29,14 @@
 
     <nav id="top-menu">
         <ul>
-            <li><a href="{% url 'index' %}"><i class="fas fa-home"></i> home</a></li>
-            <li><a href="{% url 'models' %}"><i class="fas fa-rss-square"></i> models</a></li>
+            <li><a href="{% url 'index' %}"><i class="fas fa-home"></i> ホーム</a></li>
+            <li><a href="{% url 'models' %}"><i class="fas fa-rss-square"></i> モデル一覧</a></li>
         </ul>
       </nav>
 
 
     <main>
-        <div class="content">
+        <div class="contents">
             {% block contents %} {% endblock %}
         </div>
     </main>
