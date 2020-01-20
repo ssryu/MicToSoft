@@ -3,33 +3,25 @@
 {% block title %} top {% endblock %}
 
 {% block contents %}
-    <div class="tutorial">
-        <h1>tutorial discription</h1>
-        <h4>bring training data</h4>
-        <h4>learn</h4>
-        <h4>created model</h4>
+
+    <div class="overview">
 
     </div>
 
+    <div class="tutorial">
+        <h2 class="section">学習モデルの作り方</h2>
+        <p>学習器の作成ページへ移動し，フォームを入力してください．</p>
 
-    <!-- <a href="#">create account</a> -->
+        {% load static %}
+        <img src="{% static 'home/create_model.png' %}" alt="crete-model" width="50%">
 
-    <!-- {% for data in datas %}
-        <p>----------</p>
-        {{ data. }}
-    {% endfor %} -->
+        <p class="danger">データセットの拡張子は.csvです．データセットはサーバへ保存されます</p>
+        <p　class="notice">最後にCreate Modelというボタンを押してください．モデルの作成には数分かかります．</p>
+        <br>
 
-<!--
-    datas
-    <form action="{% url 'index' %}" method="post" id="dataform" enctype="multipart/form-data">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <input type="submit" value="Upload">
-    </form>
-    {{ datas }}
-    {% for data in datas %}
-        <p>----------</p>
-        {{ data.title }}
-        {{ data.textdata.url }}
-    {% endfor %} -->
+        <h2 class="section">APIの使いかた</h2>
+        <p>ソースコード</p>
+        <img src="{% static 'home/api_sample.png' %}" alt="api-sample" width="50%">
+    </div>
+
 {% endblock %}

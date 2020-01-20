@@ -1,0 +1,9 @@
+$ time ./ex_7.sh sys_call.c
+real	0m0.150s
+user	0m0.055s
+sys	0m0.041s
+
+$ time ./ex_7.sh sys_call_lib.c
+real	0m0.142s
+user	0m0.054s
+sys 0m0.041s

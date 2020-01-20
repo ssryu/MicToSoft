@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+
+{% block title %} create {% endblock %}
+
+{% block contents %}
+    <div class="edit-model">
+        <form class="edit-form" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <table>
+                <tr>
+                    <td>ユーザID</td>
+                    <td>{{ form.userid }}</td>
+                </tr>
+
+                <tr>
+                    <td>タイトル</td>
+                    <td>{{ form.title }}</td>
+                </tr>
+
+                <tr>
+                    <td>説明</td>
+                    <td>{{ form.description }}</td>
+                </tr>
+
+                <tr>
+                    <td>学習データ</td>
+                    <td>{{ form.train_data }}</td>
+                </tr>
+            </table>
+
+
+
+            <div class="button-set">
+                {% if passcheck %}
+                    password is wrong!
+                {% endif %}
+                <input type="text" name="entered-password" value="" placeholder="パスワード">
+                <button type="submit" class="btn btn-primary" name="done" value="Done">編集完了</button>
+                <button type="submit" class="btn btn-danger" name="delete" value="Delete">削除</button>
+            </div>
+
+        </form>
+
+        <div class="button-set">
+            <div class="left">
+                <button class="btn btn-success" type=“button” onclick="location.href='{% url 'models'%}'">モデル一覧</button>
+            </div>
+            <div class="right">
+
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

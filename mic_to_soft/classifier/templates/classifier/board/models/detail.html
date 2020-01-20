@@ -1,0 +1,71 @@
+{% extends "layout.html" %}
+
+{% block title %} detail {% endblock %}
+
+{% block contents %}
+    <div class="model-detail">
+        <table class="detail">
+            <tr>
+                <td>ユーザID</td>
+                <td>{{ classifier.userid }}</td>
+            </tr>
+            <tr>
+                <td>タイトル</td>
+                <td>{{ classifier.title }}</td>
+            </tr>
+            <tr>
+                <td>説明</td>
+                <td>{{ classifier.description|linebreaksbr }}</td>
+            </tr>
+            <tr>
+                <td>学習データ</td>
+                <td>{{ classifier.train_data }}</td>
+            </tr>
+            <tr>
+                <td>正解率</td>
+                <td>{{ classifier.acc_rate }}</td>
+            </tr>
+            <tr>
+                <td>モデルハッシュ</td>
+                <td>{{ classifier.model_hash }}</td>
+            </tr>
+
+            <tr>
+                <td>作成日</td>
+                <td>{{ classifier.created_date|date:"y/m/d H:i:s" }}</td>
+            </tr>
+
+            <tr>
+                <td>最終編集日</td>
+                <td>{{ classifier.modified_date|date:"y/m/d H:i:s" }}</td>
+            </tr>
+        </table>
+
+        <br>
+        
+        <form class="classify" method="GET">
+            モデル分類サンプル
+            <input type="text" name="sentence" placeholder="分類したい文章">
+            <button class="btn btn-default" type="submit" name="classify-btn">分類</button>
+        </form>
+
+        <div class="classified-result">
+            {% if classified %}
+                <p>分類結果　{{ classified }}</p>
+            {% else %}
+                <br>
+            {% endif %}
+        </div>
+
+        <br>
+
+        <div class="button-set">
+            <div class="left">
+                <button class="btn btn-success" type=“button” onclick="location.href='{% url 'models'%}'">モデル一覧</button>
+            </div>
+            <div class="right">
+                <button class="btn btn-primary" type=“button” onclick="location.href='{% url 'model_edit' pk=classifier.pk %}'">編集</button>
+            </div>
+        </div>
+    </div>
+{% endblock %}

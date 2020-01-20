@@ -9,30 +9,18 @@ from django.utils import timezone
 from django.conf import settings
 
 from .models import Classifier
-from .models import Account
-from .forms import ClassifierForm
-from .forms import ClassifierAccount
 
+from .forms import ClassifierForm
+from .forms import ClassifierEditForm
+
+# for generate hash of models
 import hashlib
 from mic_to_soft.tasks import learn, classify
 
+import requests
+
 def index(request):
-    if request.method == 'POST':
-        form = ClassifierForm(request.POST, request.FILES)
-        if form.is_valid():
-            form.save()
-            return redirect('/')
-
-    context = {'test' : 'test text'}
-
-    datas = Account.objects.all()
-
-    context['datas'] = datas
-
-    form = ClassifierForm()
-    context['form'] = form
-
-    return render(request, 'classifier/index.html', context)
+    return render(request, 'classifier/index.html')
 
 @csrf_exempt
 def api(request):
@@ -81,92 +69,86 @@ def learning_finished(request):
         status=400
         )
 
-def signup(request):
-    if request.method == 'POST':
-        form = ClassifierAccount(request.POST)
-        if form.is_valid():
-            form.save()
-            return redirect('/')
-    else:
-        form = ClassifierAccount()
-    return render(request, 'classifier/sign/signup.html', {'form': form})
+def board_models(request):
+    classifiers = Classifier.objects.order_by("-pk")
+    return render(request, 'classifier/board/models/models.html', {'classifiers' : classifiers})
 
-def signin(request):
-    if request.method == 'POST':
-        form = ClassifierAccount(request.POST)
-        if form.is_valid():
-            form.save()
-            return redirect('/')
-    else:
-        form = ClassifierAccount()
-
-    return render(request, 'classifier/sign/signin.html', {'form': form})
-
-def board(request):
-    # context = {'posts' : [{'model' : 'm1', 'data' : 'd1'}, {'model' : 'm2', 'data' : 'd2'}]}
-    classifiers = Classifier.objects.all()
-    return render(request, 'classifier/board/board.html', context = {'classifiers' : classifiers})
-
-def createmodel(request):
+def model_create(request):
     if request.method == 'POST':
         form = ClassifierForm(request.POST, request.FILES)
         if form.is_valid():
             classifier = form.save(commit=False)
 
-            hash_value = str(classifier.id) + classifier.userid + classifier.title
+            hash_value = str(classifier.id)
             hash_value = hashlib.sha256(hash_value.encode()).hexdigest()
             media_root = settings.MEDIA_ROOT
             train_data = 'textdata/' + str(classifier.train_data)
-            model = train_data.replace('textdata', 'model')
 
             classifier.model_hash = hash_value
-            classifier.model = model
             classifier.save()
 
             learn.delay(hash_value, media_root, train_data, model)
-            return redirect('modeldetail', pk=classifier.pk)
+
+            return redirect('model_detail', pk=classifier.pk)
     else:
         form = ClassifierForm()
-    return render(request, 'classifier/board/createmodel.html', {'form' : form})
+    return render(request, 'classifier/board/models/create.html', {'form' : form})
 
-def created(request, pk):
+def model_detail(request, pk):
+    context = {}
+    print(request.GET)
     classifier = get_object_or_404(Classifier, pk=pk)
-    return render(request, 'classifier/board/created.html', {'classifier': classifier})
+    context['classifier'] = classifier
 
-def modeldetail(request, pk):
+    if request.method == "GET":
+        if request.GET.__contains__('sentence'):
+            context['classified'] = False
+            if request.GET['sentence'] != '':
+                URL = 'http://www.mictosoft.work/api'
+                data = {
+                    'model_hash' : classifier.model_hash,
+                    'text' : request.GET['sentence'],
+                }
+
+                response = requests.post(URL, data=data)
+                result_dict = json.loads(response.json())
+                result_class = result_dict['class']
+
+                classified = result_class[0]
+                context['classified'] = classified
+
+    return render(request, 'classifier/board/models/detail.html', context)
+
+def model_edit(request, pk):
+    print(request.POST)
     classifier = get_object_or_404(Classifier, pk=pk)
-    return render(request, 'classifier/board/modeldetail.html', {'classifier': classifier})
+    passcheck = False
+    if request.method == "POST":
+        form = ClassifierEditForm(request.POST, request.FILES, instance=classifier)
 
-def models(request):
-    return render(request, 'classifier/board/models.html', {})
+        if request.POST['entered-password'] == classifier.password:
+            # done selected
+            if request.POST.__contains__('done'):
+                if form.is_valid():
+                    classifier = form.save(commit=False)
+                    classifier.modified_date = timezone.now()
+                    classifier.save()
+                    return redirect('model_detail', pk=classifier.pk)
+            # delete selected
+            elif request.POST.__contains__('delete'):
+                Classifier.objects.filter(pk=pk).delete()
+                return redirect('models')
 
-def newmodel(request):
-    if request.method == 'POST':
-        form = ClassifierForm(request.POST)
-        if form.is_valid():
-            form.save()
-            return redirect('/')
+        # password is wrong
+        else:
+            if request.POST.__contains__('models'):
+                return redirect('models')
+            passcheck = True
     else:
-        form = ClassifierForm()
-    return render(request, 'classifier/mypage/newmodel.html', {'form' : form})
+        form = ClassifierEditForm(instance=classifier)
 
-def data(request):
-    return render(request, 'classifier/board/data.html', {})
-
-def mypage(request):
-    return render(request, 'classifier/mypage/mypage.html', {})
-
-def account(request):
-    form = ClassifierAccount()
-    return render(request, 'classifier/mypage/account.html', {'form': form})
-
-def managemodels(request):
-    context = {'model1' : 'm1', 'data1' : 'd1'}
-
-    return render(request, 'classifier/mypage/managemodels.html', context)
-
-def about(request):
-    return render(request, 'classifier/about/about.html', {})
-
-def help(request):
-    return render(request, 'classifier/about/help.html', {})
+    context = {
+        'form': form,
+        'passcheck':passcheck,
+    }
+    return render(request, 'classifier/board/models/edit.html', context)

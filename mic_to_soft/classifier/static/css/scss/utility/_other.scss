@@ -77,8 +77,10 @@ $break-point: 769 481;
 
 // 色関係
 // 使用する色は全てここで管理する
-// 色を指定する時は全てc()を通す
-$c: white black #3CB371 #2B8051 #57FFA2 #164029 #4EE692;
+$main-color: #3CB371;
+$sub-color: #2B8051;
+$sub-sub-color: #164029;
+$c: #3CB371 #2B8051 #57FFA2 #164029 #4EE692;
 @function c($index){
     @return nth($c, $index);
 }

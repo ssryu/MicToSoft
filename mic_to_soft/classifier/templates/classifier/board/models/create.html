@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block title %} create {% endblock %}
+
+{% block contents %}
+    <div class="create-model">
+        <form class="create-form" action="{% url 'model_create' %}" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <table>
+                <tr>
+                    <td>ユーザID</td>
+                    <td>{{ form.userid }}</td>
+                </tr>
+
+                <tr>
+                    <td>パスワード</td>
+                    <td>{{ form.password }}</td>
+                </tr>
+
+                <tr>
+                    <td>タイトル</td>
+                    <td>{{ form.title }}</td>
+                </tr>
+
+                <tr>
+                    <td>説明</td>
+                    <td>{{ form.description }}</td>
+                </tr>
+
+                <tr>
+                    <td>学習データ</td>
+                    <td>{{ form.train_data }}</td>
+                </tr>
+            </table>
+
+            <button type="submit" class="btn btn-default btn-lg btn-block">モデル作成</button>
+        </form>
+    </div>
+{% endblock %}

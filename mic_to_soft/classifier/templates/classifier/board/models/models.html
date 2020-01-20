@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block title %} models {% endblock %}
+
+{% block contents %}
+    <div class="model-board">
+        <button type="button" class="btn btn-default btn-lg btn-block" onclick="location.href='{% url 'model_create' %}'">モデル作成</button>
+
+        <div class="models">
+            <div class="model">
+                <div class="model-title">
+                    タイトル
+                </div>
+
+                <div class="model-user">
+                    ユーザID
+                </div>
+
+                <div class="model-date">
+                    日付　　　　　　
+                </div>
+            </div>
+
+            <br>
+
+            {% for classifier in classifiers %}
+                <a href="{% url 'model_detail' pk=classifier.pk %}">
+                    <div class="model">
+                        <div class="model-title">
+                            {{ classifier.title }}
+                        </div>
+
+                        <div class="model-user">
+                            {{ classifier.userid }}
+                        </div>
+
+                        <div class="model-date">
+                            {{ classifier.created_date|date:"y/m/d H:i:s" }}
+                        </div>
+                    </div>
+                </a>
+            {% endfor %}
+
+        </div>
+    </div>
+{% endblock %}
