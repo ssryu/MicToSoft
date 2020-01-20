@@ -93,15 +93,11 @@ class Learner(Common):
         #様子をみて再学習
         fit_n = 1
         while self.acc < expected_acc_rate and fit_n < n_re_learning:
-            print('\n\nfit onemore!! {} / {}1\n\n'.format(fit_n, n_re_learning))
-            # self.model.compile(loss="categorical_crossentropy", optimizer=Adam(lr=0.01), metrics=['acc'])
-            # print('\n\nfit onemore!! {} / {}\n\n'.format(fit_n, n_re_learning))
+            print('\n\nfit onemore!! {} / {}\n\n'.format(fit_n, n_re_learning))
+            self.model.compile(loss="categorical_crossentropy", optimizer=Adam(lr=0.01), metrics=['acc'])
             his = self.model.fit(g, h, batch_size=batch_size, epochs=100, validation_split=0.1, callbacks=[early_stopping])#, verbose=0)
-            print('\n\nfit onemore!! {} / {}3\n\n'.format(fit_n, n_re_learning))
             self.acc = his.history['acc'][-1]
-            print('\n\nfit onemore!! {} / {}4\n\n'.format(fit_n, n_re_learning))
             fit_n += 1
-            print('\n\nfit onemore!! {} / {}5\n\n'.format(fit_n, n_re_learning))
             
         if self.acc < expected_acc_rate:
             print('I failed to learn. acc-rate is {} under than {}'.format(self.acc, expected_acc_rate))

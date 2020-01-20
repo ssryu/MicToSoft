@@ -36,13 +36,7 @@ def api(request):
         result = classify(model, text)
 
         return JsonResponse(
-            json.dumps(
-                {
-                    # 'req' : str(request),
-                    # 'data' : form,
-                    'class' : result
-                }
-            ),
+            json.dumps( { 'class' : result } ),
             safe = False
         )
 
