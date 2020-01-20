@@ -38,9 +38,9 @@ def api(request):
         return JsonResponse(
             json.dumps(
                 {
-                    'req' : str(request),
-                    'data' : form,
-                    'class' : result[0]
+                    # 'req' : str(request),
+                    # 'data' : form,
+                    'class' : result
                 }
             ),
             safe = False
@@ -50,12 +50,13 @@ def api(request):
 def learning_finished(request):
     if request.method == "POST":
         form = request.POST
-        model_hash = form['model_hash']
         acc = float(form['acc'])
+        model = form['model']
+        model_hash = form['model_hash']
 
         classifier = get_object_or_404(Classifier, model_hash = model_hash)
         classifier.acc_rate = acc
-        model = str(classifier.train_data).replace('textdata', 'model')
+        classifier.model = model
         classifier.save()
 
         return JsonResponse(
@@ -82,6 +83,7 @@ def model_create(request):
             hash_value = hashlib.sha256(hash_value.encode()).hexdigest()
             media_root = settings.MEDIA_ROOT
             train_data = 'textdata/' + str(classifier.train_data)
+            model = train_data.replace('textdata', 'model')
 
             classifier.model_hash = hash_value
             classifier.save()

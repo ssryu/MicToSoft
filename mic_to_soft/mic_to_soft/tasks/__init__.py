@@ -19,20 +19,11 @@ import pickle
 
 from .preprocess import *
 
-
-
-
 tokenizer = TextsTokenize()
-
-
-
 
 # word_vector.model : 日本語wikiより作成
 wv_filename = "word_vector.model"
 wmodel = word2vec.Word2Vec.load(os.path.dirname(__file__) + '/' + wv_filename).wv
-
-
-
 
 class Common:
     def __init__(self):
@@ -42,11 +33,8 @@ class Common:
         self.vector_size = None
         self.model = None
 
-
-
-
 class Learner(Common):
-    def fit(self, filename, wv_filename=None, max_token=40, expected_acc_rate=0.85, n_re_learning=5):
+    def fit(self, filename, wv_filename=None, max_token=40, expected_acc_rate=0.95, n_re_learning=5):
         '''
         モデルの作成と学習までをする
         通常はfilenameに渡されたデータセットからword2vectorのモデルも作成する
@@ -105,16 +93,18 @@ class Learner(Common):
         #様子をみて再学習
         fit_n = 1
         while self.acc < expected_acc_rate and fit_n < n_re_learning:
-            print('\n\nfit onemore!! {} / {}\n\n'.format(fit_n, n_re_learning))
-            self.model.compile(loss="categorical_crossentropy", optimizer=Adam(lr=0.01), metrics=['acc'])
+            print('\n\nfit onemore!! {} / {}1\n\n'.format(fit_n, n_re_learning))
+            # self.model.compile(loss="categorical_crossentropy", optimizer=Adam(lr=0.01), metrics=['acc'])
+            # print('\n\nfit onemore!! {} / {}\n\n'.format(fit_n, n_re_learning))
             his = self.model.fit(g, h, batch_size=batch_size, epochs=100, validation_split=0.1, callbacks=[early_stopping])#, verbose=0)
+            print('\n\nfit onemore!! {} / {}3\n\n'.format(fit_n, n_re_learning))
             self.acc = his.history['acc'][-1]
+            print('\n\nfit onemore!! {} / {}4\n\n'.format(fit_n, n_re_learning))
             fit_n += 1
-
+            print('\n\nfit onemore!! {} / {}5\n\n'.format(fit_n, n_re_learning))
+            
         if self.acc < expected_acc_rate:
             print('I failed to learn. acc-rate is {} under than {}'.format(self.acc, expected_acc_rate))
-
-
 
     def save(self, modelname):
         self.model.save(modelname+'.keras', include_optimizer=False)
@@ -128,9 +118,6 @@ class Learner(Common):
         }
         return params
 
-
-
-
 class Classifier(Common):
     def load(self, filename):
         with open(filename+'.bin', 'rb') as f:
@@ -141,7 +128,6 @@ class Classifier(Common):
         self.vector_size = damy.vector_size
         self.model = keras.models.load_model(filename+'.keras', compile=False)
         #print(self.id_to_label)
-
 
     def predict(self, texts):
         if type(texts) is str: #単文の入力にも対応
@@ -168,7 +154,6 @@ class Classifier(Common):
             return y[0]
         return y
 
-
 @app.task()
 def learn(model_hash, media_root, data, model):
     L = Learner()
@@ -176,13 +161,14 @@ def learn(model_hash, media_root, data, model):
     dataset = os.path.join(media_root, data)
     model_dir = os.path.join(media_root, model)
 
-    L.fit(dataset, wv_filename = None)
+    L.fit(dataset)
     params = L.save(model_dir)
     # request settings
-    URL = 'http://localhost/learning-finished'
+    URL = 'http://www.mictosoft.work/learning-finished'
     data = {
-        'model_hash' : model_hash,
         'acc' : params['acc']
+        'model' : model
+        'model_hash' : model_hash,
     }
 
     requests.post(URL, data=data)
@@ -190,9 +176,8 @@ def learn(model_hash, media_root, data, model):
     return
 
 def classify(model, texts):
-    C = Classifier()
     # texts = ['振込がしたい', 'お金を引き出しにきた', '金よこせ', '預けようかな']
-    texts = [texts]
+    C = Classifier()
     C.load(model)
     result = C.predict(texts)
 
