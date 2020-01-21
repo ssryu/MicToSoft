@@ -95,7 +95,6 @@ def model_create(request):
 
 def model_detail(request, pk):
     context = {}
-    print(request.GET)
     classifier = get_object_or_404(Classifier, pk=pk)
     context['classifier'] = classifier
 
@@ -119,7 +118,6 @@ def model_detail(request, pk):
     return render(request, 'classifier/board/models/detail.html', context)
 
 def model_edit(request, pk):
-    print(request.POST)
     classifier = get_object_or_404(Classifier, pk=pk)
     passcheck = False
     if request.method == "POST":

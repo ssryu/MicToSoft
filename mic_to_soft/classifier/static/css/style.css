@@ -280,18 +280,19 @@ main {
       line-height: 35px; } }
   main .contents {
     text-align: center; }
+    main .contents .section::before {
+      content: '';
+      display: inline-block;
+      width: 17px;
+      height: 25px;
+      background-image: url(../home/section.png);
+      background-size: contain;
+      vertical-align: middle; }
     main .contents .overview {
+      margin: 50 0;
       text-align: left; }
     main .contents .tutorial {
       text-align: left; }
-      main .contents .tutorial .section::before {
-        content: '';
-        display: inline-block;
-        width: 17px;
-        height: 25px;
-        background-image: url(../home/section.png);
-        background-size: contain;
-        vertical-align: middle; }
       main .contents .tutorial .danger {
         color: red; }
         main .contents .tutorial .danger::before {
@@ -415,16 +416,23 @@ main {
 .model-detail {
   text-align: center;
   margin: auto;
-  width: 90vw; }
+  width: 90vw;
+  overflow-x: scroll; }
   .model-detail table.detail {
     text-align: center;
     margin: auto;
     padding: auto; }
     .model-detail table.detail table {
       margin: auto; }
-    .model-detail table.detail th, .model-detail table.detail td {
+    .model-detail table.detail th {
       margin: auto;
-      padding: 1vw 2vw;
+      text-align: center; }
+    .model-detail table.detail td {
+      white-space: nowrap;
+      height: auto;
+      width: auto;
+      margin: auto;
+      padding: 5 15;
       text-align: center; }
 
 .edit-model {

@@ -7,6 +7,6 @@ db.sqlite3
 .DS_Store
 mic_to_soft/properties.json
 /mic_to_soft/media
-/mic_to_soft/django.log
+django.log
 /media
 word_vector.*

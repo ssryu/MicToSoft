@@ -9,32 +9,31 @@ main{
     .contents{
 
         text-align: center;
+        .section{
+            &::before{
+                content: '';
+                display: inline-block;
+                width: 17px;
+                height: 25px;
+                background-image: url(../home/section.png);
+                background-size: contain;
+                vertical-align: middle;
+            }
+        }
 
 
         .overview{
+            margin: 50 0;
             text-align: left;
-
         }
         .tutorial{
             text-align: left;
-            .section{
-                &::before{
-                    content: '';
-                    display: inline-block;
-                    width: 17px;
-                    height: 25px;
-                    background-image: url(../home/section.png);
-                    background-size: contain;
-                    vertical-align: middle;
-                }
-            }
             .danger{
                 color: red;
 
                 &::before{
                     content: "※"
                 }
-
             }
             .notice{
                 border-bottom: solid 1px blue;
@@ -201,6 +200,8 @@ main{
     text-align: center;
     margin: auto;
     width: 90vw;
+    overflow-x: scroll;
+
     table.detail {
         // border: solid 1px #000;
         text-align: center;
@@ -210,9 +211,16 @@ main{
         table{
             margin: auto;
         }
-        th,td{
+        th{
             margin: auto;
-            padding: 1vw 2vw;
+            text-align: center;
+        }
+        td{
+            white-space: nowrap;
+            height: auto;
+            width: auto;
+            margin: auto;
+            padding: 5 15;
             text-align: center;
         }
 
@@ -240,7 +248,7 @@ main{
     margin: auto;
     width: 80vw;
     padding: 1vh 1vw;
-    
+
 
     .left{
         display: inline-block;
