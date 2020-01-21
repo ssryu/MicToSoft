@@ -15,6 +15,7 @@ from .forms import ClassifierEditForm
 
 # for generate hash of models
 import hashlib
+import datetime
 from mic_to_soft.tasks import learn, classify
 
 import requests
@@ -36,13 +37,7 @@ def api(request):
         result = classify(model, text)
 
         return JsonResponse(
-            json.dumps(
-                {
-                    'req' : str(request),
-                    'data' : form,
-                    'class' : result[0]
-                }
-            ),
+            json.dumps( { 'class' : result } ),
             safe = False
         )
 
@@ -50,23 +45,25 @@ def api(request):
 def learning_finished(request):
     if request.method == "POST":
         form = request.POST
-        model_hash = form['model_hash']
         acc = float(form['acc'])
+        model_hash = form['model_hash']
 
         classifier = get_object_or_404(Classifier, model_hash = model_hash)
         classifier.acc_rate = acc
-        model = str(classifier.train_data).replace('textdata', 'model')
+        classifier.model = str(classifier.train_data).replace('textdata', 'model')
         classifier.save()
 
         return JsonResponse(
-            json.dumps({'result' : 'ok'}),
-            status=200
-            )
+            json.dumps( { 'result' : 'ok' } ),
+            status=200,
+            safe = False,
+        )
 
     return JsonResponse(
-        json.dumps({'error' : 'something bad'}),
-        status=400
-        )
+        json.dumps( { 'error' : 'something bad' } ),
+        status=400,
+        safe = False,
+    )
 
 def board_models(request):
     classifiers = Classifier.objects.order_by("-pk")
@@ -78,13 +75,16 @@ def model_create(request):
         if form.is_valid():
             classifier = form.save(commit=False)
 
-            hash_value = str(classifier.id)
+            hash_value = classifier.userid + str(datetime.datetime.now())
             hash_value = hashlib.sha256(hash_value.encode()).hexdigest()
             media_root = settings.MEDIA_ROOT
             train_data = 'textdata/' + str(classifier.train_data)
 
             classifier.model_hash = hash_value
             classifier.save()
+
+            classifier = get_object_or_404(Classifier, model_hash = hash_value)
+            model = str(classifier.train_data).replace('textdata', 'model')
 
             learn.delay(hash_value, media_root, train_data, model)
 

@@ -2,15 +2,16 @@
 # coding: UTF-8
 from ..celery import app
 
-import requests  
+import requests
 import json
 import sys
 import keras
 import os
+import keras
 from keras.models import Sequential
 from keras.layers.core import Dense, Activation
 from keras.layers.recurrent import LSTM
-from keras.optimizers import Adam
+from keras.optimizers import Adam, SGD
 from keras.callbacks import EarlyStopping
 from gensim.models import KeyedVectors, word2vec
 import numpy as np
@@ -29,7 +30,13 @@ class Common:
         self.model = None
 
 class Learner(Common):
-    def fit(self, filename, wv_filename=None, max_token=20):
+    def fit(self, filename, max_token=40, expected_acc_rate=0.95, n_re_learning=10):
+        print('now loding wordvector ...')
+        # word_vector.model : 日本語wikiより作成
+        wv_filename = "word_vector.model"
+        wmodel = word2vec.Word2Vec.load(os.path.dirname(__file__) + '/' + wv_filename).wv
+        print('completed loding wordvector !')
+
         '''
         モデルの作成と学習までをする
         通常はfilenameに渡されたデータセットからword2vectorのモデルも作成する
@@ -37,11 +44,10 @@ class Learner(Common):
         '''
         # csvから文章とラベルを読み込み、形態素解析して単語リスト作る(ワードベクトルにない単語は除外)
         texts, labels = csv_to_data(filename)
+        batch_size = int(len(texts) / 20)
+        if batch_size == 0:
+            batch_size = 1
         texts = tokenizer(texts)
-        if(wv_filename == None):
-            wmodel = word2vec.Word2Vec(texts, size=50, min_count=2, window=2).wv
-        else:
-            wmodel = KeyedVectors.load_word2vec_format(wv_filename, binary=True)
         for i in range(len(texts)):
             texts[i] = [w for w in texts[i] if w in wmodel.vocab]
         vocab = texts_to_vocab(texts)
@@ -65,7 +71,7 @@ class Learner(Common):
         length_of_sequence = max_token
         in_neurons = g.shape[2]
         out_neurons = h.shape[1]
-        n_hidden = 200
+        n_hidden = 400
 
         # あとで必要そうなデータをオブジェクトに格納
         self.id_to_label = dict([(v, k) for k, v in label_to_id.items()])
@@ -80,13 +86,25 @@ class Learner(Common):
         self.model.add(LSTM(n_hidden, batch_input_shape=(None, length_of_sequence, in_neurons), return_sequences=False))
         self.model.add(Dense(out_neurons))
         self.model.add(Activation("sigmoid"))
-        self.model.compile(loss="categorical_crossentropy", optimizer=Adam(lr=0.001), metrics=['acc'])
-        early_stopping = EarlyStopping(monitor='val_loss', mode='auto', patience=20)
-        his = self.model.fit(g, h, batch_size=300, epochs=100, validation_split=0.1, callbacks=[early_stopping], verbose=0)
+        self.model.compile(loss="categorical_crossentropy", optimizer=Adam(lr=0.01), metrics=['acc'])
+        early_stopping = EarlyStopping(monitor='val_loss', mode='auto', patience=15)
+        his = self.model.fit(g, h, batch_size=batch_size, epochs=100, validation_split=0.1, callbacks=[early_stopping])#, verbose=0)
 
         #データの保持
         self.filename = filename
         self.acc = his.history['acc'][-1]
+
+        #様子をみて再学習
+        fit_n = 1
+        while self.acc < expected_acc_rate and fit_n < n_re_learning:
+            print('\n\nfit onemore!! {} / {}\n\n'.format(fit_n, n_re_learning))
+            self.model.compile(loss="categorical_crossentropy", optimizer=Adam(lr=0.01), metrics=['acc'])
+            his = self.model.fit(g, h, batch_size=batch_size, epochs=100, validation_split=0.1, callbacks=[early_stopping])#, verbose=0)
+            self.acc = his.history['acc'][-1]
+            fit_n += 1
+
+        if self.acc < expected_acc_rate:
+            print('I failed to learn. acc-rate is {} under than {}'.format(self.acc, expected_acc_rate))
 
     def save(self, modelname):
         self.model.save(modelname+'.keras', include_optimizer=False)
@@ -109,9 +127,15 @@ class Classifier(Common):
         self.max_token = damy.max_token
         self.vector_size = damy.vector_size
         self.model = keras.models.load_model(filename+'.keras', compile=False)
-
+        #print(self.id_to_label)
 
     def predict(self, texts):
+        if type(texts) is str: #単文の入力にも対応
+            texts = [texts]
+            a_text = True
+        else:
+            a_text = False
+
         tokenized_texts = tokenizer(texts)
         for i in range(len(tokenized_texts)):
             tokenized_texts[i] = [w for w in tokenized_texts[i] if w in self.word_to_vec]
@@ -120,26 +144,30 @@ class Classifier(Common):
             for j in range(len(tokenized_texts[i])):
                 g[i][j][...] = self.word_to_vec[tokenized_texts[i][j]]
 
-        y = np.argmax(self.model.predict(g), axis=1)
+        y = self.model.predict(g)
+        y = np.argmax(y, axis=1)
         y = [self.id_to_label[y[i]] for i in range(len(y))]
         for text, label in zip(texts, y):
             print("%s : %s" % (text, label))
+
+        if a_text:
+            return y[0]
         return y
 
 @app.task()
 def learn(model_hash, media_root, data, model):
     L = Learner()
-    
+
     dataset = os.path.join(media_root, data)
     model_dir = os.path.join(media_root, model)
-    
-    L.fit(dataset, wv_filename = None)
+
+    L.fit(dataset)
     params = L.save(model_dir)
     # request settings
-    URL = 'http://localhost/learning-finished'
+    URL = 'http://www.mictosoft.work/learning-finished'
     data = {
+        'acc' : params['acc'],
         'model_hash' : model_hash,
-        'acc' : params['acc']
     }
 
     requests.post(URL, data=data)
@@ -147,9 +175,8 @@ def learn(model_hash, media_root, data, model):
     return
 
 def classify(model, texts):
-    C = Classifier()
     # texts = ['振込がしたい', 'お金を引き出しにきた', '金よこせ', '預けようかな']
-    texts = [texts]
+    C = Classifier()
     C.load(model)
     result = C.predict(texts)
 
