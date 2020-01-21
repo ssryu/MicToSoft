@@ -79,10 +79,12 @@ def model_create(request):
             hash_value = hashlib.sha256(hash_value.encode()).hexdigest()
             media_root = settings.MEDIA_ROOT
             train_data = 'textdata/' + str(classifier.train_data)
-            model = train_data.replace('textdata', 'model')
 
             classifier.model_hash = hash_value
             classifier.save()
+
+            classifier = get_object_or_404(Classifier, model_hash = hash_value)
+            model = str(classifier.train_data).replace('textdata', 'model')
 
             learn.delay(hash_value, media_root, train_data, model)
 
