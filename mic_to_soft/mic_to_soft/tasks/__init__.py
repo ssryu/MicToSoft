@@ -163,7 +163,6 @@ def learn(model_hash, media_root, data, model):
     URL = 'http://www.mictosoft.work/learning-finished'
     data = {
         'acc' : params['acc'],
-        'model' : model,
         'model_hash' : model_hash,
     }
 
