@@ -4649,3 +4649,63 @@ INFO 2020-01-21 14:06:17,412 basehttp 89183 123145522163712 "GET /board/models/3
 INFO 2020-01-21 14:06:17,420 basehttp 89183 123145522163712 "GET /static/css/style.css HTTP/1.1" 304 0
 INFO 2020-01-21 14:06:18,916 basehttp 89183 123145522163712 "GET / HTTP/1.1" 200 4020
 INFO 2020-01-21 14:09:53,012 basehttp 89183 123145522163712 "GET / HTTP/1.1" 200 4221
+INFO 2020-01-21 20:55:08,729 autoreload 91138 4739636672 Watching for file changes with StatReloader
+INFO 2020-01-21 20:55:19,778 basehttp 91138 123145362534400 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2020-01-21 20:55:19,799 basehttp 91138 123145373044736 "GET /static/home/section.png HTTP/1.1" 200 11634
+INFO 2020-01-21 20:55:19,800 basehttp 91138 123145357279232 "GET / HTTP/1.1" 200 4221
+INFO 2020-01-21 20:55:19,803 basehttp 91138 123145378299904 "GET /static/home/create_model.png HTTP/1.1" 200 165839
+INFO 2020-01-21 20:55:19,810 basehttp 91138 123145367789568 "GET /static/home/api_sample.png HTTP/1.1" 200 38679
+INFO 2020-01-21 20:55:22,378 basehttp 91138 123145357279232 "GET /board/models/ HTTP/1.1" 200 3322
+INFO 2020-01-21 20:55:25,076 basehttp 91138 123145357279232 "GET /board/models/33/ HTTP/1.1" 200 3560
+INFO 2020-01-21 20:55:56,372 autoreload 91138 4739636672 /Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/classifier/views.py changed, reloading.
+INFO 2020-01-21 20:55:58,130 autoreload 91151 4514500032 Watching for file changes with StatReloader
+INFO 2020-01-21 20:56:06,052 basehttp 91151 123145444167680 "GET /board/models/33/?sentence=&classify-btn= HTTP/1.1" 200 3560
+WARNING 2020-01-21 20:56:06,180 log 91151 123145449422848 Not Found: /favicon.ico
+WARNING 2020-01-21 20:56:06,181 basehttp 91151 123145449422848 "GET /favicon.ico HTTP/1.1" 404 3375
+INFO 2020-01-21 20:56:07,379 basehttp 91151 123145444167680 "GET /board/models/33/?sentence=&classify-btn= HTTP/1.1" 200 3560
+INFO 2020-01-21 20:56:08,073 basehttp 91151 123145444167680 "GET /board/models/33/?sentence=&classify-btn= HTTP/1.1" 200 3560
+INFO 2020-01-21 20:56:08,390 basehttp 91151 123145444167680 "GET /board/models/33/?sentence=&classify-btn= HTTP/1.1" 200 3560
+INFO 2020-01-21 20:56:08,610 basehttp 91151 123145444167680 "GET /board/models/33/?sentence=&classify-btn= HTTP/1.1" 200 3560
+INFO 2020-01-21 20:56:08,822 basehttp 91151 123145444167680 "GET /board/models/33/?sentence=&classify-btn= HTTP/1.1" 200 3560
+INFO 2020-01-21 20:56:09,010 basehttp 91151 123145444167680 "GET /board/models/33/?sentence=&classify-btn= HTTP/1.1" 200 3560
+INFO 2020-01-21 20:56:09,193 basehttp 91151 123145444167680 "GET /board/models/33/?sentence=&classify-btn= HTTP/1.1" 200 3560
+INFO 2020-01-21 20:56:09,376 basehttp 91151 123145444167680 "GET /board/models/33/?sentence=&classify-btn= HTTP/1.1" 200 3560
+INFO 2020-01-21 20:56:09,527 basehttp 91151 123145444167680 "GET /board/models/33/?sentence=&classify-btn= HTTP/1.1" 200 3560
+INFO 2020-01-21 20:56:09,694 basehttp 91151 123145444167680 "GET /board/models/33/?sentence=&classify-btn= HTTP/1.1" 200 3560
+INFO 2020-01-21 20:56:09,900 basehttp 91151 123145444167680 "GET /board/models/33/?sentence=&classify-btn= HTTP/1.1" 200 3560
+INFO 2020-01-21 20:56:10,446 basehttp 91151 123145444167680 "GET /board/models/33/?sentence=&classify-btn= HTTP/1.1" 200 3560
+INFO 2020-01-21 20:56:10,993 basehttp 91151 123145444167680 "GET /board/models/33/?sentence=&classify-btn= HTTP/1.1" 200 3560
+INFO 2020-01-21 20:56:11,361 basehttp 91151 123145444167680 "GET /board/models/33/?sentence=&classify-btn= HTTP/1.1" 200 3560
+INFO 2020-01-21 20:56:18,928 basehttp 91151 123145444167680 "GET /board/models/33/?sentence=aa&classify-btn= HTTP/1.1" 200 3581
+WARNING 2020-01-21 20:56:18,968 log 91151 123145449422848 Not Found: /favicon.ico
+WARNING 2020-01-21 20:56:18,969 basehttp 91151 123145449422848 "GET /favicon.ico HTTP/1.1" 404 3375
+INFO 2020-01-21 20:56:25,224 basehttp 91151 123145444167680 "GET /board/models/33/?sentence=a%3Bwlefm&classify-btn= HTTP/1.1" 200 3581
+WARNING 2020-01-21 20:56:25,265 log 91151 123145449422848 Not Found: /favicon.ico
+WARNING 2020-01-21 20:56:25,265 basehttp 91151 123145449422848 "GET /favicon.ico HTTP/1.1" 404 3375
+INFO 2020-01-21 20:56:53,903 autoreload 91151 4514500032 /Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/classifier/views.py changed, reloading.
+INFO 2020-01-21 20:56:55,895 autoreload 91162 4697898432 Watching for file changes with StatReloader
+INFO 2020-01-21 20:57:05,220 basehttp 91162 123145513586688 "GET /board/models/33/?sentence=a%3Bwlefm&classify-btn= HTTP/1.1" 200 3581
+INFO 2020-01-21 20:57:09,899 basehttp 91162 123145513586688 "GET /board/models/33/?sentence=aaaa&classify-btn= HTTP/1.1" 200 3581
+WARNING 2020-01-21 20:57:09,962 log 91162 123145519378432 Not Found: /favicon.ico
+WARNING 2020-01-21 20:57:09,962 basehttp 91162 123145519378432 "GET /favicon.ico HTTP/1.1" 404 3375
+INFO 2020-01-21 20:57:17,266 autoreload 91162 4697898432 /Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/classifier/views.py changed, reloading.
+INFO 2020-01-21 20:57:19,219 autoreload 91170 4620549568 Watching for file changes with StatReloader
+INFO 2020-01-21 20:57:25,853 basehttp 91170 123145572302848 "GET /board/models/33/?sentence=aaaa&classify-btn= HTTP/1.1" 200 3587
+INFO 2020-01-21 20:57:28,453 basehttp 91170 123145572302848 "GET /board/models/33/?sentence=&classify-btn= HTTP/1.1" 200 3560
+INFO 2020-01-21 20:57:30,660 basehttp 91170 123145572302848 "GET /board/models/33/?sentence=asdf&classify-btn= HTTP/1.1" 200 3587
+WARNING 2020-01-21 20:57:30,720 log 91170 123145578094592 Not Found: /favicon.ico
+WARNING 2020-01-21 20:57:30,721 basehttp 91170 123145578094592 "GET /favicon.ico HTTP/1.1" 404 3375
+INFO 2020-01-21 20:57:47,643 autoreload 91170 4620549568 /Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/classifier/views.py changed, reloading.
+INFO 2020-01-21 20:57:49,349 autoreload 91177 4657757632 Watching for file changes with StatReloader
+INFO 2020-01-21 20:57:57,637 basehttp 91177 123145428082688 "GET /board/models/33/?sentence=asdfas&classify-btn= HTTP/1.1" 200 3587
+WARNING 2020-01-21 20:57:57,732 log 91177 123145434411008 Not Found: /favicon.ico
+WARNING 2020-01-21 20:57:57,733 basehttp 91177 123145434411008 "GET /favicon.ico HTTP/1.1" 404 3375
+INFO 2020-01-21 20:58:03,225 basehttp 91177 123145428082688 "GET /board/models/33/?sentence=%E3%81%82%E3%81%82%E3%81%82&classify-btn= HTTP/1.1" 200 3587
+WARNING 2020-01-21 20:58:03,261 log 91177 123145434411008 Not Found: /favicon.ico
+WARNING 2020-01-21 20:58:03,262 basehttp 91177 123145434411008 "GET /favicon.ico HTTP/1.1" 404 3375
+INFO 2020-01-21 20:58:07,765 basehttp 91177 123145428082688 "GET /board/models/33/?sentence=%E6%8C%AF%E3%82%8A%E8%BE%BC%E3%81%BF&classify-btn= HTTP/1.1" 200 3584
+INFO 2020-01-21 20:58:08,445 basehttp 91177 123145439666176 "GET /board/models/33/?sentence=%E6%8C%AF%E3%82%8A%E8%BE%BC%E3%81%BF&classify-btn= HTTP/1.1" 200 3584
+WARNING 2020-01-21 20:58:08,500 log 91177 123145434411008 Not Found: /favicon.ico
+WARNING 2020-01-21 20:58:08,502 basehttp 91177 123145434411008 "GET /favicon.ico HTTP/1.1" 404 3375
+INFO 2020-01-21 20:58:36,753 autoreload 91177 4657757632 /Users/satouryousuke/Documents/GitHub/MicToSoft/mic_to_soft/classifier/views.py changed, reloading.
+INFO 2020-01-21 20:58:37,702 autoreload 91187 4681674176 Watching for file changes with StatReloader

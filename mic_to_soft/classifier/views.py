@@ -112,8 +112,7 @@ def model_detail(request, pk):
                 result_dict = json.loads(response.json())
                 result_class = result_dict['class']
 
-                classified = result_class[0]
-                context['classified'] = classified
+                context['classified'] = result_class
 
     return render(request, 'classifier/board/models/detail.html', context)
 
