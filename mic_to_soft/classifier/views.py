@@ -103,9 +103,12 @@ def model_detail(request, pk):
             context['classified'] = False
             if request.GET['sentence'] != '':
                 URL = 'http://www.mictosoft.work/api'
+                model_hash = classifier.model_hash
+                text = request.GET['sentence']
+
                 data = {
-                    'model_hash' : classifier.model_hash,
-                    'text' : request.GET['sentence'],
+                    'model_hash' : model_hash,
+                    'text' : text,
                 }
 
                 response = requests.post(URL, data=data)
