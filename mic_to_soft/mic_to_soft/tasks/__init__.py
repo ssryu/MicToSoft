@@ -21,10 +21,6 @@ from .preprocess import *
 
 tokenizer = TextsTokenize()
 
-# word_vector.model : 日本語wikiより作成
-wv_filename = "word_vector.model"
-wmodel = word2vec.Word2Vec.load(os.path.dirname(__file__) + '/' + wv_filename).wv
-
 class Common:
     def __init__(self):
         self.id_to_label = None
@@ -34,7 +30,13 @@ class Common:
         self.model = None
 
 class Learner(Common):
-    def fit(self, filename, wv_filename=None, max_token=40, expected_acc_rate=0.95, n_re_learning=5):
+    def fit(self, filename, max_token=40, expected_acc_rate=0.95, n_re_learning=10):
+        print('now loding wordvector ...')
+        # word_vector.model : 日本語wikiより作成
+        wv_filename = "word_vector.model"
+        wmodel = word2vec.Word2Vec.load(os.path.dirname(__file__) + '/' + wv_filename).wv
+        print('completed loding wordvector !')
+
         '''
         モデルの作成と学習までをする
         通常はfilenameに渡されたデータセットからword2vectorのモデルも作成する
@@ -43,6 +45,8 @@ class Learner(Common):
         # csvから文章とラベルを読み込み、形態素解析して単語リスト作る(ワードベクトルにない単語は除外)
         texts, labels = csv_to_data(filename)
         batch_size = int(len(texts) / 20)
+        if batch_size == 0:
+            batch_size = 1
         texts = tokenizer(texts)
         for i in range(len(texts)):
             texts[i] = [w for w in texts[i] if w in wmodel.vocab]
@@ -98,7 +102,7 @@ class Learner(Common):
             his = self.model.fit(g, h, batch_size=batch_size, epochs=100, validation_split=0.1, callbacks=[early_stopping])#, verbose=0)
             self.acc = his.history['acc'][-1]
             fit_n += 1
-            
+
         if self.acc < expected_acc_rate:
             print('I failed to learn. acc-rate is {} under than {}'.format(self.acc, expected_acc_rate))
 
