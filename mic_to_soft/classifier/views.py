@@ -98,24 +98,15 @@ def model_detail(request, pk):
     classifier = get_object_or_404(Classifier, pk=pk)
     context['classifier'] = classifier
 
-    if request.method == "GET":
-        if request.GET.__contains__('sentence'):
-            context['classified'] = False
-            if request.GET['sentence'] != '':
-                URL = 'http://www.mictosoft.work/api'
-                model_hash = classifier.model_hash
-                text = request.GET['sentence']
-
-                data = {
-                    'model_hash' : model_hash,
-                    'text' : text,
-                }
-
-                response = requests.post(URL, data=data)
-                result_dict = json.loads(response.json())
-                result_class = result_dict['class']
-
-                context['classified'] = result_class
+    if request.method == "GET" \
+    and request.GET.__contains__('sentence') \
+    and request.GET['sentence'] != '' :
+        # set parameter
+        model = os.path.join(settings.MEDIA_ROOT, str(classifier.model))
+        text = request.GET['sentence']
+        # get result
+        result_class = classify(model, text)
+        context['classified'] = result_class
 
     return render(request, 'classifier/board/models/detail.html', context)
 
