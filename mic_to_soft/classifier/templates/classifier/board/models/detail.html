@@ -44,6 +44,7 @@
         <br>
         
         <form class="classify" method="GET">
+            {% csrf_token %}
             モデル分類サンプル
             <input type="text" name="sentence" placeholder="分類したい文章">
             <button class="btn btn-default" type="submit" name="classify-btn">分類</button>
