@@ -28,29 +28,80 @@
         <br>
         <p>学習データは次の項目を満たす必要があります．</p>
 
-        <li>"text1", "class1"のような形式で，csvファイルであること．</li>
-        <li>データ数は分類するクラスごとに50個以上あること（100個以上あれば分類精度が上がる）．</li>
+        <br>
+        <li>モデルのトレーニングに使用するコンテンツを含むソース,テキスト,ドキュメントを20個以上,100,000個以下の範囲で指定する.</li>
+        <li>2個以上、100個以下の一意のラベルを指定する.</li>
+        <li>様々な長さ,言い回し,スタイルのドキュメントを学習用データとする.</li>
+        <li>人間が読んで容易に分類可能なドキュメントを使用する.</li>
+        <li>ラベルあたり少なくとも1,000のトレーニングドキュメントを用意する.</li>
+        <li>非常に低い頻度のラベルは削除する.</li>
+        <li>定義されたラベルのいずれとも一致しないドキュメント用のラベルを用意する.</li>
+        <br>
 
         <p class="danger">データセットの拡張子は.csvです．データセットはサーバに保存されます</p>
 
         <br>
 
-        <p　class="notice">最後にモデル作成というボタンを押してください．
-            モデルの作成にはデータの数に比例して数時間かかります．．</p>
-        <br>
+        <p　class="notice">最後にモデル作成というボタンを押してください．モデル一覧に移動します．
+            モデルの作成にはデータの数に比例して長時間かかります．</p>
+
 
         <p>モデル一覧からモデルを選択すると詳細画面に移動します．
             その詳細画面にはモデルのハッシュ値や，サンプルで文章分類できるフォームがあります．
         </p>
 
+        <br>
+
         <h2 class="section">APIの使いかた</h2>
-        <p>ソースコード</p>
+        <p>ソースコード例</p>
         <img src="{% static 'home/api_sample.png' %}" alt="api-sample" width="50%">
 
-        <p>http://www.mictosoft.work/api のURLに，
-            分類に使用したいモデルハッシュと分類したいテキストをdetaとしてrequestしてください．
-        </p>
+        <br>
 
+        <div class="parameter_list">
+            <table class="parameter_list" border="1">
+                <caption>リクエストパラメータ</caption>
+                <tr>
+                    <th>パラメータ</th>
+                    <th>値</th>
+                    <th>説明</th>
+                </tr>
+                <tr>
+                    <td>model_hash</td>
+                    <td>文字列</td>
+                    <td>モデルのハッシュ値です．モデルを識別するのに使います．</td>
+                </tr>
+                <tr>
+                    <td>text</td>
+                    <td>文字列</td>
+                    <td>分類したい文字列を入力します．</td>
+                </tr>
+            </table>
+        </div>
+
+        <br>
+
+        <div class="parameter_list">
+            <table class="parameter_list" border="1">
+                <caption>レスポンスフィールド</caption>
+                <tr>
+                    <th>フィールド</th>
+                    <th>値</th>
+                    <th>説明</th>
+                </tr>
+                <tr>
+                    <td>class</td>
+                    <td>文字列</td>
+                    <td>分類結果です．モデルによって種類の数が異なります．</td>
+                </tr>
+            </table>
+        </div>
+
+        <br>
+
+        <p>API URL :
+            http://www.mictosoft.work/api
+        </p>
     </div>
 
 {% endblock %}

@@ -271,5 +271,23 @@ main{
             display: inline-block;
         }
     }
+}
 
+.parameter_list{
+    table{
+        tr{
+            th{
+                background-color: #dcdcdc;
+                padding-right: 10;
+                padding-left: 10;
+                border: solid 1px;
+            }
+
+            td{
+                padding-right: 10;
+                padding-left: 10;
+                border: solid 1px;
+            }
+        }
+    }
 }
